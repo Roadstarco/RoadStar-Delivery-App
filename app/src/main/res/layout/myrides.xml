@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/my_rides_layout_header"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/app_color">
+
+        <RelativeLayout
+            android:id="@+id/my_rides_header_back_layout"
+            android:layout_width="55dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="26dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:background="@null"
+                android:src="@drawable/back_arrow"/>
+        </RelativeLayout>
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/my_rides_textview_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/my_rides_header_textview"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/my_rides_toolbar_shadow_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/my_rides_layout_header"
+        android:background="@xml/toolbar_shadow"/>
+
+    <RelativeLayout
+        android:id="@+id/my_rides_tab_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_rides_toolbar_shadow_layout"
+        android:layout_marginTop="5dp"
+        android:background="#00000000"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:id="@+id/my_rides_list_main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/app_color">
+
+            <LinearLayout
+                android:id="@+id/my_rides_all_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:background="@color/app_color">
+
+                <com.mylibrary.widgets.CustomTextView
+                    android:id="@+id/my_rides_all_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/my_rides_all"
+                    android:textColor="#ffffff"
+                    android:textSize="14dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/my_rides_upcoming_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:background="#ffffff">
+
+                <com.mylibrary.widgets.CustomTextView
+                    android:id="@+id/my_rides_upcoming_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/my_rides_upcoming"
+                    android:textColor="@color/app_color"
+                    android:textSize="14dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/my_rides_completed_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:background="#ffffff">
+
+                <com.mylibrary.widgets.CustomTextView
+                    android:id="@+id/my_rides_completed_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/my_rides_completed"
+                    android:textColor="@color/app_color"
+                    android:textSize="14dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/my_rides_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/my_rides_tab_layout"
+        android:layout_marginTop="10dp"
+        android:divider="#cdcdcd"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:dividerHeight="1dp"/>
+
+    <com.mylibrary.widgets.CustomTextView
+        android:id="@+id/my_rides_listview_empty_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_rides_tab_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="@string/my_rides_no_ride_yet"
+        android:textColor="#4e4e4e"
+        android:visibility="gone"
+        android:textSize="16dp"/>
+
+</RelativeLayout>

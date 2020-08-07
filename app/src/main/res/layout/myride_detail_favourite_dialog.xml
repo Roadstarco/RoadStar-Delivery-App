@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg">
+
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/myride_detail_favourite_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/my_rides_detail_favourite_address"
+            android:textColor="#fff"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/myride_detail_favourite_title_edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/myride_detail_favourite_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_curve_background_grey"
+            android:hint="@string/my_rides_detail_favourite_enter_title"
+
+            android:imeOptions="actionDone"
+            android:inputType="textImeMultiLine"
+            android:paddingLeft="8dp"
+            android:paddingRight="5dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="#4e4e4e"
+            android:textColorHint="#A8A8A8"
+            android:textCursorDrawable="@drawable/edittext_cursor_color"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+</RelativeLayout>

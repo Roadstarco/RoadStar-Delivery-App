@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/favorite_list_layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/app_color">
+
+        <RelativeLayout
+            android:id="@+id/favorite_list_header_back_layout"
+            android:layout_width="55dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="26dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:background="@null"
+                android:src="@drawable/back_arrow"/>
+        </RelativeLayout>
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/favorite_list_header_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:text="@string/favorite_list_label_title"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/favorite_list_shadow_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/favorite_list_layout_header"
+        android:background="@xml/toolbar_shadow"/>
+
+    <RelativeLayout
+        android:id="@+id/favorite_list_listview_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/favorite_list_favorite_layout"
+        android:layout_below="@+id/favorite_list_shadow_layout"
+        android:background="#f3f3f3">
+
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+            android:id="@+id/favorite_list_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#939290"
+            android:dividerHeight="1px"
+            android:paddingBottom="10dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:visibility="visible"/>
+
+        <RelativeLayout
+            android:id="@+id/favorite_list_listview_empty_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#f3f3f3"
+            >
+
+            <ImageView
+                android:id="@+id/favorite_list_listview_empty_heart_image"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_above="@+id/favorite_list_listview_empty_heart_label1"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/heart_grey_icon"/>
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/favorite_list_listview_empty_heart_label1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:text="@string/favorite_list_label_no_favorite_yet"
+                android:textColor="#666666"
+                android:textSize="16sp"/>
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/favorite_list_listview_empty_heart_label2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/favorite_list_listview_empty_heart_label1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/favorite_list_label_frequent_access"
+                android:textColor="#939290"
+                android:textSize="16sp"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/favorite_list_favorite_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_color">
+
+        <View
+            android:id="@+id/favorite_list_favorite_view"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentTop="true"
+            android:background="@xml/toolbar_shadow"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/favorite_list_favorite_view">
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/favorite_list_favorite_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/favorite_list_label_add_favorite"
+                android:textColor="#ffffff"
+                android:textSize="14sp"/>
+
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/favorite_list_favorite_location_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/favorite_list_favorite_label"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/favorite_list_favorite_heart_layout"
+                android:gravity="left"
+                android:maxLines="2"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="13sp"/>
+
+
+            <RelativeLayout
+                android:id="@+id/favorite_list_favorite_heart_layout"
+                android:layout_width="70dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="1px"
+                android:background="@color/app_color">
+
+                <View
+                    android:id="@+id/favorite_list_favorite_heart_view"
+                    android:layout_width="1px"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff"/>
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/fav_add"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

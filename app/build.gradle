@@ -1,0 +1,95 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+
+android {
+    compileSdkVersion 26
+
+
+    defaultConfig {
+        applicationId "shrinkcom.roadstarcorrieruser.com"
+        minSdkVersion 18
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        resConfigs "en", "ar"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    useLibrary 'org.apache.http.legacy'
+
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.mcxiaoke.volley:library:1.0.19'
+    implementation 'com.google.android.gms:play-services:10.2.1'
+    implementation 'com.google.android.gms:play-services-gcm:10.2.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation project(':slideDateTimePicker')
+    implementation project(':libraryimagepicker')
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.github.paolorotolo:expandableheightlistview:1.0.0'
+    implementation 'com.github.ganfra:material-spinner:1.1.0'
+    implementation 'com.baoyz.swipemenulistview:library:1.3.0'
+    implementation 'com.github.jakob-grabner:Circle-Progress-View:v1.2.2'
+    implementation 'me.drakeet.materialdialog:library:1.2.2'
+    implementation 'com.wang.avi:library:1.0.1'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'org.igniterealtime.smack:smack-android:4.1.0-rc1'
+    implementation 'org.igniterealtime.smack:smack-tcp:4.1.0-rc1'
+    implementation 'org.igniterealtime.smack:smack-im:4.1.0-rc1'
+    implementation 'org.igniterealtime.smack:smack-extensions:4.1.0-rc1'
+    implementation 'net.hockeyapp.android:HockeySDK:3.5.0'
+    implementation 'com.android.support:multidex:1.0.1'
+    implementation 'org.jsoup:jsoup:1.8.3'
+    implementation 'com.github.jd-alexander:library:1.1.0'
+    implementation 'org.apache.httpcomponents:httpcore:4.4.1'
+    implementation 'org.apache.httpcomponents:httpclient:4.5'
+    implementation 'com.google.maps.android:android-maps-utils:0.4.4'
+    implementation 'com.google.code.gson:gson:2.5'
+    //implementation 'com.github.irshadsparky:PermissionLib:master-SNAPSHOT'
+    implementation 'com.google.firebase:firebase-messaging:10.2.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    configurations {
+        all*.exclude group: 'xpp3', module: 'xpp3'
+        implementation.exclude group: "org.apache.httpcomponents", module: "httpclient"
+    }
+    implementation('cn.trinea.android.view.autoscrollviewpager:android-auto-scroll-view-pager:1.1.2') {
+        exclude module: 'support-v4'
+    }
+    implementation 'me.relex:circleindicator:1.2.2@aar'
+    implementation project(':ucrop')
+    implementation('com.crashlytics.sdk.android:crashlytics:2.9.0@aar') {
+        transitive = true;
+    }
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.karumi:dexter:5.0.0'
+}
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg">
+
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/mail_invoice_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_rides_detail_mail_invoice_textview"
+            android:textColor="#fff"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/mail_invoice_email_edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/mail_invoice_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/edittext_curve_background_grey"
+            android:hint="@string/my_rides_detail_enter_emailId"
+            android:imeOptions="actionDone"
+            android:inputType="textImeMultiLine"
+            android:paddingLeft="8dp"
+            android:paddingRight="5dp"
+            android:textColor="#4e4e4e"
+            android:textColorHint="#A8A8A8"
+            android:textCursorDrawable="@drawable/edittext_cursor_color"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+</RelativeLayout>

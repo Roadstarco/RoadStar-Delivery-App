@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/myride_rating_single_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text=""
+            android:textColor="#4e4e4e"
+            android:textSize="15sp"/>
+
+
+        <RatingBar
+            android:id="@+id/myride_rating_single_ratingbar"
+            style="@style/CustomRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_below="@+id/myride_rating_single_title"
+            android:layout_centerHorizontal="true"
+            android:numStars="5"
+            android:stepSize="1"
+            android:layout_marginTop="8dp"/>
+
+
+        <com.mylibrary.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:layout_below="@+id/myride_rating_single_ratingbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+</RelativeLayout>

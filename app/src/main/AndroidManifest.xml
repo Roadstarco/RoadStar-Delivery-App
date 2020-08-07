@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.shrinkcom.passenger">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.NETWORK" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" /> <!-- Push Notification Permission -->
+    <uses-permission android:name="com.zuber.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- MAP Permission -->
+    <permission
+        android:name="com.shrinkcom.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.zuber.permission.MAPS_RECEIVE" />
+
+    <application
+        android:name="com.mylibrary.volley.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/roadstarlogo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        tools:replace="android:supportsRtl">
+        <activity android:name="com.shrinkcom.app.UserPickupInfoActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.shrinkcom.app.SelectCorrierServicesActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.shrinkcom.app.SplashPage"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/PrimarycolorThemeSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- code for app open with -->
+            <!--
+            <data android:scheme="http" />
+            <data android:scheme="http" android:host="com.zuber.passenger"/>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+            -->
+
+
+            <!-- <action android:name="android.intent.action.VIEW" /> -->
+
+
+            <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+            <!-- <category android:name="android.intent.category.BROWSABLE" /> -->
+
+
+            <!--
+                        <data
+                            android:host="http://project.dectar.com/fortaxi/track-ride?rideId=1455520763"
+                            android:pathPrefix="/cabily"
+                            android:scheme="http" />
+            -->
+
+
+            <!--
+                        <data
+                            android:host="cabily"
+                            android:scheme="example" />
+            -->
+
+
+            <!--
+                   <data android:scheme="http"
+                   android:host="play.google.com"
+                   android:pathPrefix="/store/apps/details?id=com.zuber.passenger" />
+            -->
+
+        </activity>
+
+        <service
+            android:name="com.mylibrary.pushnotification.GCMNotificationIntentService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- Push Notification Permission -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver
+            android:name="com.mylibrary.pushnotification.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter android:priority="100">
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.zuber" />
+            </intent-filter>
+        </receiver> <!-- <service android:name="com.mylibrary.pushnotification.GCMNotificationIntentService" /> -->
+        <!-- XMPP SERVICE Permission -->
+        <!--
+ <service
+            android:name="com.mylibrary.xmpp.XmppService"
+            android:enabled="true" />
+        -->
+        <!--
+<service
+            android:name="com.mylibrary.locationservice.GEOService"
+            android:enabled="true" />
+        -->
+        <!-- IdentifyAppKilled Service Permission -->
+        <service
+            android:name="com.shrinkcom.utils.IdentifyAppKilled"
+            android:stopWithTask="false" /> <!-- Auto Connect Internet Permission -->
+        <receiver android:name="com.shrinkcom.utils.NetworkChangeReceiver">
+            <intent-filter android:priority="10">
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.shrinkcom.partner"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"
+                tools:replace="android:resource" />
+        </provider> <!-- Start Chat Service Permission -->
+        <!-- Identify Location update Permission -->
+        <receiver android:name="com.shrinkcom.service.UpdateLocationService">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver> <!-- MAP Permission -->
+        <!--
+ <meta-data
+             android:name="com.google.android.maps.v2.API_KEY"
+             android:value="AIzaSyDX3ihFwLTKgZcrIL-NhZVP7ejdemZaIFk" />
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD_p2BnXUNOgG-h5n04BrmO57qxcjZeZZo" /> <!-- AIzaSyBPE-OK-WIkdh2HYd1q0eeN4qGiR2JyRfU -->
+        <activity android:name="net.hockeyapp.android.UpdateActivity" />
+        <!--
+  <activity
+              android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+              android:theme="@style/Base.Theme.AppCompat" />
+        -->
+        <!--
+ <action android:name="android.intent.action.VIEW" />
+         <category android:name="android.intent.category.DEFAULT" />
+         <category android:name="android.intent.category.BROWSABLE" />
+         <data android:scheme="http"
+             android:host="www.example.com"
+             android:pathPrefix="/plumbal" />
+
+         <data android:scheme="example"
+             android:host="plumbal" />
+
+         <data android:scheme="http"
+             android:host="play.google.com"
+             android:pathPrefix="/store/apps/details?id=com.casperon.plumbal" />
+        -->
+        <activity
+            android:name="com.shrinkcom.app.SingUpAndSignIn"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.shrinkcom.app.SignUpBannerPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.shrinkcom.app.LoginPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.ActivityJoinUsWsalna"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.shrinkcom.app.ActivityWsalnaWithUs"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.shrinkcom.app.RegisterPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.ChangeLanguageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.TermsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.shrinkcom.app.RegisterFacebook"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.DropLocationSelect"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.ForgotPassword"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.FacebookOtpPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.ForgotPasswordOtp"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.ResetPassword"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.NavigationDrawer"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.shrinkcom.app.OtpPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.shrinkcom.app.TimerPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Transparent_Theme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.shrinkcom.app.TrackYourRide"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.shrinkcom.app.TrackRideCancelTrip"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.EstimatePage"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.shrinkcom.app.EstimateDetailPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.shrinkcom.app.ProfilePage"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.ChangePassword"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.ProfileOtpPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.AboutUs"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.AutoPlaceSearch"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.FeedBackPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.EmergencyContact"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.InviteAndEarn"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.Setting"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.shrinkcom.app.RateCard"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.CabilyMoney"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.CabilyMoneyWebview"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.CabilyMoneyTransaction"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.MyRides"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.ActivityContactUs"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.shrinkcom.app.MyRidesDetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.MyRideDetailTrackRide"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.MyRideCancelTrip"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.MyRidePaymentList"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.MyRidePaymentWebView"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.AboutUsWebView"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.MyRideRating"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.PushNotificationAlert"
+            android:screenOrientation="portrait"
+            android:theme="@style/PushNotificaton_NoActionBar_Transparent_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.FareBreakUp"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/PushNotificaton_NoActionBar_Payment_Transparent_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.FareBreakUpPaymentList"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.FareBreakUpPaymentWebView"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.LocationSearch"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.FavLocationSearch"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.FavoriteList"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.RecepitList"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.FavoriteAdd"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.UpdateUserLocation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.AdsPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/PushNotificaton_NoActionBar_Transparent_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.shrinkcom.app.DestinationSearchPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="90418bfc91e8c7209969d4fa2702a93a18bd26ac" />
+
+        <activity android:name="com.irshad.permissionlib.PermissionUtils$PermissionActivity" />
+
+        <service
+            android:name="com.shrinkcom.firebase.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.shrinkcom.firebase.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

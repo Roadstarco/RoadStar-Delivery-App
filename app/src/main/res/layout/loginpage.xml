@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#1aB43526">
+
+    <RelativeLayout
+        android:id="@+id/login_header_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/app_color"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:id="@+id/login_header_back_layout"
+            android:layout_width="55dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="26dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:background="@null"
+                android:src="@drawable/back_arrow" />
+        </RelativeLayout>
+
+        <com.mylibrary.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/login_header_back_layout"
+            android:text="@string/login_label"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/login_header_layout"
+        android:background="#00000000"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#00000000">
+
+
+            <Button
+                android:id="@+id/login_facebook_button"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_above="@+id/login_or_label"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/facebook_full_icon"/>
+
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/login_or_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/login_signin_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:text="@string/login_label_or"
+                android:textColor="#006400"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:id="@+id/login_signin_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#CCffffff">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/signup_input_layout_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:theme="@style/TextLabel"
+                    android:hint="Name"
+                    android:textColorHint="#006400">
+
+                    <EditText
+                        android:id="@+id/login_email_editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:textColor="#006400"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+               <!-- <com.mylibrary.widgets.CustomEdittext
+                    android:id="@+id/login_email_editText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/edittext_background"
+                    android:hint="@string/login_label_email_hint"
+                    android:imeOptions="actionDone"
+                    android:inputType="textImeMultiLine"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="#3f3e3e"
+                    android:textColorHint="#3f3e3e"
+                    android:textCursorDrawable="@drawable/edittext_cursor_color"
+                    android:textSize="15dp" />-->
+
+                <!--<View
+                    android:id="@+id/login_view1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/login_email_editText"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#898585" />-->
+
+                <com.mylibrary.widgets.CustomEdittext
+                    android:id="@+id/login_password_editText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/signup_input_layout_name"
+                    android:background="@drawable/edittext_background"
+                    android:hint="@string/login_label_pwd_hint"
+                    android:imeOptions="actionDone"
+                    android:inputType="textImeMultiLine"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="#006400"
+                    android:textColorHint="#006400"
+                    android:textCursorDrawable="@drawable/edittext_cursor_color"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/login_submit_button"
+                android:layout_width="fill_parent"
+                android:layout_height="42dp"
+                android:layout_below="@+id/login_signin_layout"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/app_color_button"
+                android:text="@string/login_label_login"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <RelativeLayout
+                android:id="@+id/login_forgotpwd_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/login_submit_button"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:background="#00000000">
+
+                <com.mylibrary.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/login_label_forgotpwd"
+                    android:textColor="#006400"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

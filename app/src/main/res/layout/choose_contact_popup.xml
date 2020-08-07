@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:id="@+id/call_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center">
+        <ImageView
+            android:id="@+id/call_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:background="@drawable/profilephone"/>
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/call_to_driver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerInParent="true"
+            android:textColor="#9e9e9e"
+            android:text="@string/conatct_call"
+            android:textSize="18dp"
+            android:layout_toRightOf="@+id/call_image"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/message_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/call_layout"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/message_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+
+                android:background="@drawable/profilemail"/>
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/chat_to_driver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_centerInParent="true"
+                android:textColor="#9e9e9e"
+                android:text="@string/contact_message"
+                android:textSize="18dp"
+                android:layout_toRightOf="@+id/message_image"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/message_layout"
+            android:background="@color/app_color"
+            android:gravity="center">
+
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="@string/action_cancel"
+                android:textSize="18dp"
+                />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

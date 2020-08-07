@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/feedback"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/feedback_layout_header"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/app_color">
+
+            <RelativeLayout
+                android:id="@+id/feedback_header_back_layout"
+                android:layout_width="55dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="26dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:background="@null"
+                    android:src="@drawable/back_arrow" />
+            </RelativeLayout>
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/feedback_textview_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/my_feedback_textview"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/feedback_toolbar_shadow_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="0.3dp"
+            android:layout_below="@+id/feedback_layout_header"
+            android:background="@xml/toolbar_shadow" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg"
+            android:layout_below="@+id/feedback_toolbar_shadow_layout">
+
+
+            <RelativeLayout
+                android:id="@+id/Relative_subject"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_curve_background_grey">
+
+                <EditText
+                    android:id="@+id/et_sub"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edittext_background"
+                    android:hint="@string/feedback_subject"
+                    android:imeOptions="actionDone"
+
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="#006400"
+                    android:textColorHint="#006400"
+                    android:textCursorDrawable="@drawable/edittext_cursor_color"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/Relative_message"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@+id/Relative_subject"
+                android:layout_margin="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_curve_background_grey">
+
+                <EditText
+                    android:id="@+id/et_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edittext_background"
+                    android:hint="@string/feedback_message"
+                    android:gravity="left|top"
+                    android:imeOptions="actionDone"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+
+                    android:paddingRight="10dp"
+                    android:text=""
+                    android:textColor="#006400"
+                    android:textColorHint="#006400"
+                    android:textCursorDrawable="@drawable/edittext_cursor_color"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_submit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="15dp"
+                android:background="@color/app_color">
+
+
+                <com.mylibrary.widgets.CustomTextView
+                    android:id="@+id/feedback_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/my_rides_rating_header_submit_textview"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

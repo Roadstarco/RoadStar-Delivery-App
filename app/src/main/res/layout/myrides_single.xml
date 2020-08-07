@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/myride_single_car_type_imageView"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"/>
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/myride_single_address_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/myride_single_car_type_imageView"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#4e4e4e"
+            android:textSize="13sp"/>
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/myride_single_date_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myride_single_address_textview"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/myride_single_car_type_imageView"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#918e8e"
+            android:textSize="12sp"/>
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/myride_single_status_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/myride_single_address_textview"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#027536"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:layout_alignStart="@+id/myride_single_date_textview"
+            android:layout_below="@+id/myride_single_date_textview"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+</RelativeLayout>

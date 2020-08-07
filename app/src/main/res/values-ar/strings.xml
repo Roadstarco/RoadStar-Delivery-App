@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">وصلنا تاكسي للعملاء</string>
+    <string name="app_name_heading">وصلنا تاكسي للعملاء</string>
+    <string name="action_settings">الاعدادات</string>
+    <string name="action_signingIn">تسجيل الدخول</string>
+    <string name="action_signingUp">التسجيل</string>
+    <string name="action_updating">تحديث</string>
+    <string name="action_logging_out">الخروج</string>
+    <string name="action_sending_invoice">ارسال الفاتورة</string>
+    <string name="action_processing">معالجة البيانات</string>
+    <string name="action_deleting">حذف</string>
+    <string name="action_success">تم</string>
+    <string name="action_pleasewait">يرجي الانتظار...</string>
+    <string name="action_loading">تحميل</string>
+    <string name="action_saving">حفظ</string>
+    <string name="action_error">اسف</string>
+    <string name="action_verifying">التحقق</string>
+    <string name="action_cancel">الغاء</string>
+    <string name="action_retry">اعادة المحاولة</string>
+    <string name="action_ok">تم</string>
+    <string name="fragment_edit">تعديل</string>
+    <string name="action_cancel_alert">الغاء</string>
+    <string name="alert_nointernet">عدم الاتصال بالانترنيت</string>
+    <string name="alert_no_gps">غير مفعل GPS نظام !!!</string>
+    <string name="forgotpassword">يرجي ادخال البريد الالكتروني</string>
+    <string name="alert_nointernet_message">انت غير نشط يرجي التحقق من الاتصال بالانترنيت</string>
+    <string name="alert_servererror">خطأ بالخادم</string>
+    <string name="alert_gpsEnable">من تحديد موقعك GPS  عدم قدرة نظام</string>
+    <string name="alert_nocar">اسف ! الخدمة غير متاحة حاليا في مدينتكم</string>
+    <string name="alert_update_location">تحديث موقعك</string>
+    <string name="action_session_expired_title">انتهت المدة</string>
+    <string name="action_session_expired_message">يرجي تسجيل الدخول مرة اخري</string>
+    <string name="action_unable_to_create_map">عدم القدرة على عرض الخريطة ، يرجي تنزيل جوجل ماب</string>
+
+
+    <!-- signup and Signin Page -->
+    <string name="signin_main_label_Signin">تسجيل الدخول</string>
+    <string name="signin_main_label_register">تسجيل</string>
+
+    <!-- Login Page -->
+    <string name="login_label">تسجيل الدخول</string>
+    <string name="login_label_forgotpwd">نسيت كلمة المرور ؟</string>
+    <string name="login_label_email_hint">البريد الالكتروني</string>
+    <string name="login_label_pwd_hint">كلمة المرور</string>
+    <string name="login_label_login">تسجيل الدخول</string>
+    <string name="login_label_alert_username">يجب ادخال البريد الالكتروني</string>
+    <string name="login_label_alert_email_invalid">البريد الالكتروني غير صالح</string>
+    <string name="login_label_alert_password">يجب ادخال كلمة المرور</string>
+    <string name="login_label_alert_signIn_failed">فشل تسجيل الدخول</string>
+    <string name="login_label_facecook_login">تسجيل الدخول بواسطة الفيس بوك</string>
+    <string name="login_label_facecook_login_app">تسجيل الدخول بواسطة الفيس بوك</string>
+    <string name="login_label_facecook_login_re">التسجيل بواسطة الفيس بوك</string>
+    <string name="login_label_or">او</string>
+
+
+
+    <!-- Register Page -->
+    <string name="register_label">التسجيل</string>
+    <string name="register_label_email_hint">البريد الالكتروني</string>
+    <string name="register_label_email_me_hint">راسلني</string>
+    <string name="register_label_pwd_hint">كلمة المرور</string>
+    <string name="register_label_cnf_pwd_hint">تاكيد كلمة المرور</string>
+    <string name="register_label_username_hint">الاسم</string>
+    <string name="register_label_phone_hint">رقم الموبيل</string>
+    <string name="register_label_code_hint">كود</string>
+    <string name="register_label_dummy_text">بمجرد تسجيل دخولك لوصلنا ذلك بمثابة موافقة منك على جميع الشروط والاحكام</string>
+    <string name="login_label_privacypolicy">بمجرد تسجيل دخولك لوصلنا ذلك بمثابة موافقة منك على جميع الشروط والاحكام</string>
+    <string name="login_label_Terms_of_service">اتفاقية المستخدم</string>
+    <string name="login_label_and">and</string>
+    <string name="login_label_Privacy_Policy">شروط الخدمة</string>
+
+
+
+    <string name="register_label_referal_hint">كود الكوبون (اختياري)</string>
+    <string name="register_label_register">التسجيل</string>
+    <string name="register_label_create_account">انشاء حساب</string>
+    <string name="register_label_alert_username">يجب ادخال اسم المستخدم</string>
+    <string name="register_label_alert_password">يجب ان تتكون كلمة المرور من 6 احرف عل الاقل حرف كبير وارقام</string>
+    <string name="register_label_alert_email">البريد الالكتروني غير صالح</string>
+    <string name="register_label_alert_email_register">يجب ادخال البريد الالكتروني</string>
+    <string name="register_label_alertpassword_register">يجب ادخال كلمة المرور</string>
+    <string name="register_label_alert_email_empty">يرجي ادخال البريد الالكتروني</string>
+    <string name="register_label_alert_phoneNo">ادخل رقم الموبيل</string>
+    <string name="register_label_alert_country_code">ادخل كود بلدك </string>
+    <string name="register_label_alert_pass_not_match">كلمة المرور غير متشابهه</string>
+    <string name="register_label_referal_schema">كود الكوبون!</string>
+    <string name="register_label_referal_ok">تم</string>
+    <string name="register_label_referal_schema_content1">ادخل رقم الكوبون للحصول على رحلة مجانية</string>
+    <string name="register_label_referal_schema_content2">ملحوظة :- يطبق الكوبون على العملاء الذين يستخدموا وصلنا لاول مرة فقط</string>
+    <string name="login_label_alert_register_failed">فشل في التسجيل</string>
+
+    <!-- OTP Page -->
+    <string name="otp_label_verification">التحقق من رقم الموبيل</string>
+    <string name="otp_label_enter_otp">OTP ادخل </string>
+    <string name="otp_label_send">ارسال</string>
+    <string name="action_otp">التحقق</string>
+    <string name="otp_label_alert_otp"> OTP يجب ادخال </string>
+    <string name="otp_label_alert_invalid">OTP غير صحيح</string>
+
+
+
+    <!--  Forgot Password Page -->
+    <string name="forgot_password_email_label_title">نسيت كلمة المرور</string>
+    <string name="forgot_password_email_label_enter_email">البريد الالكتروني</string>
+    <string name="forgot_password_email_label_send_email">راسلني</string>
+    <string name="forgot_password_email_label_enter_valid_email">البريد الالكتروني غير صالح</string>
+    <string name="forgot_password_email_label_success">تم ارسال كود التحقيق لرقم المسجل لدي وصلنا</string>
+    <!-- Reset Password Page -->
+    <string name="reset_password_label_title">أعادة تعين كلمة مرور جديدة</string>
+    <string name="reset_password_label_email">البريد الالكتروني</string>
+    <string name="reset_password_label_enter_new_password">كلمة المرور الجديدة</string>
+    <string name="reset_password_label_show_password_text">اظهار كلمة المرور</string>
+    <string name="reset_password_email_label_enter_valid_email">يرجي ادخال بريد الالكتروني</string>
+    <string name="reset_password_email_label_enter_valid_password">يجب ادخال كلمة المرور</string>
+    <string name="action_alert_empty_email">يجب ادخال البريد الالكتروني</string>
+    <string name="action_alert_invalid_email">البريد الالكتروني غير صالح
+</string>
+
+    <!-- Navigation Drawer Layout -->
+    <string name="navigation_label_bookmyride">حجز رحلتي.</string>
+    <string name="navigation_label_myride">رحلاتي.</string>
+    <string name="navigation_label_money">وصلنا تاكسي للعملاء.</string>
+    <string name="navigation_label_invite">أدعو صديق واكسب معنا.</string>
+    <string name="navigation_label_ratecard">المعدل.</string>
+    <string name="navigation_label_emergency">الاتصال بالطوارئ.</string>
+    <string name="navigation_label_report_issue">تقرير عن مشكلة.</string>
+    <string name="navigation_label_feedback">أرسال رسالة للمدير.</string>
+    <string name="navigation_label_setting">الاعدادات.</string>
+    <string name="navigation_label_contactus">الاتصال بنا.</string>
+    <string name="navigation_label_terms">الشروط والاحكام.</string>
+    <string name="navigation_label_aboutus">من نحن.</string>
+    <string name="action_email_toAddress">info@zoplay.com.</string>
+    <string name="loading">تحميل...</string>
+    <string name="aboutus_lable_header_wsalnawithus">استخدم وصلنا تاكسي معنا وشاركنا النجاح.</string>
+    <string name="joinus_lable_header_textview">انضم الى وصلنا تاكسي كمقدم خدمة وشاركنا النجاح</string>
+
+    <!-- Home Page -->
+
+    <string name="home_label_ride_later">وصلني في وقت لاحق.</string>
+    <string name="home_label_ride_now">وصلني الان.</string>
+    <string name="home_label_cancel">الغاء.</string>
+    <string name="home_label_confirm">تاكيد.</string>
+    <string name="home_label_fromNow">من الان.</string>
+    <string name="home_label_confirmation">التاكيد.</string>
+    <string name="home_label_invalid_pickUp">موقع التقاط غير صالح.</string>
+    <string name="home_label_invalid_drop">موقع توصيل غير صالح.</string>
+
+    <!--  GPS Alert Dialog -->
+    <string name="gps_label_title">استخدم الموقع ؟.</string>
+    <string name="gps_label_text1">يرغب التطبيق في تغير.</string>
+    <string name="gps_label_text2">اعدادات الجهاز:.</string>
+    <string name="gps_label_text3">     واي فاي ،وشبكة الانترنت، GPS استخدام  .</string>
+    <string name="gps_label_text4">الموقع.</string>
+    <string name="gps_label_no">لا.</string>
+    <string name="gps_label_yes">نعم.</string>
+
+    <!--  Alert Dialog -->
+    <string name="alert_label_title">اسف.</string>
+    <string name="alert_label_ok">تم</string>
+    <string name="alert_label_content1">لا نستطيع قبول طلبك.</string>
+    <string name="alert_label_content2">لا يوجد مقدمين خدمة متاحين في موقعك ، يرجي المحاولة لاحقا
+</string>
+
+    <!-- RIDE LATER Alert Dialog -->
+    <string name="ratecard_label_fare">معدل الاجرة</string>
+    <string name="ratecard_label_ok">تم</string>
+
+    <!-- Book My Ride Layout -->
+    <string name="ridenow_label_ratecard">سعر البطاقة</string>
+    <string name="ridenow_label_estimate">احصل على تقدير الأجرة</string>
+    <string name="ridenow_label_enter_drop_loc">Enter Drop Location</string>
+    <string name="ridenow_label_coupon">تطبيق القسيمة</string>
+    <string name="ridenow_label_cartype">نوع السيارة</string>
+    <string name="ridenow_no_driver">لا يوجد سائق متاح ، يرجى اختيار فئة أخرى</string>
+    <string name="ridenow_label_available_wallet_amount">محفظتك:</string>
+    <string name="ridenow_label_pickup_time">اختار المعاد</string>
+    <string name="ridenow_label_confirm_success">تم تسجيل الحجز بنجاح. سيتصل بك سائقنا قريبًا.</string>
+
+
+
+    <!-- Coupon Code Dilaog -->
+    <string name="couponcode_label_title">ادخل كوبون كود</string>
+    <string name="couponcode_label_apply">تم</string>
+    <string name="couponcode_label_remove">مسح</string>
+    <string name="couponcode_label_cancel">الغاء</string>
+    <string name="couponcode_label_verifying">التحقق...</string>
+    <string name="couponcode_label_verifed">تم التحقق</string>
+    <string name="couponcode_label_invalid_code">كوبون كود غير صالح</string>
+    <string name="couponcode_label_empty_code">كود الكوبون فارغ</string>
+    <string name="couponcode_label_allowance_text1">تم اضافة كود الكوبون بنجاح </string>
+    <string name="couponcode_label_allowance_text2"> سوف يتم الخصم من الاجرة الاجمالية</string>
+    <string name="couponcode_label_allowance_text3"> سوف يتم الخصم من الاجرة الاجمالية</string>
+    <string name="couponcode_label_allowance">البديل</string>
+    <string name="couponcode_allowance_type">النسبة</string>
+
+    <string name="wsalnawithus">- وصالنا في مصر والمملكة العربية السعودية تعلن عن تفعيل خدمة التوصيل داخل جمهورية مصر العربية والمملكة من خلال أسطول من السيارات الحديثة على مدار 24 ساعة في اليوم. توفر هذه الخدمة حجز سيارة بالمواصفات والمعلومات المطلوبة حول السائق وتحدد مسافة الرحلة وقيمتها ودقة وكفاءة موظفي الشركة.
+- تطبق الشركة أيضًا نظام النقاط بإضافة 15 نقطة إلى حساب أي عميل جديد يتم خصمه من أول رحلة معنا وإضافة نقطتين لكل عميل يستخدم الخدمة من خلالك عبر الرمز الترويجي الذي ستحصل عليه بالتسجيل ورحلتك الأولى معنا.
+- كما تعلن الشركة عن إضافة خدمة نقل البضائع والسيارات واستخدام مركبات النقل بجميع أنواعها و SATHA ، والتي تتيح الوصول إلى جميع السيارات بجميع أنواعها في خدمة السيارات الخاصة والنقل و SATHA</string>
+    <string name="wsalnajoinus">- وصلنا في مصر والمملكة العربية السعودية تعلن عن بدء التسجيل واستلام طلبات الالتحاق بالشركة لتقديم الخدمة عن طريق استخدام سيارتك الخاصة أو سيارة الإيجار ، وتحقيق دخل إضافي يصل إلى 5000 ألف جنيه / ريال شهريا عن طريق زيارة المقر من الشركة الأوراق المطلوبة
+- نظام الشجرة (ستحصل على 2٪ لمدة 6 أشهر لكل سائق ينضم إلى وصلنا من خلالك بشرط أن يتم نشر الخدمة واستخدامها من قبل 10 أشخاص على الأقل)</string>
+
+    <string name="profile_lable_saves">تحديث</string>
+
+
+    <!-- Timer Alert Dilaog -->
+    <string name="timer_label_alert_retry">اعادة المحاولة</string>
+    <string name="timer_label_alert_cancel">الغاء</string>
+    <string name="timer_label_alert_sorry">اسف!</string>
+    <string name="timer_label_alert_content">لا يوجد مقدمي خدمة</string>
+
+    <!--Timer Activity -->
+    <string name="timer_label">وصلنا تاكسي تبحث عن مقدمي خدمة اليكم ، كن مطمئننا واستمتع بوقتك!</string>
+    <string name="timer_label_cancel_ride">الغاء رحلتك</string>
+    <string name="timer_label_alert_yes">نعم</string>
+    <string name="timer_label_alert_no">لا</string>
+    <string name="timer_label_alert_cancel_ride">الغاء الرحلة</string>
+    <string name="timer_label_alert_cancel_ride_message">هل انت متاكد انك تريد الغاء الرحلة ؟</string>
+    <!-- Track Your Ride Activity -->
+    <string name="track_your_ride_label_cancelRide">الغاء الرحلة</string>
+    <string name="track_your_ride_label_track">تتبع رحلتك</string>
+    <string name="track_your_ride_label_done">تم</string>
+    <string name="track_your_ride_label_callDriver">اتصل</string>
+    <string name="track_your_ride_label_endTrip">الغاء</string>
+    <string name="track_your_ride_label_arrive_in">الوصول</string>
+    <string name="track_your_ride_label_minutes">دقائق</string>
+    <string name="track_your_ride_label_hours">ساعات</string>
+    <string name="track_your_ride_label_rating">المعدل:</string>
+    <string name="track_your_ride_alert_content1">عدم القدرة على الاتصال بمقدم الخدمة ، يرجي المحاولة لاحقا
+
+    <!--Home Car Type Select Dialog -->
+    <string name="car_type_select_dialog_label_carType">حدد نوع السيارة</string>
+    <string name="car_type_select_dialog_label_shareSeat">اختار المقعد</string>
+    <string name="car_type_select_dialog_label_cancel">الغاء
+</string>
+    <!--  Estimate Price Activity -->
+    <string name="estimate_price_label_search">ادخل موقعك للبحث</string>
+    <string name="estimate_price_label_place_notAvailable">فشل البحث</string>
+    <string name="estimate_price_label_not_found">عدم توفر المعدل</string>
+    <string name="estimated_fare_label">الاجرة المتوقعة</string>
+    <!--  Estimate Detail Activity -->
+    <string name="estimate_detail_label_rideEstimation">البيانات المتوقعة للرحلة</string>
+    <string name="estimate_detail_label_ok">تم</string>
+    <string name="estimate_detail_label_pickup">وصلني</string>
+    <string name="estimate_detail_label_drop">وصلني</string>
+    <string name="estimate_detail_label_approx">الوقت المتوقع للرحلة :</string>
+    <string name="estimate_detail_label_peekTime">تكلفة الوقت الذورة  :</string>
+    <string name="estimate_detail_label_nightCharge">تكلفة التوصيل ليلا:</string>
+
+
+    <!--Profile Activity-->
+    <string name="profile_lable_signin_myprofile"> لوحة معلوماتي</string>
+    <string name="profile_lable_signindetails">معلومات تسجيل الدخول</string>
+    <string name="profile_lable_emailid">البريد الالكتروني</string>
+    <string name="profile_lable_emailiduser">ani@gmail.com</string>
+    <string name="profile_lable_signinstar">*************</string>
+    <string name="profile_lable_signinchangepassword">تغير كلمة المرور</string>
+    <string name="profile_lable_signin_hintname">الاسم</string>
+    <string name="profile_lable_signin_hint_code">كود</string>
+    <string name="profile_lable_signinhintmobileno">رقم الموبيل</string>
+    <string name="profile_lable_signinmydetails">معلوماتي</string>
+    <string name="profile_lable_signinlogout">الخروج</string>
+        <string name="profile_lable_save">حفظ</string>
+    <string name="profile_lable_username_success">تم تحديث الاسم بنجاح</string>
+    <string name="profile_lable_mobile_success">تم تحديث رقم الموبيل بنجاح</string>
+    <string name="profile_lable_error_name">يجب ادخال الاسم</string>
+    <string name="profile_lable_error_mobile">ادخل رقم الموبيل</string>
+    <string name="profile_lable_error_mobilecode">ادخل كود بلدك</string>
+    <string name="profile_lable_logout_title">الخروج</string>
+    <string name="profile_lable_logout_message">هل انت متاكد انك تريد الخروج ؟</string>
+    <string name="profile_lable_logout_yes">نعم</string>
+    <string name="profile_lable_logout_no">لا</string>
+
+    <!--ChangePassword Activity-->
+    <string name="changepassword_lable_headertextview">تغير كلمة المرور</string>
+    <string name="changepassword_lable_old_password_edittext">ادخل كلمة المرور القديمة</string>
+    <string name="changepassword_lable_new_password_edittext">ادخل كلمة المرور الجديدة</string>
+    <string name="changepassword_lable_confirm_new_password_edittext">تاكيد كلمة المرور الجديدة</string>
+    <string name="changepassword_lable_confirm_notmatch_edittext">كلمة المرور الماكدة لابد ان تكون نفس كلمة المرور الجديدة</string>
+    <string name="changepassword_lable_old_notmatch_edittext">كلمة المرور الجديدة يجب الا تكون متشابهة مع كلمة المرور القديمة</string>
+    <string name="changepassword_lable_submit">ارسال</string>
+    <string name="changepassword_label_alert_oldpassword">يرجي ادخال كلمة المرور القديمة</string>
+    <string name="changepassword_label_alert_newpassword">يجب ان تتكون كلمة المرور من 6 احرف عل الاقل حرف كبير وارقام</string>
+    <string name="changepassword_label_alert_confirmpassword">يرجي ادخال كلمة المرور الجديدة للتاكيد</string>
+    <string name="changepassword_label_changed_success">تم تغير كلمة المرور بنجاح</string>
+    <!--AboutUs-->
+    <string name="aboutus_lable_header_textview">من نحن</string>
+    <string name="termsnandcondition_lable_header_textview">الشروط والاحكام</string>
+    <string name="aboutus_lable_version_textview">اصدار</string>
+    <string name="aboutus_lable_poweredby_textview">مدعوم من : شركاء وصلنا تاكسي للعملاء	</string>
+    <string name="aboutus_lable_company_textview">وصلنا تاكسي للعملاء</string>
+    <string name="aboutus_lable_version_code_textview">اصدار 2.1</string>
+    <string name="aboutus_lable_moreinfo_textview">مزيد من المعلومات</string>
+    <string name="cabily_aboutus_webview_lable_header_textview">من نحن</string>
+    <string name="aboutus_lable_aboutus_description_textview">تطبيق وصلنا تاكسي  لحجز سيارة أجرة من شأنه أن يأخذ المتاعب من الوصول إلى وجهتك بسرعة ودون الحاجة إلى إنفاق الكثير. باستخدام برنامج حجز سيارات الأجرة المتقدم للغاية ، سيقدم لك عرض أسعار سريع لمساعدتك على تجنب أي مفاجآت عند الوصول إلى وجهتك ، وتعيينك إلى سائق محترف ومسؤول</string>
+    <!--Emergency Contact-->
+        <string name="emergencycontact_lable_header_textview">الاتصال بالطوارئ</string>
+<string name="emergencycontact_lable_entername_textview">ادخل الاسم</string>
+<string name="emergencycontact_lable_entercode_textview">+91</string>
+<string name="emergencycontact_lable_entermobileno_textview">ادخل رقم الموبيل</string>
+<string name="emergencycontact_lable_enteremail_id_textview">ادخل البريد الالكتروني</string>
+<string name="emergencycontact_lable_list_textview">ادرج اسماء والارقام سوف يتم الاتصال بهم في حالة الطوارئ</string>
+<string name="emergencycontact_lable_note_textview">ملحوظة : سوف يتم الاتصال بعد عملية التحقيق</string>
+<string name="emergencycontact_lable_sharealways_textview">دائما قم بمشاركة معلومات رحلتي مع رقم التواصل الخاص بي</string>
+<string name="emergencycontact_lable_heremove_contact_textview">ازالة الاتصال</string>
+<string name="emergencycontact_lable_save_contact_textview">حفظ</string>
+<string name="emergencycontact_lable_namevalidate_textview">يجب ادخال الاسم</string>
+<string name="emergencycontact_lable_mobilenovalidate_textview">ادخل رقم الموبيل</string>
+<string name="emergencycontact_lable_email_validate_textview">ادخل بريد الكتروني صالح</string>
+<string name="emergencycontact_lable_code_validate_textview">ادخل كود بلدك</string>
+<string name="emergencycontact_lable_saved_emergencycontacts">تم حفظ ارقام التواصل في حالة الطوارئ بنجاح </string>
+<string name="emergencycontact_lable_savingtextview">حفظ...</string>
+<string name="emergencycontact_lable_deletesuccess_textview">تم حذف ارقام التواصل في حالة الطوارئ بنجاح</string>
+
+    <!-- Invite And Earn Activity-->
+        <string name="invite_earn_label_shareAndEarn">ادعوا صديق واكسب معنا</string>
+<string name="invite_earn_label_friends_earn">اضافة اصدقاء ، واكسب معنا</string>
+<string name="invite_earn_label_friends_ride">دعوة اصدقاء لاستخدام وصلنا تاكسي </string>
+<string name="invite_earn_label_friend_ride">انت تكسب مع وصلنا تاكسي</string>
+<string name="invite_earn_label_on_first_ride">دعوة اصدقاء لاستخدام وصلنا تاكسي </string>
+<string name="invite_earn_label_shareReferralCode">مشاركة الكود الخاص بك</string>
+<string name="invite_earn_label_start_invite">دعوة الاصدقاء</string>
+<string name="invite_earn_label_invite_sms">رسالة</string>
+<string name="invite_earn_label_invite_email">بريد الكتروني</string>
+<string name="invite_earn_label_facebook">فيس بوك</string>
+<string name="invite_earn_label_whatsApp">واتس اب</string>
+<string name="invite_earn_label_messenger">ماسنجر</string>
+<string name="invite_earn_label_twitter">تويتر</string>
+<string name="invite_earn_label_letWorldKnow">شاركنا فى انتشار ومشاركة وصلنا حول العالم</string>
+<string name="invite_earn_label_problem_server">حدثت مشكلة في الاتصال بالخادم ، الرجاء المحاولة لاحقا</string>
+<string name="invite_earn_label_whatsApp_not_installed">لا نستطيع ايجاد الواتس اب مثبت على جهازك</string>
+<string name="invite_earn_label_messenger_not_installed">لا نستطيع ايجاد الماسنجر مثبت على جهازك</string>
+<string name="invite_earn_label_email_not_installed">لا يوجد ايميل مسجل على جهازك</string>
+<string name="invite_earn_label_twitter_not_installed">لا نستطيع ايجاد تويتر مثبت على جهازك</string>
+<string name="invite_earn_label_facebook_not_installed">لا نستطيع ايجاد الفيس بوك مثبت على جهازك</string>
+<string name="invite_earn_label_share_messgae1">لدي كوبون يمكن استخدامة</string>
+<string name="invite_earn_label_share_messgae2">لك انت ، اشترك بوصلنا باس</string>تخدام كودي واكسب معنا</string>
+    <string name="invite_earn_label_share_messgae3">للاستفادة من الكوبون والركوب مجانا يرجي تنزيل https://www.dectar.com/</string>
+    <string name="invite_earn_label_twitter_share_messgae">للاستفادة من الكوبون والركوب مجانا يرجي تنزيل https://www.dectar.com/</string>
+    <string name="invite_earn_label_app_invitation">دعوة وصلنا تاكسي للعملاء</string>
+
+
+    <string name="terms">الشروط والأحكام \ n العلاقة التعاقدية</string>
+    <string name="term1">أن موافقتك على أحكام وشروط أستخدام التطبيقات والمواقع الإلكترونية والمحتويات والمنتجات والخدمات التي توفرها شركة وصلنا ومقرها الرئيسي بمصر تعتبر علاقة تعاقدية بينك وبين الشركة، وفي حالة عدم موافقتك على هذه الشروط،لا يجوز لك الحصول على هذه الخدمات أو أستخدامها،  وتحل هذه الشروط تحديداً محل أي اتفاقات أو ترتيبات سابقة أبرمت معك. ويجوز لشركة وصلنا إنهاء هذه الشروط أو أي من الخدمات التي تخصك على الفور أو بشكل عام إيقاف عرض الخدمات أو منع الوصول إليها أو إلى أي جزء منها في أي وقت ولأي سبب كان.
+ويجوز لشركة وصلنا تعديل الشروط المتعلقة بالخدمات من حين إلى آخر. وتسري التعديلات عند نشر وصلنا هذه الشروط المحدثة على هذا الموقع أو نشر السياسات المعدلة أو الشروط التكميلية المتعلقة بالخدمة المقدمة. إن استمرار وصولك إلى الخدمات أو استخدامها بعد هذا النشر يعتبر موافقة منك على الالتزام بالشروط بصيغتها المعدلة.
+نقوم شركة وصلنا بجمع البيانات الشخصية واستخدامها فيما يتعلق بالخدمات وفقًا لما هو منصوص عليه في سياسة الخصوصية الخاصة بالشركة والتي يمكن الاطلاع عليها من الرابط www.wsalna.com ويجوز لشركة وصلنا تقديم ما يلزم من المعلومات (بما في ذلك معلومات الاتصال الخاصة بك) إلى شركات تسوية المطالبات أو شركات التأمين في حال وجود شكوى أو نزاع أو خلاف والذي قد يتضمن حادثاً يقع بينك وبين أخرين حيث تكون هذه المعلومات أو البيانات ضرورية لتسوية الشكوى أو النزاع أو الخلاف، جميع الحقوق والخدمات المقدمة ملكية خاصة لشركة وصلنا.
+الخدمات وكيفية أستخدامها
+تقوم شركة وصلنا من خلال تطبيقات الجوال أو المواقع الإلكترونية باستخدام التطبيقات المصممة خصيصاً لأجهزة الجوال التي تعمل بنظام Apple IOS أو Android أو Microsoft Windows  من تمكين عملاءها من أستخدام الخدمات وترتيب وجدولة خدمات النقل شريطة الموافقة على هذه الشروط من أجل: (1) الوصول إلى التطبيقات واستخدامها على جهازك الشخصي فيما يتعلق باستخدامك للخدمات فقط، و(2) الوصول إلى أي من المحتويات والمعلومات والمواد ذات الصلة التي قد يتم توفيرها من خلال الخدمات واستخدامها، وفي جميع هذه الحالات يكون الاستخدام شخصي فقط وغير التجاري. وتحتفظ شركة وصلنا بأي من الحقوق غير الممنوحة صراحة في هذه الشروط.
+لتتمكن من أستخدام الخدمات المتاحة بالتطبيق يجب عليك التسجيل والحصول على حساب شخصي من خلال أدخال معلومات صحيحة ومحدثة لتجنب  توقف الخدمة أو انهاؤها وتتحمل انت المسؤلية كاملة عن جميع الأنشطة التى تجري باسم حسابك
+بمجرد أنشاء الحساب سوف تصلك بعض الرسائل النصية المعلوماتية كجزء من تتابع تقديم الخدمة ويجوز للشركة أستخدام رموز ترويجية وفق لتقديراتها المطلقة والتي من خلالها يمكن من أضافة مزايا ومنافع أخري تتعلق بالخدمات المقدمة او لمقدمي الخدمات
+يتم تطبيق أسعار ثابتة على المشاوير المباشرة بين مواقع محددة. قد تؤدي التوقفات الإضافية إلى زيادة الأجرة. قد يتم إضافة رسوم الطريق ورسوم تسعيرة الذروة إلى أجرتك. قد تتغير أسعارنا في بعض الأوقات طبقا للظروف العامة والمواسم لتوفير عدد كاف من السيارات وتوفير خدمة أفضل
+إخلاء المسؤولية؛ حدود المسؤولية؛ التعويض
+الشركة غير مسؤلة عن جودة مقدمي الخدمة أو سلامتهم وقدراتهم وتوافق من جانبك على أن المخاطر الكاملة التي تنشأ عن أستخدام هذه الخدمات تبقى مسؤليتك أنت ومقدم الخدمة طبقا للقانون المعمول به
+الشركة غير مسؤلة عن الأضرار الغير مباشرة بما فيها فقدان البيانات أو المتعلقات الشخصية أو عن التأخير ولا يجوز بأي حال من الأحوال أن تتجاوز قيمة التعويض عن جميع الخسائر والأضرار 100 ريال سعودي فقط لاغير
+المكافاءات
+تقوم الشركة بتطبيق نظام النقاط عن طريق أضافة 15 نقطه لحساب أي عميل جديد تخصم من أول مشوار له مع وصلني وأضافة عدد 2 نقطة لكل عميل يستخدم خدمة وصلني من خلالك بواسطة الرمز الترويجي والذي سوف تحصل علية بمجرد التسجيل وأول مشوار لك معنا
+</string>
+
+
+    <!--RateCard Activity-->
+    <string name="ratecard_lable_header_textview">المعدل</string>
+    <string name="ratecard_lable_city">اختار المدينة</string>
+    <string name="ratecard_lable_carType">اختار نوع السيارة</string>
+    <string name="ratecard_lable_standardRate">المعدل القياسي</string>
+    <string name="ratecard_lable_charges">رسوم اضافية</string>
+    <string name="ratecard_lable_firstKM">اول 1 كيلو متر</string>
+    <string name="ratecard_lable_afterKM">بعد 1 كيلو متر</string>
+    <string name="ratecard_lable_perKM">لكل كيلو متر</string>
+    <string name="ratecard_lable_select_city">اختار المدينة</string>
+    <string name="ratecard_lable_selected_city_hint">اختار المدينة</string>
+    <string name="ratecard_lable_selected_car_hint">اختار السيارة</string>
+    <string name="ratecard_lable_select_city_alert">اختار المدينة الاولي</string>
+    <string name="ratecard_lable_perMin">لكل دقيقة
+</string>
+
+    <!--Click4Cabs Passenger Money-->
+    <string name="cabily_lable_header_textview">وصلنا تاكسي للعملاء</string>
+    <string name="cabilymoney_lable_textview"> باقل قيمة ومتاعب استمتع برحلتك مع وصلنا واكثر...</string>
+    <string name="cabilymoney_lable_yourcurrent_balance_textview">رصيدك الحالي</string>
+    <string name="cabilymoney_lable_rechargemoney_textview">تعبئة رصيد وصلنا تاكسي للعملاء</string>
+    <string name="cabilymoney_lable_rechargemoney_edittext_hinr">ادخل القيمة</string>
+    <string name="cabilymoney_lable_rechargemoney_edittext">ادخل القيمة بين $10 - $100</string>
+    <string name="cabilymoney_lable_rechargemoney_edittext_hint">ادخل القيمة بين</string>
+    <string name="cabilymoney_lable_rechargemoney_alert">تعبئة الرصيد لابد تكون بين</string>
+    <string name="cabilymoney_lable_addcabilymoney">اضافة رصيد لوصلنا تاكسي للعملاء</string>
+    <string name="cabilymoney_enter_amount">يرجي ادخال القيمة لاضافتها لمحفظتك</string>
+    <string name="action_loading_cabily_money_empty_field">يجب ادخال القيمة</string>
+    <string name="action_loading_cabilymoney_transaction_wallet_success">تمت المعاملةبنجاح
+</string>
+    <!--Click4Cabs Passenger Money WebView-->
+    <string name="cabily_webview_lable_header_textview">عملية الدفع</string>
+    <string name="cabily_webview_lable_transaction_cancel">تم الغاء المعاملة</string>
+    <string name="cabily_webview_lable_transaction_failed">فشلت المعاملة</string>
+    <string name="cabily_webview_lable_transaction_success">تمت عمليت الدفع بنجاح</string>
+    <string name="cabily_webview_lable_cancel_transaction">الغاء المعاملة</string>
+    <string name="cabily_webview_lable_cancel_transaction_proceed">سيؤدي الضغط الرجوع مرة اخري الى الغاء معاملتك الحالية. المتابعة على اية حال ؟ </string>
+    <!--Click4Cabs Passenger Money Transaction-->
+    <string name="cabily_transaction_lable_header_textview">المعاملة الاخيرة</string>
+    <string name="cabily_money_lable_transaction_all">الكل</string>
+    <string name="cabily_money_lable_transaction_credit">بطاقة ائتمان</string>
+    <string name="cabily_money_lable_transaction_debit">مدين</string>
+    <string name="cabily_money_lable_no_transaction_yet">لا يوجد معاملة بعد !</string>
+    <string name="cabily_money_lable_transaction_list_credit">CR</string>
+    <string name="cabily_money_lable_transaction_list_debit">DR</string>
+    <string name="cabily_money_lable_transaction_list_balance">المتبقي :
+</string>
+
+    <!--MyRides-->
+    <string name="my_rides_header_textview">رحلاتي</string>
+    <string name="my_rides_all">كل الرحلات</string>
+    <string name="my_rides_upcoming">القادمة</string>
+    <string name="my_rides_completed">المكتملة</string>
+    <string name="my_rides_no_ride_yet">لا يوجد رحلات محجوزة!</string>
+    <string name="my_rides_status_booked_label">محجوزة</string>
+    <string name="my_rides_status_completed_label">مكتملة</string>
+    <string name="my_rides_status_cancelled_label">ملغاه</string>
+    <string name="my_rides_status_accept_label">موافق</string>
+    <string name="my_rides_status_onride_label">علي الطريق</string>
+    <string name="my_rides_status_finished_label">انتهت</string>
+    <string name="my_rides_from_label">من
+</string>
+
+
+    <!--MyRides Details-->
+    <string name="my_rides_detail_header_textview">معلومات الرحلة</string>
+    <string name="my_rides_detail_ride_distance_textview">مسافة الرحلة</string>
+    <string name="my_rides_detail_time_taken_textview">الوقت المستغرق</string>
+    <string name="my_rides_detail_wait_time_textview">وقت الانتظار</string>
+    <string name="my_rides_detail_mail_invoice_textview">فاتورة مرسلة بالبريد</string>
+    <string name="my_rides_detail_report_issue_textview">تقرير مشكلة</string>
+    <string name="my_feedback_textview">ارسال رسالة للمدير</string>
+    <string name="my_rides_detail_pickup_textview">وصلني</string>
+    <string name="my_rides_detail_drop_textview">وصلني</string>
+    <string name="my_rides_detail_total_bill_textview">القيمة الاجمالية للفاتورة :</string>
+    <string name="my_rides_detail_total_paid_textview">اجمالي المدفوع :</string>
+    <string name="my_rides_detail_tips_textview">اكراميات:</string>
+    <string name="my_rides_detail_crn_textview">CRN</string>
+    <string name="my_rides_detail_city_taxi_textview">وصلنا تاكسي</string>
+    <string name="my_rides_detail_ride_textview">وصلني</string>
+    <string name="my_rides_detail_coupon_discount_textview">كوبون خصم :</string>
+    <string name="my_rides_detail_wallet_usuage_textview">استخدام المحفظة :</string>
+    <string name="my_rides_detail_cancel_trip_textview">الغاء الرحلة</string>
+    <string name="my_rides_detail_track_ride_textview">تتبع الرحلة</string>
+    <string name="my_rides_detail_payment_textview">الدفع</string>
+    <string name="my_rides_detail_kms_textview">كيلو متر</string>
+    <string name="my_rides_detail_mins_textview">دقايق</string>
+    <string name="my_rides_detail_enter_emailId">ادخل بريدك الالكتروني</string>
+    <string name="my_rides_detail_cancel">الغاء</string>
+    <string name="my_rides_detail_send">ارسال</string>
+    <string name="my_rides_detail_favourite_address">العنوان المفضل لديك</string>
+    <string name="my_rides_detail_favourite_enter_title">ادخل العنوان</string>
+    <string name="my_rides_detail_favourite_apply">تم</string>
+    <string name="my_rides_detail_favourite_alert_title">ادخل عنوان موقعك المفضل</string>
+    <string name="my_rides_detail_cancel_ride_alert">هل انت متاكد انك تريد الغاء رحلتك ؟</string>
+    <string name="my_rides_detail_cancel_ride_alert_yes">نعم</string>
+    <string name="my_rides_detail_cancel_ride_alert_no">لا</string>
+    <string name="my_rides_detail_cancel_ride_alert_title">الغاء الرحلة</string>
+    <string name="my_rides_detail_tip_label">ادخل قيمة الاكرامية</string>
+    <string name="my_rides_detail_tip_apply_label">تم</string>
+    <string name="my_rides_detail_tip_remove_label">ازالة</string>
+    <string name="my_rides_detail_tip_empty_label">القيمة الاكرامية المدخلة غير صالحة</string>
+    <string name="my_rides_detail_tip_amount_label">اكراميات</string>
+    <string name="my_rides_detail_tip_amount_message">هل تريد اعطاء اكرامية لمقدم الخدمة ؟</string>
+    <string name="my_rides_detail_share_message">مشاركة</string>
+
+
+    <!--MyRides cancel Trip -->
+    <string name="my_rides_cancel_trip_header_textview">الغاء الرحلة</string>
+    <string name="my_rides_cancel_trip_why_label">لماذا تقوم بالغاء الرحلة ؟</string>
+    <string name="my_rides_cancel_trip_action_cancel">الغاء الرحلة</string>
+
+    <!--MyRides payment List -->
+    <string name="my_rides_payment_header_textview">قم بالدفع</string>
+    <string name="my_rides_payment_mode_label">اختيار طريقة الدفع</string>
+    <string name="my_rides_payment_cash_success">تم الدفع بنجاح</string>
+    <string name="my_rides_payment_wallet_success">تمت عملية الدفع بنجاح</string>
+    <string name="my_rides_payment_cash_driver_confirm_label">يرجي الانتظار لحين التاكيد من طرف مقدم الخدمة</string>
+    <string name="my_rides_payment_empty_wallet">المحفظة فارغة</string>
+    <string name="my_rides_payment_empty_wallet_sorry">اسف</string>
+    <string name="my_rides_payment_webview_lable">عملية الدفع</string>
+
+
+    <string name="action_alert_sub">يجب ادخال العنوان</string>
+    <string name="action_alert_msg">يجب ادخال الرسالة</string>
+
+
+    <!--MyRides Rating List -->
+    <string name="my_rides_rating_header_textview">التقيم</string>
+    <string name="my_rides_rating_header_skip_textview">تخطي</string>
+    <string name="my_rides_rating_header_submit_textview">ارسال</string>
+    <string name="my_rides_rating_header_comment_textview">يرجي ادخال ملاحظتك عن الرحلة</string>
+    <string name="my_rides_rating_header_sorry_textview">اسف</string>
+    <string name="my_rides_rating_header_enter_all">يرجي التقيم</string>
+    <string name="my_rides_rating_submit_successfully">تم ارسال تقيمك بنجاح
+</string>
+
+
+    <!--PushNotificatoin Alert Page-->
+    <string name="pushnotification_alert_label_message">رسالة</string>
+    <string name="pushnotification_alert_label_cab_arrived">مقدم الخدمة وصل</string>
+    <string name="pushnotification_alert_label_ok">تم</string>
+    <string name="pushnotification_alert_label_ride_completed">تم الانتهاء من الرحلة بنجاح ، نتمني ان نراكم مجددا</string>
+    <string name="pushnotification_alert_label_ride_cancelled_sorry">اسف</string>
+    <string name="pushnotification_alert_label_ride_arrived_success">نجاح</string>
+    <string name="pushnotification_alert_label">Alert</string>
+    <string name="pushnotification_alert_label_ride_completed_thanks">شكرا لك!</string>
+
+
+    <!--Fare BreakUp Page-->
+    <string name="fare_breakup_label_message">معدل الاجرة</string>
+    <string name="fare_breakup_label_total_amount">الاجرة الاساسية</string>
+    <string name="fare_breakup_label_duration">المدة</string>
+    <string name="fare_breakup_label_waiting">وقت الانتظار</string>
+    <string name="fare_breakup_label_timeTravel">المسافة</string>
+    <string name="fare_breakup_label_subtotal">المجموع</string>
+    <string name="fare_breakup_label_tips">الاكراميات</string>
+    <string name="fare_breakup_label_serviceTax">ضريبة الخدمة</string>
+    <string name="fare_breakup_label_driverRating">تقيم مقدم الخدمة</string>
+    <string name="fare_breakup_label_tripTotal">المجموع الاجمالي للرحلة</string>
+    <string name="fare_breakup_label_total">الاجمالي</string>
+    <string name="fare_breakup_label_remove">ازالة</string>
+    <string name="fare_breakup_label_payment">قم بالدفع</string>
+    <string name="fare_breakup_label_complete_payment">يرجي استكمال الدفع</string>
+    <string name="fare_breakup_label_tip_remove_failed">فشل في اضافة اكرامية لمقدم الخدمة</string>
+
+    <!--Favorite List Page-->
+    <string name="favorite_list_label_title">المفضلة</string>
+    <string name="favorite_list_label_no_favorite_yet">لم يتم اضافة عناوين !</string>
+    <string name="favorite_list_label_frequent_access">اختيار المواقع المتكررة وحفظها كمفضلة للوصول الفوري</string>
+    <string name="favorite_list_label_add_favorite">اضافة اماكن مفضلة</string>
+    <string name="favorite_list_label_select_location">عنوان المفضل غير صالح</string>
+
+    <!--Add Favorite Page-->
+    <string name="favorite_add_label_title">اضافة عنوان للمفضلة</string>
+    <string name="favorite_add_label_name">اسم الاماكن المفضلة</string>
+    <string name="favorite_add_label_save">حفظ</string>
+    <string name="favorite_add_label_gettingAddress">الحصول على عنوان....</string>
+    <string name="favorite_add_label_no_address">عدم امكانية الحصول على عنوان!</string>
+    <string name="favorite_add_label_invalid_address">عنوان غير صالح</string>
+    <string name="favorite_add_label_name_empty">يجب ادخال اسم المفضلة</string>
+    <string name="call_police_lable">الاتصال بالشرطة</string>
+    <string name="call_fireservice_lable">الاتصال بالحماية المدنية</string>
+    <string name="call_ambulance_lable">الاتصال بالاسعاف</string>
+    <string name="alert_multiple_login">الخروج من جميع الاجهزة</string>
+
+    <!--Share-->
+    <string name="action_share_header">مشاركة</string>
+    <string name="action_share_summery">مشاركة رحلتك</string>
+    <string name="action_complete_submit">ارسال</string>
+    <string name="action_complete_cancel">الغاء</string>
+
+    <!--Track your ride-->
+    <string name="action_driver_arrived">وصل مقدم الخدمة</string>
+    <string name="action_enjy_your_ride">استمتع برحلتك !!</string>
+
+    <!--Home page-->
+    <string name="action_enter_drop_location">ترك الموقع
+</string>
+
+
+    <!--Destination Address Search-->
+    <string name="destination_address_search_done">تم</string>
+    <string name="destination_address_search_drag">تحديد عنوانك</string>
+    <string name="destination_address_search_invalid">عنوان وجهتك غير صالح
+</string>
+
+    <!--Splash App Info-->
+    <string name="app_info_header_textView">اسف على التاخير</string>
+    <string name="app_info_content">واجهنا بعض المشكلات اثناء الاتصال ، ولكن سوف نقلك لوجهتك في اسرع وقت</string>
+
+    <string name="demo_json">{"status": "1","message": "Facebook app is successfully integrated","facebook_id": "2505192316174046"}</string>
+
+
+    <!--service_request_alert-->
+    <string name="service_request_net_slow_alert">الاتصال بالشبكة بطئ يرجي محاولة الاتصال لاحقا</string>
+    <string name="service_request_auth_failure">فشل المصادقة</string>
+    <string name="service_request_server_error">خطأ بالخادم</string>
+    <string name="service_request_network_error">خطأ بالشبكة</string>
+    <string name="service_request_parseerror">خطأ تحليلي</string>
+
+
+    <!--home page Toast-->
+    <string name="home_page_toast_incompatible_version">اصدار غير متوافق مع جوجل بلاي</string>
+    <string name="home_page_toast_cancel">الغاء</string>
+    <string name="home_page_toast_loaction_enable">تمكين الموقع!</string>
+
+    <!--language changess-->
+    <string name="profile_lable_language">اللغة</string>
+    <string name="profile_lable_language_change">تغير
+</string>
+
+    <!--ratecard-->
+    <string name="ratecard_select_city">اختيار المدينة</string>
+    <string name="ratecard_select_car_type">اختيار نوع السيارة</string>
+
+    <!--Myridesdetais toast-->
+    <string name="myrides_toast_sorry_unable">اسف! غير قادر على عرض الخريطة</string>
+    <string name="myrides_toast_there_is_no">لايوجد بريد الكتروني</string>
+
+    <!--splash toast-->
+    <string name="splash_toast_loaction_enable">تمكين الموقع!</string>
+
+    <string name="dialog_app_exiting">هل انت متاكد انك تريد الخروج</string>
+    <string name="home_label__pickUp">موقع الالتقاط</string>
+    <string name="home_label__no_cabs">لا يوجد مقدمين خدمة متاحين</string>
+    <string name="home_label_min">دقايق</string>
+    <string name="navigation_drawer_ok">تم</string>
+    <string name="navigation_drawer_cancel">الغاء</string>
+    <string name="takephoto">كيف تريد التقاط صورتك </string>
+    <string name="camra">التقاط صورتي بواسطة الكاميرا</string>
+    <string name="existingcamera">اختيار صورة من الاستوديو</string>
+    <string name="edit_profile_success_label">تم رفع الصورة بنجاح</string>
+    <string name="action_select_drop_location">اختار الموقع المراد الوصول الية</string>
+    <string name="tripsummery_add_Ride_label">وصلني</string>
+    <string name="tripsummery_add_Payment_label">الدفع</string>
+
+    <string name="feedback_subject">الموضوع</string>
+    <string name="feedback_message">رسالة
+</string>
+    <string name="conatct_call">اتصال</string>
+    <string name="contact_message">رسالة</string>
+
+    <string name="away_label">بعيدا</string>
+
+
+    <string name="sms_masking_text">ادخل النص الخاص بك</string>
+    <string name="Track_ur_ride_co_passenger">البحث عن عميل</string>
+    <string name="Track_ur_ride_co_passenger_yes">يقوم بتوصيلك ...</string>
+
+    <string name="home_share_pool_is_available">مشاركة</string>
+    <string name="home_seat">مقعد</string>
+    <string name="home_share_count">مشاركة </string>
+    <string name="home_share">مشاركة</string>
+    <string name="update_paly_service">يرجي تحديث جوجل بلاي</string>
+    <string name="all_fields_are_mandatory">كل الخانات مطلوب </string>
+    <string name="book_your_ride">حجز رحلتك</string>
+
+
+
+
+
+    <string-array name="titles">
+        <item>رحلتك بلمسة واحدة مع وصلنا</item>
+        <item>احجز رحلتك مع وصلنا في أي وقت وأي مكان</item>
+        <item>وصلنا دائما معك لتوصيلك في الوقت الذي تحدده</item>
+        <item>ادعوا اصدقاءك لاستخدام وصلنا واكسب معانا</item>
+        <item>مع وصلنا احجز رحلتك باقل التكاليف وبأعلا جودة</item>
+        <item>أنطلق مع وصلنا عن طريق اعادة شحن محفظتك</item>
+    </string-array>
+
+
+    <string name="select_country_label">اختار دولتك</string>
+    <string name="search">Search&#8230;</string>
+
+    <string name="terms_and_condition_lable">الشروط والاحكام</string>
+    <string name="resend_code_lable">اعادة ارسال الكود</string>
+    <string name="my_rides_detail_un_fav_alert_message">هل تريد انت متاكد تريد الغاء هذا الموقع المفضل ؟</string>
+    <string name="currect_location_fetching_issue">يتعذر تحديد موقعكم ، يرجي المحاولة لاحقا ،  في حالة استمرا المشكلة يرجي التاكد من اتصالك بالانترنت والمحاولة في مكان مفتوح للسماء وليس مكان مغلق ، مع تحيات وصلنا تكسي ، نتمني لكم رحلة سعيدة</string>
+    <string name="phone_number">رقم الموبيل</string>
+    <string name="country_code">كود البلد</string>
+
+    <string name="update">تحديث</string>
+    <string name="enter_amount_here_in_usd">ادخل القيمة هنا بالريال او بالجنية المصري</string>
+    <string name="digits_amount">1234567890.</string>
+    <string name="receipt_history">تاريخ الاستلام</string>
+    <string name="cabily_recepit_list_textview">تاريخ الاستلام</string>
+    <string name="alert_select_image">يرجي اختيار الصورة الاولي</string>
+    <string name="action_loading_cabilymoney_transaction_wallet_success_admin_confirm">شكرا لك ، سوف يتم اضافة المبلغ الخاص بك في محفظتك بمجرد التاكيد</string>
+
+
+
+    <string name="termsandcondition_point_one">1- استخدام سيارات حديثة مزودة بالتكيف وواي فاي بداية من موديل 2018</string>
+    <string name="termsandcondition_point_two">2-  احترام القواعد والشروط ووقت تقديم الخدمة ويتم فحص السيارات فى ورش تابعة للشركة قبل البدء في الخدمة</string>
+    <string name="termsandcondition_point_three">    3- مزود الخدمة سوف يحصل على 80 % بالاضافة الى مكافئات والشركة على 20% فقط</string>
+    <string name="termsandcondition_point_four">     4- سوف تحصل على نسبة 2% لمدة 6 أشهرعن كل مشترك في الخدمة من خلالك بشرط نشر وأستخدام الخدمة على الأقل بين 10 أشخاص</string>
+    <string name="termsandcondition_point_five">     5- توجد تعريفة للمشوار حسب سياسات الشركة</string>
+    <string name="termsandcondition_point_six">6- الحد الأدني للمشوار 15 ريال او 15 جنية مصري</string>
+    <string name="paragraph">شركة وصلنا للنقل وتقنية المعلومات ذات مسؤلية محدودة تم أنشائها بالاسكندرية ، مصر في أغسطس 2016 وجاري انشاء فرع اخر بالمملكة العربية السعودية وتعتبر من الشركات الصاعدة في مجال نقل الأفراد والبضائع بجمهورية مصر العربية من خلال أسطول من السيارات الحديثة على مدار 24 ساعة حيث توفر هذه الخدمة حجز سيارة بالمواصفات المطلوبة والمعلومات عن السائق وتحديد مسافة المشوار وقيمتة ودقة وكفاءة طاقم عمل الشركة من خلال تطبيق وصلنا والمتاح على أجهزة الأيفون و الأندرويد.
+كما انه سوف تطبق الخدمة ايضا في المملكة العربية السعودية قريبا باذن الله
+  الخدمات التي تقدمها وصلنا !
+1.	خدمة وصلنا فورا والتي تتيح هذه الخدمة طلب أقرب سيارة الى موقعك بالمواصفات المطلوبة
+2.	خدمة توصيل وأستقبال من المولات والأسواق
+3.	خدمة حجز سيارة بالمواصفات المطلوبة في الوقت الذي تختارة
+4.	خدمة توصيل وأستقبال من المطار
+5.	خدمة توصيل وأستقبال من النقل الجماعي
+6.	خدمة توصيل وأستقبال من السكك الحديدية
+7.	خدمة وصلنا خارج المدينة
+8.	خدمة التعاقد الشهري أو السنوي مع المدارس والحضانات والجامعات والشركات
+9.	تقديم الخدمة على مدار 24 ساعة
+10.	تقديم خدمة توفير سطحة وعربيات نقل عفش والذي يسمح بدخول الخدمة جميع السيارات بمختلف أنواعها
+  المستفيدين من خدمة وصلنا !
+1.	عملائنا بجميع أنحاء مصر من خلال أستخدام التطبيق والذي من خلاله نقدم خدمة وصلنا في أي وقت وأي مكان كما يمكن حجز موعد في الوقت الذي تحدده والتوصيل لجميع الوجهات التي تختارها
+2.	مقدمين الخدمة بجميع أنحاء مصر من خلال أستخدام تطبيق وصلنا لتقديم الخدمة بسيارتك الخاصة أو المستأخرة وتحقيق دخلا أضافيا
+الشركات والمدارس والجامعات من خلال أستخدام تطبيق وصلنا وطلب خدمة التوصيل لموظفيها أو طلابها
+3.	الشركات والمدارس والجامعات من خلال أستخدام تطبيق وصلنا وطلب خدمة التوصيل لموظفيها أو طلابها
+</string>
+    <string name="countries_code">W3sibmFtZSI6IkFmZ2hhbmlzdGFuIiwiZGlhbF9jb2RlIjoiKzkzIiwiY29kZSI6IkFGIn0seyJuYW1lIjoiQWxiYW5pYSIsImRpYWxfY29kZSI6IiszNTUiLCJjb2RlIjoiQUwifSx7Im5hbWUiOiJBbGdlcmlhIiwiZGlhbF9jb2RlIjoiKzIxMyIsImNvZGUiOiJEWiJ9LHsibmFtZSI6IkFtZXJpY2FuU2Ftb2EiLCJkaWFsX2NvZGUiOiIrMSA2ODQiLCJjb2RlIjoiQVMifSx7Im5hbWUiOiJBbmRvcnJhIiwiZGlhbF9jb2RlIjoiKzM3NiIsImNvZGUiOiJBRCJ9LHsibmFtZSI6IkFuZ29sYSIsImRpYWxfY29kZSI6IisyNDQiLCJjb2RlIjoiQU8ifSx7Im5hbWUiOiJBbmd1aWxsYSIsImRpYWxfY29kZSI6IisxIDI2NCIsImNvZGUiOiJBSSJ9LHsibmFtZSI6IkFudGFyY3RpY2EiLCJkaWFsX2NvZGUiOiIrNjcyIiwiY29kZSI6IkFRIn0seyJuYW1lIjoiQW50aWd1YSBhbmQgQmFyYnVkYSIsImRpYWxfY29kZSI6IisxMjY4IiwiY29kZSI6IkFHIn0seyJuYW1lIjoiQXJnZW50aW5hIiwiZGlhbF9jb2RlIjoiKzU0IiwiY29kZSI6IkFSIn0seyJuYW1lIjoiQXJtZW5pYSIsImRpYWxfY29kZSI6IiszNzQiLCJjb2RlIjoiQU0ifSx7Im5hbWUiOiJBcnViYSIsImRpYWxfY29kZSI6IisyOTciLCJjb2RlIjoiQVcifSx7Im5hbWUiOiJBdXN0cmFsaWEiLCJkaWFsX2NvZGUiOiIrNjEiLCJjb2RlIjoiQVUifSx7Im5hbWUiOiJBdXN0cmlhIiwiZGlhbF9jb2RlIjoiKzQzIiwiY29kZSI6IkFUIn0seyJuYW1lIjoiQXplcmJhaWphbiIsImRpYWxfY29kZSI6Iis5OTQiLCJjb2RlIjoiQVoifSx7Im5hbWUiOiJCYWhhbWFzIiwiZGlhbF9jb2RlIjoiKzEgMjQyIiwiY29kZSI6IkJTIn0seyJuYW1lIjoiQmFocmFpbiIsImRpYWxfY29kZSI6Iis5NzMiLCJjb2RlIjoiQkgifSx7Im5hbWUiOiJCYW5nbGFkZXNoIiwiZGlhbF9jb2RlIjoiKzg4MCIsImNvZGUiOiJCRCJ9LHsibmFtZSI6IkJhcmJhZG9zIiwiZGlhbF9jb2RlIjoiKzEgMjQ2IiwiY29kZSI6IkJCIn0seyJuYW1lIjoiQmVsYXJ1cyIsImRpYWxfY29kZSI6IiszNzUiLCJjb2RlIjoiQlkifSx7Im5hbWUiOiJCZWxnaXVtIiwiZGlhbF9jb2RlIjoiKzMyIiwiY29kZSI6IkJFIn0seyJuYW1lIjoiQmVsaXplIiwiZGlhbF9jb2RlIjoiKzUwMSIsImNvZGUiOiJCWiJ9LHsibmFtZSI6IkJlbmluIiwiZGlhbF9jb2RlIjoiKzIyOSIsImNvZGUiOiJCSiJ9LHsibmFtZSI6IkJlcm11ZGEiLCJkaWFsX2NvZGUiOiIrMSA0NDEiLCJjb2RlIjoiQk0ifSx7Im5hbWUiOiJCaHV0YW4iLCJkaWFsX2NvZGUiOiIrOTc1IiwiY29kZSI6IkJUIn0seyJuYW1lIjoiQm9saXZpYSwgUGx1cmluYXRpb25hbCBTdGF0ZSBvZiIsImRpYWxfY29kZSI6Iis1OTEiLCJjb2RlIjoiQk8ifSx7Im5hbWUiOiJCb3NuaWEgYW5kIEhlcnplZ292aW5hIiwiZGlhbF9jb2RlIjoiKzM4NyIsImNvZGUiOiJCQSJ9LHsibmFtZSI6IkJvdHN3YW5hIiwiZGlhbF9jb2RlIjoiKzI2NyIsImNvZGUiOiJCVyJ9LHsibmFtZSI6IkJyYXppbCIsImRpYWxfY29kZSI6Iis1NSIsImNvZGUiOiJCUiJ9LHsibmFtZSI6IkJyaXRpc2ggSW5kaWFuIE9jZWFuIFRlcnJpdG9yeSIsImRpYWxfY29kZSI6IisyNDYiLCJjb2RlIjoiSU8ifSx7Im5hbWUiOiJCcnVuZWkgRGFydXNzYWxhbSIsImRpYWxfY29kZSI6Iis2NzMiLCJjb2RlIjoiQk4ifSx7Im5hbWUiOiJCdWxnYXJpYSIsImRpYWxfY29kZSI6IiszNTkiLCJjb2RlIjoiQkcifSx7Im5hbWUiOiJCdXJraW5hIEZhc28iLCJkaWFsX2NvZGUiOiIrMjI2IiwiY29kZSI6IkJGIn0seyJuYW1lIjoiQnVydW5kaSIsImRpYWxfY29kZSI6IisyNTciLCJjb2RlIjoiQkkifSx7Im5hbWUiOiJDYW1ib2RpYSIsImRpYWxfY29kZSI6Iis4NTUiLCJjb2RlIjoiS0gifSx7Im5hbWUiOiJDYW1lcm9vbiIsImRpYWxfY29kZSI6IisyMzciLCJjb2RlIjoiQ00ifSx7Im5hbWUiOiJDYW5hZGEiLCJkaWFsX2NvZGUiOiIrMSIsImNvZGUiOiJDQSJ9LHsibmFtZSI6IkNhcGUgVmVyZGUiLCJkaWFsX2NvZGUiOiIrMjM4IiwiY29kZSI6IkNWIn0seyJuYW1lIjoiQ2F5bWFuIElzbGFuZHMiLCJkaWFsX2NvZGUiOiIrIDM0NSIsImNvZGUiOiJLWSJ9LHsibmFtZSI6IkNlbnRyYWwgQWZyaWNhbiBSZXB1YmxpYyIsImRpYWxfY29kZSI6IisyMzYiLCJjb2RlIjoiQ0YifSx7Im5hbWUiOiJDaGFkIiwiZGlhbF9jb2RlIjoiKzIzNSIsImNvZGUiOiJURCJ9LHsibmFtZSI6IkNoaWxlIiwiZGlhbF9jb2RlIjoiKzU2IiwiY29kZSI6IkNMIn0seyJuYW1lIjoiQ2hpbmEiLCJkaWFsX2NvZGUiOiIrODYiLCJjb2RlIjoiQ04ifSx7Im5hbWUiOiJDaHJpc3RtYXMgSXNsYW5kIiwiZGlhbF9jb2RlIjoiKzYxIiwiY29kZSI6IkNYIn0seyJuYW1lIjoiQ29jb3MgKEtlZWxpbmcpIElzbGFuZHMiLCJkaWFsX2NvZGUiOiIrNjEiLCJjb2RlIjoiQ0MifSx7Im5hbWUiOiJDb2xvbWJpYSIsImRpYWxfY29kZSI6Iis1NyIsImNvZGUiOiJDTyJ9LHsibmFtZSI6IkNvbW9yb3MiLCJkaWFsX2NvZGUiOiIrMjY5IiwiY29kZSI6IktNIn0seyJuYW1lIjoiQ29uZ28iLCJkaWFsX2NvZGUiOiIrMjQyIiwiY29kZSI6IkNHIn0seyJuYW1lIjoiQ29uZ28sIFRoZSBEZW1vY3JhdGljIFJlcHVibGljIG9mIHRoZSIsImRpYWxfY29kZSI6IisyNDMiLCJjb2RlIjoiQ0QifSx7Im5hbWUiOiJDb29rIElzbGFuZHMiLCJkaWFsX2NvZGUiOiIrNjgyIiwiY29kZSI6IkNLIn0seyJuYW1lIjoiQ29zdGEgUmljYSIsImRpYWxfY29kZSI6Iis1MDYiLCJjb2RlIjoiQ1IifSx7Im5hbWUiOiJDb3RlIGQnSXZvaXJlIiwiZGlhbF9jb2RlIjoiKzIyNSIsImNvZGUiOiJDSSJ9LHsibmFtZSI6IkNyb2F0aWEiLCJkaWFsX2NvZGUiOiIrMzg1IiwiY29kZSI6IkhSIn0seyJuYW1lIjoiQ3ViYSIsImRpYWxfY29kZSI6Iis1MyIsImNvZGUiOiJDVSJ9LHsibmFtZSI6IkN5cHJ1cyIsImRpYWxfY29kZSI6IiszNTciLCJjb2RlIjoiQ1kifSx7Im5hbWUiOiJDemVjaCBSZXB1YmxpYyIsImRpYWxfY29kZSI6Iis0MjAiLCJjb2RlIjoiQ1oifSx7Im5hbWUiOiJEZW5tYXJrIiwiZGlhbF9jb2RlIjoiKzQ1IiwiY29kZSI6IkRLIn0seyJuYW1lIjoiRGppYm91dGkiLCJkaWFsX2NvZGUiOiIrMjUzIiwiY29kZSI6IkRKIn0seyJuYW1lIjoiRG9taW5pY2EiLCJkaWFsX2NvZGUiOiIrMSA3NjciLCJjb2RlIjoiRE0ifSx7Im5hbWUiOiJEb21pbmljYW4gUmVwdWJsaWMiLCJkaWFsX2NvZGUiOiIrMSA4NDkiLCJjb2RlIjoiRE8ifSx7Im5hbWUiOiJFY3VhZG9yIiwiZGlhbF9jb2RlIjoiKzU5MyIsImNvZGUiOiJFQyJ9LHsibmFtZSI6IkVneXB0IiwiZGlhbF9jb2RlIjoiKzIwIiwiY29kZSI6IkVHIn0seyJuYW1lIjoiRWwgU2FsdmFkb3IiLCJkaWFsX2NvZGUiOiIrNTAzIiwiY29kZSI6IlNWIn0seyJuYW1lIjoiRXF1YXRvcmlhbCBHdWluZWEiLCJkaWFsX2NvZGUiOiIrMjQwIiwiY29kZSI6IkdRIn0seyJuYW1lIjoiRXJpdHJlYSIsImRpYWxfY29kZSI6IisyOTEiLCJjb2RlIjoiRVIifSx7Im5hbWUiOiJFc3RvbmlhIiwiZGlhbF9jb2RlIjoiKzM3MiIsImNvZGUiOiJFRSJ9LHsibmFtZSI6IkV0aGlvcGlhIiwiZGlhbF9jb2RlIjoiKzI1MSIsImNvZGUiOiJFVCJ9LHsibmFtZSI6IkZhbGtsYW5kIElzbGFuZHMgKE1hbHZpbmFzKSIsImRpYWxfY29kZSI6Iis1MDAiLCJjb2RlIjoiRksifSx7Im5hbWUiOiJGYXJvZSBJc2xhbmRzIiwiZGlhbF9jb2RlIjoiKzI5OCIsImNvZGUiOiJGTyJ9LHsibmFtZSI6IkZpamkiLCJkaWFsX2NvZGUiOiIrNjc5IiwiY29kZSI6IkZKIn0seyJuYW1lIjoiRmlubGFuZCIsImRpYWxfY29kZSI6IiszNTgiLCJjb2RlIjoiRkkifSx7Im5hbWUiOiJGcmFuY2UiLCJkaWFsX2NvZGUiOiIrMzMiLCJjb2RlIjoiRlIifSx7Im5hbWUiOiJGcmVuY2ggR3VpYW5hIiwiZGlhbF9jb2RlIjoiKzU5NCIsImNvZGUiOiJHRiJ9LHsibmFtZSI6IkZyZW5jaCBQb2x5bmVzaWEiLCJkaWFsX2NvZGUiOiIrNjg5IiwiY29kZSI6IlBGIn0seyJuYW1lIjoiR2Fib24iLCJkaWFsX2NvZGUiOiIrMjQxIiwiY29kZSI6IkdBIn0seyJuYW1lIjoiR2FtYmlhIiwiZGlhbF9jb2RlIjoiKzIyMCIsImNvZGUiOiJHTSJ9LHsibmFtZSI6Ikdlb3JnaWEiLCJkaWFsX2NvZGUiOiIrOTk1IiwiY29kZSI6IkdFIn0seyJuYW1lIjoiR2VybWFueSIsImRpYWxfY29kZSI6Iis0OSIsImNvZGUiOiJERSJ9LHsibmFtZSI6IkdoYW5hIiwiZGlhbF9jb2RlIjoiKzIzMyIsImNvZGUiOiJHSCJ9LHsibmFtZSI6IkdpYnJhbHRhciIsImRpYWxfY29kZSI6IiszNTAiLCJjb2RlIjoiR0kifSx7Im5hbWUiOiJHcmVlY2UiLCJkaWFsX2NvZGUiOiIrMzAiLCJjb2RlIjoiR1IifSx7Im5hbWUiOiJHcmVlbmxhbmQiLCJkaWFsX2NvZGUiOiIrMjk5IiwiY29kZSI6IkdMIn0seyJuYW1lIjoiR3JlbmFkYSIsImRpYWxfY29kZSI6IisxIDQ3MyIsImNvZGUiOiJHRCJ9LHsibmFtZSI6Ikd1YWRlbG91cGUiLCJkaWFsX2NvZGUiOiIrNTkwIiwiY29kZSI6IkdQIn0seyJuYW1lIjoiR3VhbSIsImRpYWxfY29kZSI6IisxIDY3MSIsImNvZGUiOiJHVSJ9LHsibmFtZSI6Ikd1YXRlbWFsYSIsImRpYWxfY29kZSI6Iis1MDIiLCJjb2RlIjoiR1QifSx7Im5hbWUiOiJHdWVybnNleSIsImRpYWxfY29kZSI6Iis0NCIsImNvZGUiOiJHRyJ9LHsibmFtZSI6Ikd1aW5lYSIsImRpYWxfY29kZSI6IisyMjQiLCJjb2RlIjoiR04ifSx7Im5hbWUiOiJHdWluZWEtQmlzc2F1IiwiZGlhbF9jb2RlIjoiKzI0NSIsImNvZGUiOiJHVyJ9LHsibmFtZSI6Ikd1eWFuYSIsImRpYWxfY29kZSI6Iis1OTUiLCJjb2RlIjoiR1kifSx7Im5hbWUiOiJIYWl0aSIsImRpYWxfY29kZSI6Iis1MDkiLCJjb2RlIjoiSFQifSx7Im5hbWUiOiJIb2x5IFNlZSAoVmF0aWNhbiBDaXR5IFN0YXRlKSIsImRpYWxfY29kZSI6IiszNzkiLCJjb2RlIjoiVkEifSx7Im5hbWUiOiJIb25kdXJhcyIsImRpYWxfY29kZSI6Iis1MDQiLCJjb2RlIjoiSE4ifSx7Im5hbWUiOiJIb25nIEtvbmciLCJkaWFsX2NvZGUiOiIrODUyIiwiY29kZSI6IkhLIn0seyJuYW1lIjoiSHVuZ2FyeSIsImRpYWxfY29kZSI6IiszNiIsImNvZGUiOiJIVSJ9LHsibmFtZSI6IkljZWxhbmQiLCJkaWFsX2NvZGUiOiIrMzU0IiwiY29kZSI6IklTIn0seyJuYW1lIjoiSW5kaWEiLCJkaWFsX2NvZGUiOiIrOTEiLCJjb2RlIjoiSU4ifSx7Im5hbWUiOiJJbmRvbmVzaWEiLCJkaWFsX2NvZGUiOiIrNjIiLCJjb2RlIjoiSUQifSx7Im5hbWUiOiJJcmFuLCBJc2xhbWljIFJlcHVibGljIG9mIiwiZGlhbF9jb2RlIjoiKzk4IiwiY29kZSI6IklSIn0seyJuYW1lIjoiSXJhcSIsImRpYWxfY29kZSI6Iis5NjQiLCJjb2RlIjoiSVEifSx7Im5hbWUiOiJJcmVsYW5kIiwiZGlhbF9jb2RlIjoiKzM1MyIsImNvZGUiOiJJRSJ9LHsibmFtZSI6IklzbGUgb2YgTWFuIiwiZGlhbF9jb2RlIjoiKzQ0IiwiY29kZSI6IklNIn0seyJuYW1lIjoiSXNyYWVsIiwiZGlhbF9jb2RlIjoiKzk3MiIsImNvZGUiOiJJTCJ9LHsibmFtZSI6Ikl0YWx5IiwiZGlhbF9jb2RlIjoiKzM5IiwiY29kZSI6IklUIn0seyJuYW1lIjoiSmFtYWljYSIsImRpYWxfY29kZSI6IisxIDg3NiIsImNvZGUiOiJKTSJ9LHsibmFtZSI6IkphcGFuIiwiZGlhbF9jb2RlIjoiKzgxIiwiY29kZSI6IkpQIn0seyJuYW1lIjoiSmVyc2V5IiwiZGlhbF9jb2RlIjoiKzQ0IiwiY29kZSI6IkpFIn0seyJuYW1lIjoiSm9yZGFuIiwiZGlhbF9jb2RlIjoiKzk2MiIsImNvZGUiOiJKTyJ9LHsibmFtZSI6IkthemFraHN0YW4iLCJkaWFsX2NvZGUiOiIrNyA3IiwiY29kZSI6IktaIn0seyJuYW1lIjoiS2VueWEiLCJkaWFsX2NvZGUiOiIrMjU0IiwiY29kZSI6IktFIn0seyJuYW1lIjoiS2lyaWJhdGkiLCJkaWFsX2NvZGUiOiIrNjg2IiwiY29kZSI6IktJIn0seyJuYW1lIjoiS29yZWEsIERlbW9jcmF0aWMgUGVvcGxlJ3MgUmVwdWJsaWMgb2YiLCJkaWFsX2NvZGUiOiIrODUwIiwiY29kZSI6IktQIn0seyJuYW1lIjoiS29yZWEsIFJlcHVibGljIG9mIiwiZGlhbF9jb2RlIjoiKzgyIiwiY29kZSI6IktSIn0seyJuYW1lIjoiS3V3YWl0IiwiZGlhbF9jb2RlIjoiKzk2NSIsImNvZGUiOiJLVyJ9LHsibmFtZSI6Ikt5cmd5enN0YW4iLCJkaWFsX2NvZGUiOiIrOTk2IiwiY29kZSI6IktHIn0seyJuYW1lIjoiTGFvIFBlb3BsZSdzIERlbW9jcmF0aWMgUmVwdWJsaWMiLCJkaWFsX2NvZGUiOiIrODU2IiwiY29kZSI6IkxBIn0seyJuYW1lIjoiTGF0dmlhIiwiZGlhbF9jb2RlIjoiKzM3MSIsImNvZGUiOiJMViJ9LHsibmFtZSI6IkxlYmFub24iLCJkaWFsX2NvZGUiOiIrOTYxIiwiY29kZSI6IkxCIn0seyJuYW1lIjoiTGVzb3RobyIsImRpYWxfY29kZSI6IisyNjYiLCJjb2RlIjoiTFMifSx7Im5hbWUiOiJMaWJlcmlhIiwiZGlhbF9jb2RlIjoiKzIzMSIsImNvZGUiOiJMUiJ9LHsibmFtZSI6IkxpYnlhbiBBcmFiIEphbWFoaXJpeWEiLCJkaWFsX2NvZGUiOiIrMjE4IiwiY29kZSI6IkxZIn0seyJuYW1lIjoiTGllY2h0ZW5zdGVpbiIsImRpYWxfY29kZSI6Iis0MjMiLCJjb2RlIjoiTEkifSx7Im5hbWUiOiJMaXRodWFuaWEiLCJkaWFsX2NvZGUiOiIrMzcwIiwiY29kZSI6IkxUIn0seyJuYW1lIjoiTHV4ZW1ib3VyZyIsImRpYWxfY29kZSI6IiszNTIiLCJjb2RlIjoiTFUifSx7Im5hbWUiOiJNYWNhbyIsImRpYWxfY29kZSI6Iis4NTMiLCJjb2RlIjoiTU8ifSx7Im5hbWUiOiJNYWNlZG9uaWEsIFRoZSBGb3JtZXIgWXVnb3NsYXYgUmVwdWJsaWMgb2YiLCJkaWFsX2NvZGUiOiIrMzg5IiwiY29kZSI6Ik1LIn0seyJuYW1lIjoiTWFkYWdhc2NhciIsImRpYWxfY29kZSI6IisyNjEiLCJjb2RlIjoiTUcifSx7Im5hbWUiOiJNYWxhd2kiLCJkaWFsX2NvZGUiOiIrMjY1IiwiY29kZSI6Ik1XIn0seyJuYW1lIjoiTWFsYXlzaWEiLCJkaWFsX2NvZGUiOiIrNjAiLCJjb2RlIjoiTVkifSx7Im5hbWUiOiJNYWxkaXZlcyIsImRpYWxfY29kZSI6Iis5NjAiLCJjb2RlIjoiTVYifSx7Im5hbWUiOiJNYWxpIiwiZGlhbF9jb2RlIjoiKzIyMyIsImNvZGUiOiJNTCJ9LHsibmFtZSI6Ik1hbHRhIiwiZGlhbF9jb2RlIjoiKzM1NiIsImNvZGUiOiJNVCJ9LHsibmFtZSI6Ik1hcnNoYWxsIElzbGFuZHMiLCJkaWFsX2NvZGUiOiIrNjkyIiwiY29kZSI6Ik1IIn0seyJuYW1lIjoiTWFydGluaXF1ZSIsImRpYWxfY29kZSI6Iis1OTYiLCJjb2RlIjoiTVEifSx7Im5hbWUiOiJNYXVyaXRhbmlhIiwiZGlhbF9jb2RlIjoiKzIyMiIsImNvZGUiOiJNUiJ9LHsibmFtZSI6Ik1hdXJpdGl1cyIsImRpYWxfY29kZSI6IisyMzAiLCJjb2RlIjoiTVUifSx7Im5hbWUiOiJNYXlvdHRlIiwiZGlhbF9jb2RlIjoiKzI2MiIsImNvZGUiOiJZVCJ9LHsibmFtZSI6Ik1leGljbyIsImRpYWxfY29kZSI6Iis1MiIsImNvZGUiOiJNWCJ9LHsibmFtZSI6Ik1pY3JvbmVzaWEsIEZlZGVyYXRlZCBTdGF0ZXMgb2YiLCJkaWFsX2NvZGUiOiIrNjkxIiwiY29kZSI6IkZNIn0seyJuYW1lIjoiTW9sZG92YSwgUmVwdWJsaWMgb2YiLCJkaWFsX2NvZGUiOiIrMzczIiwiY29kZSI6Ik1EIn0seyJuYW1lIjoiTW9uYWNvIiwiZGlhbF9jb2RlIjoiKzM3NyIsImNvZGUiOiJNQyJ9LHsibmFtZSI6Ik1vbmdvbGlhIiwiZGlhbF9jb2RlIjoiKzk3NiIsImNvZGUiOiJNTiJ9LHsibmFtZSI6Ik1vbnRlbmVncm8iLCJkaWFsX2NvZGUiOiIrMzgyIiwiY29kZSI6Ik1FIn0seyJuYW1lIjoiTW9udHNlcnJhdCIsImRpYWxfY29kZSI6IisxNjY0IiwiY29kZSI6Ik1TIn0seyJuYW1lIjoiTW9yb2NjbyIsImRpYWxfY29kZSI6IisyMTIiLCJjb2RlIjoiTUEifSx7Im5hbWUiOiJNb3phbWJpcXVlIiwiZGlhbF9jb2RlIjoiKzI1OCIsImNvZGUiOiJNWiJ9LHsibmFtZSI6Ik15YW5tYXIiLCJkaWFsX2NvZGUiOiIrOTUiLCJjb2RlIjoiTU0ifSx7Im5hbWUiOiJOYW1pYmlhIiwiZGlhbF9jb2RlIjoiKzI2NCIsImNvZGUiOiJOQSJ9LHsibmFtZSI6Ik5hdXJ1IiwiZGlhbF9jb2RlIjoiKzY3NCIsImNvZGUiOiJOUiJ9LHsibmFtZSI6Ik5lcGFsIiwiZGlhbF9jb2RlIjoiKzk3NyIsImNvZGUiOiJOUCJ9LHsibmFtZSI6Ik5ldGhlcmxhbmRzIiwiZGlhbF9jb2RlIjoiKzMxIiwiY29kZSI6Ik5MIn0seyJuYW1lIjoiTmV0aGVybGFuZHMgQW50aWxsZXMiLCJkaWFsX2NvZGUiOiIrNTk5IiwiY29kZSI6IkFOIn0seyJuYW1lIjoiTmV3IENhbGVkb25pYSIsImRpYWxfY29kZSI6Iis2ODciLCJjb2RlIjoiTkMifSx7Im5hbWUiOiJOZXcgWmVhbGFuZCIsImRpYWxfY29kZSI6Iis2NCIsImNvZGUiOiJOWiJ9LHsibmFtZSI6Ik5pY2FyYWd1YSIsImRpYWxfY29kZSI6Iis1MDUiLCJjb2RlIjoiTkkifSx7Im5hbWUiOiJOaWdlciIsImRpYWxfY29kZSI6IisyMjciLCJjb2RlIjoiTkUifSx7Im5hbWUiOiJOaWdlcmlhIiwiZGlhbF9jb2RlIjoiKzIzNCIsImNvZGUiOiJORyJ9LHsibmFtZSI6Ik5pdWUiLCJkaWFsX2NvZGUiOiIrNjgzIiwiY29kZSI6Ik5VIn0seyJuYW1lIjoiTm9yZm9sayBJc2xhbmQiLCJkaWFsX2NvZGUiOiIrNjcyIiwiY29kZSI6Ik5GIn0seyJuYW1lIjoiTm9ydGhlcm4gTWFyaWFuYSBJc2xhbmRzIiwiZGlhbF9jb2RlIjoiKzEgNjcwIiwiY29kZSI6Ik1QIn0seyJuYW1lIjoiTm9yd2F5IiwiZGlhbF9jb2RlIjoiKzQ3IiwiY29kZSI6Ik5PIn0seyJuYW1lIjoiT21hbiIsImRpYWxfY29kZSI6Iis5NjgiLCJjb2RlIjoiT00ifSx7Im5hbWUiOiJQYWtpc3RhbiIsImRpYWxfY29kZSI6Iis5MiIsImNvZGUiOiJQSyJ9LHsibmFtZSI6IlBhbGF1IiwiZGlhbF9jb2RlIjoiKzY4MCIsImNvZGUiOiJQVyJ9LHsibmFtZSI6IlBhbGVzdGluaWFuIFRlcnJpdG9yeSwgT2NjdXBpZWQiLCJkaWFsX2NvZGUiOiIrOTcwIiwiY29kZSI6IlBTIn0seyJuYW1lIjoiUGFuYW1hIiwiZGlhbF9jb2RlIjoiKzUwNyIsImNvZGUiOiJQQSJ9LHsibmFtZSI6IlBhcHVhIE5ldyBHdWluZWEiLCJkaWFsX2NvZGUiOiIrNjc1IiwiY29kZSI6IlBHIn0seyJuYW1lIjoiUGFyYWd1YXkiLCJkaWFsX2NvZGUiOiIrNTk1IiwiY29kZSI6IlBZIn0seyJuYW1lIjoiUGVydSIsImRpYWxfY29kZSI6Iis1MSIsImNvZGUiOiJQRSJ9LHsibmFtZSI6IlBoaWxpcHBpbmVzIiwiZGlhbF9jb2RlIjoiKzYzIiwiY29kZSI6IlBIIn0seyJuYW1lIjoiUGl0Y2Fpcm4iLCJkaWFsX2NvZGUiOiIrODcyIiwiY29kZSI6IlBOIn0seyJuYW1lIjoiUG9sYW5kIiwiZGlhbF9jb2RlIjoiKzQ4IiwiY29kZSI6IlBMIn0seyJuYW1lIjoiUG9ydHVnYWwiLCJkaWFsX2NvZGUiOiIrMzUxIiwiY29kZSI6IlBUIn0seyJuYW1lIjoiUHVlcnRvIFJpY28iLCJkaWFsX2NvZGUiOiIrMSA5MzkiLCJjb2RlIjoiUFIifSx7Im5hbWUiOiJRYXRhciIsImRpYWxfY29kZSI6Iis5NzQiLCJjb2RlIjoiUUEifSx7Im5hbWUiOiJSb21hbmlhIiwiZGlhbF9jb2RlIjoiKzQwIiwiY29kZSI6IlJPIn0seyJuYW1lIjoiUnVzc2lhIiwiZGlhbF9jb2RlIjoiKzciLCJjb2RlIjoiUlUifSx7Im5hbWUiOiJSd2FuZGEiLCJkaWFsX2NvZGUiOiIrMjUwIiwiY29kZSI6IlJXIn0seyJuYW1lIjoiUsOpdW5pb24iLCJkaWFsX2NvZGUiOiIrMjYyIiwiY29kZSI6IlJFIn0seyJuYW1lIjoiU2FpbnQgQmFydGjDqWxlbXkiLCJkaWFsX2NvZGUiOiIrNTkwIiwiY29kZSI6IkJMIn0seyJuYW1lIjoiU2FpbnQgSGVsZW5hLCBBc2NlbnNpb24gYW5kIFRyaXN0YW4gRGEgQ3VuaGEiLCJkaWFsX2NvZGUiOiIrMjkwIiwiY29kZSI6IlNIIn0seyJuYW1lIjoiU2FpbnQgS2l0dHMgYW5kIE5ldmlzIiwiZGlhbF9jb2RlIjoiKzEgODY5IiwiY29kZSI6IktOIn0seyJuYW1lIjoiU2FpbnQgTHVjaWEiLCJkaWFsX2NvZGUiOiIrMSA3NTgiLCJjb2RlIjoiTEMifSx7Im5hbWUiOiJTYWludCBNYXJ0aW4iLCJkaWFsX2NvZGUiOiIrNTkwIiwiY29kZSI6Ik1GIn0seyJuYW1lIjoiU2FpbnQgUGllcnJlIGFuZCBNaXF1ZWxvbiIsImRpYWxfY29kZSI6Iis1MDgiLCJjb2RlIjoiUE0ifSx7Im5hbWUiOiJTYWludCBWaW5jZW50IGFuZCB0aGUgR3JlbmFkaW5lcyIsImRpYWxfY29kZSI6IisxIDc4NCIsImNvZGUiOiJWQyJ9LHsibmFtZSI6IlNhbW9hIiwiZGlhbF9jb2RlIjoiKzY4NSIsImNvZGUiOiJXUyJ9LHsibmFtZSI6IlNhbiBNYXJpbm8iLCJkaWFsX2NvZGUiOiIrMzc4IiwiY29kZSI6IlNNIn0seyJuYW1lIjoiU2FvIFRvbWUgYW5kIFByaW5jaXBlIiwiZGlhbF9jb2RlIjoiKzIzOSIsImNvZGUiOiJTVCJ9LHsibmFtZSI6IlNhdWRpIEFyYWJpYSIsImRpYWxfY29kZSI6Iis5NjYiLCJjb2RlIjoiU0EifSx7Im5hbWUiOiJTZW5lZ2FsIiwiZGlhbF9jb2RlIjoiKzIyMSIsImNvZGUiOiJTTiJ9LHsibmFtZSI6IlNlcmJpYSIsImRpYWxfY29kZSI6IiszODEiLCJjb2RlIjoiUlMifSx7Im5hbWUiOiJTZXljaGVsbGVzIiwiZGlhbF9jb2RlIjoiKzI0OCIsImNvZGUiOiJTQyJ9LHsibmFtZSI6IlNpZXJyYSBMZW9uZSIsImRpYWxfY29kZSI6IisyMzIiLCJjb2RlIjoiU0wifSx7Im5hbWUiOiJTaW5nYXBvcmUiLCJkaWFsX2NvZGUiOiIrNjUiLCJjb2RlIjoiU0cifSx7Im5hbWUiOiJTbG92YWtpYSIsImRpYWxfY29kZSI6Iis0MjEiLCJjb2RlIjoiU0sifSx7Im5hbWUiOiJTbG92ZW5pYSIsImRpYWxfY29kZSI6IiszODYiLCJjb2RlIjoiU0kifSx7Im5hbWUiOiJTb2xvbW9uIElzbGFuZHMiLCJkaWFsX2NvZGUiOiIrNjc3IiwiY29kZSI6IlNCIn0seyJuYW1lIjoiU29tYWxpYSIsImRpYWxfY29kZSI6IisyNTIiLCJjb2RlIjoiU08ifSx7Im5hbWUiOiJTb3V0aCBBZnJpY2EiLCJkaWFsX2NvZGUiOiIrMjciLCJjb2RlIjoiWkEifSx7Im5hbWUiOiJTb3V0aCBHZW9yZ2lhIGFuZCB0aGUgU291dGggU2FuZHdpY2ggSXNsYW5kcyIsImRpYWxfY29kZSI6Iis1MDAiLCJjb2RlIjoiR1MifSx7Im5hbWUiOiJTcGFpbiIsImRpYWxfY29kZSI6IiszNCIsImNvZGUiOiJFUyJ9LHsibmFtZSI6IlNyaSBMYW5rYSIsImRpYWxfY29kZSI6Iis5NCIsImNvZGUiOiJMSyJ9LHsibmFtZSI6IlN1ZGFuIiwiZGlhbF9jb2RlIjoiKzI0OSIsImNvZGUiOiJTRCJ9LHsibmFtZSI6IlN1cmluYW1lIiwiZGlhbF9jb2RlIjoiKzU5NyIsImNvZGUiOiJTUiJ9LHsibmFtZSI6IlN2YWxiYXJkIGFuZCBKYW4gTWF5ZW4iLCJkaWFsX2NvZGUiOiIrNDciLCJjb2RlIjoiU0oifSx7Im5hbWUiOiJTd2F6aWxhbmQiLCJkaWFsX2NvZGUiOiIrMjY4IiwiY29kZSI6IlNaIn0seyJuYW1lIjoiU3dlZGVuIiwiZGlhbF9jb2RlIjoiKzQ2IiwiY29kZSI6IlNFIn0seyJuYW1lIjoiU3dpdHplcmxhbmQiLCJkaWFsX2NvZGUiOiIrNDEiLCJjb2RlIjoiQ0gifSx7Im5hbWUiOiJTeXJpYW4gQXJhYiBSZXB1YmxpYyIsImRpYWxfY29kZSI6Iis5NjMiLCJjb2RlIjoiU1kifSx7Im5hbWUiOiJUYWl3YW4iLCJkaWFsX2NvZGUiOiIrODg2IiwiY29kZSI6IlRXIn0seyJuYW1lIjoiVGFqaWtpc3RhbiIsImRpYWxfY29kZSI6Iis5OTIiLCJjb2RlIjoiVEoifSx7Im5hbWUiOiJUYW56YW5pYSwgVW5pdGVkIFJlcHVibGljIG9mIiwiZGlhbF9jb2RlIjoiKzI1NSIsImNvZGUiOiJUWiJ9LHsibmFtZSI6IlRoYWlsYW5kIiwiZGlhbF9jb2RlIjoiKzY2IiwiY29kZSI6IlRIIn0seyJuYW1lIjoiVGltb3ItTGVzdGUiLCJkaWFsX2NvZGUiOiIrNjcwIiwiY29kZSI6IlRMIn0seyJuYW1lIjoiVG9nbyIsImRpYWxfY29kZSI6IisyMjgiLCJjb2RlIjoiVEcifSx7Im5hbWUiOiJUb2tlbGF1IiwiZGlhbF9jb2RlIjoiKzY5MCIsImNvZGUiOiJUSyJ9LHsibmFtZSI6IlRvbmdhIiwiZGlhbF9jb2RlIjoiKzY3NiIsImNvZGUiOiJUTyJ9LHsibmFtZSI6IlRyaW5pZGFkIGFuZCBUb2JhZ28iLCJkaWFsX2NvZGUiOiIrMSA4NjgiLCJjb2RlIjoiVFQifSx7Im5hbWUiOiJUdW5pc2lhIiwiZGlhbF9jb2RlIjoiKzIxNiIsImNvZGUiOiJUTiJ9LHsibmFtZSI6IlR1cmtleSIsImRpYWxfY29kZSI6Iis5MCIsImNvZGUiOiJUUiJ9LHsibmFtZSI6IlR1cmttZW5pc3RhbiIsImRpYWxfY29kZSI6Iis5OTMiLCJjb2RlIjoiVE0ifSx7Im5hbWUiOiJUdXJrcyBhbmQgQ2FpY29zIElzbGFuZHMiLCJkaWFsX2NvZGUiOiIrMSA2NDkiLCJjb2RlIjoiVEMifSx7Im5hbWUiOiJUdXZhbHUiLCJkaWFsX2NvZGUiOiIrNjg4IiwiY29kZSI6IlRWIn0seyJuYW1lIjoiVWdhbmRhIiwiZGlhbF9jb2RlIjoiKzI1NiIsImNvZGUiOiJVRyJ9LHsibmFtZSI6IlVrcmFpbmUiLCJkaWFsX2NvZGUiOiIrMzgwIiwiY29kZSI6IlVBIn0seyJuYW1lIjoiVW5pdGVkIEFyYWIgRW1pcmF0ZXMiLCJkaWFsX2NvZGUiOiIrOTcxIiwiY29kZSI6IkFFIn0seyJuYW1lIjoiVW5pdGVkIEtpbmdkb20iLCJkaWFsX2NvZGUiOiIrNDQiLCJjb2RlIjoiR0IifSx7Im5hbWUiOiJVbml0ZWQgU3RhdGVzIiwiZGlhbF9jb2RlIjoiKzEiLCJjb2RlIjoiVVMifSx7Im5hbWUiOiJVcnVndWF5IiwiZGlhbF9jb2RlIjoiKzU5OCIsImNvZGUiOiJVWSJ9LHsibmFtZSI6IlV6YmVraXN0YW4iLCJkaWFsX2NvZGUiOiIrOTk4IiwiY29kZSI6IlVaIn0seyJuYW1lIjoiVmFudWF0dSIsImRpYWxfY29kZSI6Iis2NzgiLCJjb2RlIjoiVlUifSx7Im5hbWUiOiJWZW5lenVlbGEsIEJvbGl2YXJpYW4gUmVwdWJsaWMgb2YiLCJkaWFsX2NvZGUiOiIrNTgiLCJjb2RlIjoiVkUifSx7Im5hbWUiOiJWaWV0IE5hbSIsImRpYWxfY29kZSI6Iis4NCIsImNvZGUiOiJWTiJ9LHsibmFtZSI6IlZpcmdpbiBJc2xhbmRzLCBCcml0aXNoIiwiZGlhbF9jb2RlIjoiKzEgMjg0IiwiY29kZSI6IlZHIn0seyJuYW1lIjoiVmlyZ2luIElzbGFuZHMsIFUuUy4iLCJkaWFsX2NvZGUiOiIrMSAzNDAiLCJjb2RlIjoiVkkifSx7Im5hbWUiOiJXYWxsaXMgYW5kIEZ1dHVuYSIsImRpYWxfY29kZSI6Iis2ODEiLCJjb2RlIjoiV0YifSx7Im5hbWUiOiJZZW1lbiIsImRpYWxfY29kZSI6Iis5NjciLCJjb2RlIjoiWUUifSx7Im5hbWUiOiJaYW1iaWEiLCJkaWFsX2NvZGUiOiIrMjYwIiwiY29kZSI6IlpNIn0seyJuYW1lIjoiWmltYmFid2UiLCJkaWFsX2NvZGUiOiIrMjYzIiwiY29kZSI6IlpXIn0seyJuYW1lIjoiw4VsYW5kIElzbGFuZHMiLCJkaWFsX2NvZGUiOiIrMzU4IiwiY29kZSI6IkFYIn1d</string>
+
+
+</resources>

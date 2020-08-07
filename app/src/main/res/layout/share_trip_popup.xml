@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/job_complete_label_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/app_color">
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:text="@string/action_share_header"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/job_complete_details_label_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/job_complete_label_layout"
+            android:background="@drawable/bg">
+
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/job_complete_fareTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/action_share_summery"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/sharetrip_mobilenoEt"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/job_complete_fareTv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/sharetrip_country_codeEt"
+                android:background="@xml/custom_curv_layout_grey"
+                android:gravity="top|left"
+                android:hint="@string/profile_lable_error_mobile"
+                android:textColorHint="#006400"
+                android:imeOptions="actionDone"
+                android:inputType="phone"
+                android:digits="0987654321+"
+                android:maxLength="15"
+                android:textColor="#006400"
+                android:padding="10dp"
+                android:textSize="13sp"
+                android:typeface="sans">
+
+            </EditText>
+
+
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/sharetrip_country_codeEt"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/job_complete_fareTv"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp"
+                android:background="@xml/custom_curv_layout_grey"
+                android:gravity="top|left|center_vertical"
+                android:hint="@string/profile_lable_signin_hint_code"
+                android:textColorHint="#006400"
+                android:digits="0987654321+"
+                android:maxLength="5"
+                android:textColor="#006400"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="13sp"
+                android:typeface="sans">
+
+            </com.mylibrary.widgets.CustomTextView>
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/layout_jobcomplete_btns"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/sharetrip_mobilenoEt"
+                android:layout_marginTop="23dp">
+
+                <View
+                    android:id="@+id/jobcompletey_popup_view1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentTop="true"
+                    android:background="#cdcdcd" />
+
+                <Button
+                    android:id="@+id/sharetrip_popup_cancel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/jobcompletey_popup_view1"
+                    android:layout_toLeftOf="@+id/jobcompletey__popup_view2"
+                    android:background="#ffffff"
+                    android:imeOptions="actionDone"
+                    android:text="@string/action_cancel"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/jobcompletey__popup_view2"
+                    android:layout_width="1px"
+                    android:layout_height="fill_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="#cdcdcd" />
+
+                <Button
+                    android:id="@+id/jsharetrip_popup_submit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/jobcompletey_popup_view1"
+                    android:layout_toRightOf="@+id/jobcompletey__popup_view2"
+                    android:background="#ffffff"
+                    android:text="@string/action_ok"
+                    android:textColor="#006400"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

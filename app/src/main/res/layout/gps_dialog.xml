@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/curve_background" >
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/gps_popup_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="6dp"
+            android:text="@string/gps_label_title"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/gps_popup_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gps_popup_text1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/gps_label_text1"
+            android:textColor="#4e4e4e"
+            android:textSize="16sp" />
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/gps_popup_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gps_popup_text2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/gps_label_text2"
+            android:textColor="#4e4e4e"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/gps_popup_imageView1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/gps_popup_text3"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/location_icon" />
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/gps_popup_text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gps_popup_text3"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/gps_popup_imageView1"
+            android:text="@string/gps_label_text3"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/gps_popup_text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gps_popup_text4"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/gps_popup_imageView1"
+            android:text="@string/gps_label_text4"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/gps_popup_text_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gps_popup_text5"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/gps_popup_text_ok"
+            android:text="@string/gps_label_no"
+            android:textColor="#4e4e4e"
+            android:textSize="18sp" />
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/gps_popup_text_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/gps_popup_text5"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/gps_label_yes"
+            android:textColor="#006400"
+            android:textSize="18sp" />
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@+id/gps_popup_text_ok"
+            android:layout_marginTop="8dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentTop="true">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+    >
+        <RelativeLayout
+            android:id="@+id/couponcode_allowance_amount_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/couponcode_apply_layout"
+            android:layout_margin="10dp"
+            android:background="#CCffffff"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/couponcode_yourallowance_layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#95BF35"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_centerHorizontal="true">
+
+                <com.mylibrary.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/couponcode_label_allowance"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/couponcode_allowance_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/couponcode_yourallowance_layout"
+                android:layout_margin="15dp"
+                android:layout_centerHorizontal="true"
+                android:typeface="sans"
+                android:textSize="16dp"
+                android:textColor="#4e4e4e"
+                android:textAlignment="center"
+                android:text="@string/couponcode_label_allowance_text1"
+                android:gravity="center_horizontal"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

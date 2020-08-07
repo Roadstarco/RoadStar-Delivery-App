@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:id="@+id/myprofile_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/app_color">
+
+        <RelativeLayout
+            android:id="@+id/myprofile_header_back_layout"
+            android:layout_width="55dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="26dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:background="@null"
+                android:src="@drawable/back_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_myprofiles"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:background="#00000000">
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/myprofiledheaderTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/profile_lable_signin_myprofile"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/profile_main_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/myprofile_top_layout"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <com.mylibrary.widgets.CircularImageView
+                    android:id="@+id/profile_profileimg"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/no_user_image" />
+
+                <com.mylibrary.widgets.CustomTextView
+                    android:id="@+id/layout_signindetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/profile_profileimg"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/profile_lable_signindetails"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/myprofile_email_layout_whole"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_signindetails"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#CCffffff"
+                    android:paddingBottom="5dp">
+
+                    <RelativeLayout
+                        android:id="@+id/myprofile_email_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:background="#00000000">
+
+                        <ImageView
+                            android:id="@+id/email_icon"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/profilemail" />
+
+                        <com.mylibrary.widgets.CustomTextView
+                            android:id="@+id/myprofile_emailid_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/email_icon"
+                            android:text=""
+                            android:textColor="#4e4e4e"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <com.mylibrary.widgets.CustomTextView
+                            android:id="@+id/myprofile_email_txtview2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/myprofile_emailid_textview"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_toRightOf="@+id/email_icon"
+                            android:text="@string/profile_lable_emailid"
+                            android:textColor="#9b9b99"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_below="@+id/myprofile_email_layout"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#9b9b9b" />
+
+                    <RelativeLayout
+                        android:id="@+id/myprofile_changepassword_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/view1"
+                        android:layout_centerVertical="true"
+                        android:background="#00000000">
+
+                        <ImageView
+                            android:id="@+id/changepwd_icon"
+                            android:layout_width="21dp"
+                            android:layout_height="21dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/profilepassword" />
+
+                        <com.mylibrary.widgets.CustomTextView
+                            android:id="@+id/myprofile_changepassword_star_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/changepwd_icon"
+                            android:text="@string/profile_lable_signinstar"
+                            android:textColor="#4e4e4e"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <com.mylibrary.widgets.CustomTextView
+                            android:id="@+id/myprofile_changepassword_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/myprofile_changepassword_star_textview"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@+id/changepwd_icon"
+                            android:text="@string/profile_lable_signinchangepassword"
+                            android:textColor="#9b9b99"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/arrow_changepasword"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/edit" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+                <com.mylibrary.widgets.CustomTextView
+                    android:id="@+id/myprofile_mydetails_Textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/myprofile_email_layout_whole"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/profile_lable_signinmydetails"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <RelativeLayout
+                    android:id="@+id/layout_mydetails_whole"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/myprofile_mydetails_Textview"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#CCffffff">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_username"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:background="#00000000"
+                        android:paddingBottom="4dp">
+
+                        <ImageView
+                            android:id="@+id/userimage"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="8dp"
+                            android:src="@drawable/profileuser" />
+
+                        <com.mylibrary.widgets.CustomEdittext
+                            android:id="@+id/myprofile_username_editText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toLeftOf="@+id/myprofile_username_editimage"
+                            android:layout_toRightOf="@+id/userimage"
+                            android:background="@drawable/edittext_background"
+                            android:gravity="bottom"
+
+                            android:imeOptions="actionSend"
+                            android:inputType="text"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="#4e4e4e"
+                            android:textCursorDrawable="@drawable/edittext_cursor_color"
+                            android:textSize="14dp" />
+
+                        <com.mylibrary.widgets.CustomTextView
+                            android:id="@+id/myprofile_username_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/myprofile_username_editText"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@+id/userimage"
+                            android:text="@string/profile_lable_signin_hintname"
+                            android:textColor="#9b9b99"
+                            android:textSize="14sp" />
+
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/myprofile_username_editimage"-->
+                            <!--android:layout_width="25dp"-->
+                            <!--android:layout_height="22dp"-->
+                            <!--android:layout_alignParentRight="true"-->
+                            <!--android:layout_marginRight="15dp"-->
+                            <!--android:layout_marginTop="10dp"-->
+                            <!--android:src="@drawable/edit" />-->
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_below="@+id/layout_username"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:background="#9b9b9b" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout_mobileno"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/view2"
+                        android:layout_centerVertical="true"
+                        android:background="#00000000">
+
+                        <ImageView
+                            android:id="@+id/mobileicon"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/profilephone" />
+
+                        <com.mylibrary.widgets.CustomTextView
+                            android:id="@+id/myprofile_country"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_toRightOf="@+id/mobileicon"
+                            android:text="+"
+                            android:textColor="#4e4e4e"
+                            android:textSize="14sp" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/myprofile_textView_country_code_layout"
+                            android:layout_width="47dp"
+                            android:layout_height="30dp"
+                            android:layout_toRightOf="@+id/myprofile_country"
+                            android:background="@drawable/edittext_background">
+
+                            <com.mylibrary.widgets.CustomTextView
+                                android:id="@+id/myprofile_country_code_textview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:gravity="bottom"
+                                android:text=""
+                                android:textColor="#3f3e3e"
+                                android:textSize="14sp" />
+
+                        </RelativeLayout>
+
+
+                        <com.mylibrary.widgets.CustomTextView
+                            android:id="@+id/myprofile_country_code_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/myprofile_textView_country_code_layout"
+                            android:layout_toRightOf="@+id/myprofile_country"
+                            android:text="@string/profile_lable_signin_hint_code"
+                            android:textColor="#9b9b99"
+                            android:textSize="14sp" />
+
+                        <com.mylibrary.widgets.CustomEdittext
+                            android:id="@+id/myprofile_edit_phoneno_editText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="8dp"
+                            android:layout_toRightOf="@+id/myprofile_textView_country_code_layout"
+                            android:background="@drawable/edittext_background"
+                            android:digits="0123456789"
+                            android:imeOptions="actionSend"
+                            android:inputType="number"
+                            android:maxLength="16"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="#4e4e4e"
+                            android:textCursorDrawable="@drawable/edittext_cursor_color"
+                            android:textSize="14dp" />
+
+                        <com.mylibrary.widgets.CustomTextView
+                            android:id="@+id/myprofile_mobile_no_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/myprofile_edit_phoneno_editText"
+                            android:layout_marginLeft="18dp"
+                            android:layout_toRightOf="@+id/myprofile_textView_country_code_layout"
+                            android:text="@string/profile_lable_signinhintmobileno"
+                            android:textColor="#9b9b99"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/mydetailsimg"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/arrow_right" />
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/mobiledit"-->
+                            <!--android:layout_width="25dp"-->
+                            <!--android:layout_height="22dp"-->
+                            <!--android:layout_alignParentRight="true"-->
+                            <!--android:layout_marginRight="15dp"-->
+                            <!--android:layout_marginTop="10dp"-->
+                            <!--android:src="@drawable/edit" />-->
+                    </RelativeLayout>
+
+
+                    <View
+                        android:id="@+id/view3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_below="@+id/layout_mobileno"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:background="#9b9b9b" />
+
+                    <!--Language Visible layout Start-->
+
+                    <RelativeLayout
+                        android:id="@+id/layout_Language"
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:layout_below="@+id/view3"
+                        android:layout_centerVertical="true"
+                        android:background="#00000000"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/language_icon"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/change_icon" />
+
+
+                        <Spinner
+                            android:id="@+id/language_spinner"
+                            android:layout_width="150dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="14dp"
+                            android:layout_toRightOf="@+id/language_icon"
+                            android:textColor="#4e4e4e"
+                            android:textSize="14dp" />
+
+
+                        <com.mylibrary.widgets.CustomTextView
+                            android:id="@+id/language_labe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/language_spinner"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@+id/language_icon"
+                            android:text="@string/profile_lable_language"
+                            android:textColor="#9b9b99"
+                            android:textSize="14dp" />
+
+
+                        <View
+                            android:id="@+id/view6"
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/language_spinner"
+                            android:background="#9b9b9b" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/change_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/view6">
+
+
+                            <com.mylibrary.widgets.CustomTextView
+                                android:id="@+id/change_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:text="@string/profile_lable_language_change"
+                                android:textColor="#4e4e4e" />
+
+
+                        </RelativeLayout>
+
+
+                        <!--Language Visible layout End-->
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <!--<RelativeLayout-->
+                    <!--android:id="@+id/layout_line0"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--<Button-->
+                        <!--android:id="@+id/myprofile_save_button"-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:layout_below="@+id/layout_mobileno"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:layout_marginBottom="15dp"-->
+                        <!--android:layout_marginLeft="25dp"-->
+                        <!--android:layout_marginRight="25dp"-->
+                        <!--android:layout_marginTop="40dp"-->
+                        <!--android:background="@color/app_color"-->
+                        <!--android:text="@string/profile_lable_signinlogout"-->
+                        <!--android:textColor="#ffffff"-->
+                        <!--android:textSize="15sp" />-->
+                <!--</RelativeLayout>-->
+                <!--<Button-->
+                    <!--android:id="@+id/myprofile_save_buttons"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_below="@+id/layout_mydetails_whole"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginBottom="15dp"-->
+                    <!--android:layout_marginLeft="25dp"-->
+                    <!--android:layout_marginRight="25dp"-->
+                    <!--android:layout_marginTop="40dp"-->
+                    <!--android:background="@color/app_color"-->
+                    <!--android:text="@string/profile_lable_saves"-->
+                    <!--android:textColor="#ffffff"-->
+                    <!--android:textSize="15sp" />-->
+
+
+                <Button
+                    android:id="@+id/myprofile_logout_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/layout_mydetails_whole"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/app_color"
+                    android:text="@string/profile_lable_signinlogout"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

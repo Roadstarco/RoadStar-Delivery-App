@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:keepScreenOn="true">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="140dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_weight="0.50"
+                android:background="@drawable/taxilogo" />
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="0.50"-->
+                <!--android:text="Wsalna Taxi"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:gravity="center"-->
+                <!--android:scaleType="fitCenter"-->
+                <!--android:textColor="#95BF35"-->
+                <!--android:textSize="30sp"-->
+                <!--android:textStyle="bold" />-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/image"-->
+            <!--android:layout_width="150dp"-->
+            <!--android:layout_height="150dp"-->
+            <!--android:layout_weight="0.50"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--android:background="@mipmap/ic_launcher" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Wsalna Taxi"-->
+            <!--android:layout_weight="0.50"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:gravity="center"-->
+            <!--android:textSize="30sp"-->
+            <!--android:textColor="#95BF35"-->
+            <!--android:textStyle="bold" />-->
+        </LinearLayout>
+
+        <!--<ImageView
+            android:id="@+id/mainpagebackgrouncdimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/driverlogo" />-->
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp">
+
+
+            <Button
+                android:id="@+id/btn_english"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/curve_green"
+                android:paddingRight="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp"
+                android:text="English"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+
+            <Button
+                android:id="@+id/btn_arabic"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/curve_green"
+                android:paddingLeft="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:textAllCaps="true"
+                android:text="العربيه"
+                android:visibility="visible"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/curve_green"
+            android:paddingLeft="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:textAllCaps="true"
+            android:text="Next"
+            android:visibility="visible"
+            android:textColor="#000"
+            android:textSize="15sp" />
+        </LinearLayout>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress_splash"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

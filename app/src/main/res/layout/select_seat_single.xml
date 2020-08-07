@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/background_blue_border_layout"
+        android:orientation="vertical">
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/select_seattype_single_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/select_seattype_single_textview_cost"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/app_color"
+            android:textSize="16sp"
+            />
+
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/select_seattype_single_textview_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/select_seattype_single_imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/app_color"
+            android:textSize="16sp"
+            />
+
+
+        <ImageView
+            android:id="@+id/select_seattype_single_imageView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/fare_breakup_checked"
+            android:visibility="visible"/>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

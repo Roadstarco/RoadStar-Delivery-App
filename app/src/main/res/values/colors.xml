@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="ripple_blue_color">#000</color>
+    <color name="darkgreen_color">#027536</color>
+    <color name="spinner_line_color">#e5e5e5</color>
+    <color name="spinner_arrow_color">#e5e5e5</color>
+    <color name="spinner_floatlabel_color">#000</color>
+    <color name="spinner_highlight_color">#4CB5AC</color>
+    <color name="app_color">#ef571f</color>
+    <color name="app_color_transperent">#000000</color>
+    <color name="app_color_transperent1">#ffB43526</color>
+    <color name="app_color_button">#ef571f</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="bg">#1aB43526</color>
+    <color name="ployline_color">#000</color>
+    <color name="apply_coupon">#4e4e4e</color>
+    <color name="text_color">#5b5b5b</color>
+    <color name="text_hint">#d4d4d4</color>
+    <color name="text_hint_dark">#919191</color>
+    <color name="accent">#d2d2d2</color>
+    <color name="normal">#8f8f8f</color>
+    <color name="acciviated">#000</color>
+    <color name="transparant">#00000000</color>
+    <color name="white_color">#FFFFFF</color>
+    <color name="black_color">#4e4e4e</color>
+    <color name="transparent_color">#00000000</color>
+    <color name="green_color">#006400</color>
+
+
+    <color name="colorPrimary">#ef571f</color>
+    <color name="colorPrimaryDark">#939090</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorgreen">#306060</color>
+    <color name="colorwhite">#FFF</color>
+    <color name="colororange">#ef2a1f</color>
+    <color name="colordarkgrey">#6C6A6A</color>
+    <color name="colorgrey">#939090</color>
+    <color name="colorlightgrey">#D3D1D1</color>
+    <color name="colorblack">#232323</color>
+    <color name="orange">#ef571f</color>
+    <color name="green">#518706</color>
+
+
+
+
+
+
+
+    <array name="dot_on_page_active">
+        <item>#B71C1C</item>
+        <item>#B71C1C</item>
+        <item>#B71C1C</item>
+
+    </array>
+
+    <array name="dot_on_page_not_active">
+        <item>#ED7A7A</item>
+        <item>#ED7A7A</item>
+        <item>#ED7A7A</item>
+    </array>
+
+
+
+</resources>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:id="@+id/aboutus_layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/app_color">
+
+        <RelativeLayout
+            android:id="@+id/aboutus_header_back_layout"
+            android:layout_width="55dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="26dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:background="@null"
+                android:src="@drawable/back_arrow" />
+        </RelativeLayout>
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/aboutus_header_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:text="@string/termsnandcondition_lable_header_textview"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/aboutus_toolbar_shadow_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/aboutus_layout_header"
+        android:background="@xml/toolbar_shadow" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutus_toolbar_shadow_layout"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true">
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/aboputus_term1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboutus_logo_imageview"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/termsandcondition_point_one"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:visibility="visible"/>
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/aboputus_term2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_below="@+id/aboputus_term1"
+                android:layout_marginTop="10dp"
+                android:text="@string/termsandcondition_point_two"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/aboputus_term3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboputus_term2"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/termsandcondition_point_three"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/aboutus_term4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboputus_term3"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/termsandcondition_point_four"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboutus_versioncode"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/aboutus_lable_aboutus_description_textview"
+                android:textAlignment="gravity"
+                android:textColor="#4e4e4e"
+                android:textSize="14sp"
+                android:visibility="gone"/>
+
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/moreinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:gravity="left"
+                android:text="@string/aboutus_lable_moreinfo_textview"
+                android:textAlignment="gravity"
+                android:textColor="@color/app_color"
+                android:textSize="20sp"
+                android:visibility="gone"/>
+
+
+
+            <ImageView
+                android:id="@+id/aboutus_link_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/moreinfo"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/about_link1"
+                android:visibility="gone"/>
+
+
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/more_info_baseurl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/moreinfo"
+                android:layout_toRightOf="@+id/aboutus_link_image"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="8dp"
+                android:gravity="left"
+                android:text=""
+                android:textAlignment="gravity"
+                android:textColor="#CC2793ff"
+                android:textSize="15sp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/aboutus_phone_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/more_info_baseurl"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/about_phone"
+                android:visibility="gone"/>
+
+
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/more_phone_baseurl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/more_info_baseurl"
+                android:layout_toRightOf="@+id/aboutus_phone_image"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:text=""
+                android:textAlignment="gravity"
+                android:textColor="#CC2793ff"
+                android:textSize="15sp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/aboutus_address_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/more_phone_baseurl"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/about_address"
+                android:visibility="gone"/>
+
+
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/more_address_baseurl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/more_phone_baseurl"
+                android:layout_toRightOf="@+id/aboutus_address_image"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:text=""
+                android:textAlignment="gravity"
+                android:textColor="#bfbfbf"
+                android:textSize="15sp"
+                android:visibility="gone"/>
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

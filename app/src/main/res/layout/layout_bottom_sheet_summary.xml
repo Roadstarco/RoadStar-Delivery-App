@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="@dimen/size_10"
+        android:paddingRight="@dimen/size_10"
+        android:background="@color/app_color"
+        android:paddingTop="8dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text=" Booking Summary"
+            android:textColor="#FFFFFF"
+            android:layout_weight=".8"
+            android:textSize="16sp" />
+        <ImageView
+            android:id="@+id/id_dismis_dialog"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_weight=".2"
+            android:src="@drawable/mr_ic_close_dark"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="@dimen/size_10"
+        android:paddingRight="@dimen/size_10"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Pickup OFF "
+            android:textStyle="bold"
+            android:textColor="#0E0E0E"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/id_pickuplocatin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pickup location "
+            android:textColor="#737373" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="@dimen/size_10"
+        android:paddingRight="@dimen/size_10"
+        android:paddingTop="8dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Drop OFF  "
+            android:textStyle="bold"
+            android:textColor="#0E0E0E"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/id_drop_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="drop off location"
+            android:textColor="#737373" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="@dimen/size_10"
+        android:paddingRight="@dimen/size_10"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Distance  "
+            android:textStyle="bold"
+            android:textColor="#0E0E0E"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/id_distance_couver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Distance  "
+            android:textStyle="bold"
+            android:textColor="#0E0E0E"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="@dimen/size_10"
+        android:paddingRight="@dimen/size_10"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Estimate FARE    "
+            android:textStyle="bold"
+            android:textColor="#0E0E0E"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/id_estimate_fareid_estimate_fare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Estimate FARE"
+            android:textStyle="bold"
+            android:textColor="#0E0E0E"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_confirmbooking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Conrfirm Booing"
+        android:fontFamily="@font/arialbd"
+        android:textSize="@dimen/size_14"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:background="@drawable/full_circle_booking"
+        android:padding="@dimen/size_12"
+        android:layout_marginBottom="@dimen/size_20"
+        android:layout_marginTop="@dimen/size_20"
+        android:textColor="@color/colorwhite"
+
+        />
+
+
+</LinearLayout>

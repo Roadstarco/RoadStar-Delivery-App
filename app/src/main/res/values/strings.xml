@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="app_name">RoadStar Courier</string>
+    <string name="app_name_heading">RoadStar Courier </string>
+    <string name="action_settings">Settings</string>
+    <string name="action_signingIn">Signing In</string>
+    <string name="action_signingUp">Signing Up</string>
+    <string name="action_updating">Updating</string>
+    <string name="action_logging_out">Logging Out</string>
+    <string name="action_sending_invoice">Sending Invoice</string>
+    <string name="action_processing">Processing</string>
+    <string name="action_deleting">Deleting</string>
+    <string name="action_success">Success</string>
+    <string name="action_pleasewait">Please Wait...</string>
+    <string name="action_loading">Loading</string>
+    <string name="action_saving">Saving</string>
+    <string name="action_error">Sorry</string>
+    <string name="action_verifying">Verifying</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_retry">Retry</string>
+    <string name="action_ok">OK</string>
+    <string name="fragment_edit">Edit</string>
+    <string name="action_cancel_alert">CANCEL</string>
+    <string name="alert_nointernet">No Internet Connection</string>
+    <string name="alert_no_gps">GPS not Enabled !!!</string>
+    <string name="forgotpassword">Forgot Password?</string>
+    <string name="alert_nointernet_message">You are offline please check your internet connection</string>
+    <string name="alert_servererror">Server Error</string>
+    <string name="alert_gpsEnable">Enable GPS to locate your location</string>
+    <string name="alert_nocar">Sorry! We do not provide services in your city yet.</string>
+    <string name="alert_update_location">Updating Your Location</string>
+    <string name="action_session_expired_title">Session Expired</string>
+    <string name="action_session_expired_message">Please re-login to renew your session</string>
+    <string name="action_unable_to_create_map">Unable to create map. Install Google Play service To View Location !!!</string>
+
+    <!-- signup and Signin Page -->
+    <string name="signin_main_label_Signin">SIGN IN</string>
+    <string name="signin_main_label_register">REGISTER</string>
+
+    <!-- Login Page -->
+    <string name="login_label">SIGN IN</string>
+    <string name="login_label_forgotpwd">Forgot Password?</string>
+    <string name="login_label_email_hint">Email Address</string>
+    <string name="login_label_pwd_hint">Password</string>
+    <string name="login_label_login">Sign In</string>
+    <string name="login_label_alert_username">Email address can\'t be empty</string>
+    <string name="login_label_alert_email_invalid">Email address is invalid</string>
+    <string name="login_label_alert_password">Password can\'t be empty</string>
+    <string name="login_label_alert_signIn_failed">Sign In Failed</string>
+    <string name="login_label_facecook_login">Facebook Log in</string>
+    <string name="login_label_facecook_login_app">Sign in with Facebook</string>
+    <string name="login_label_facecook_login_re">Sign up with Facebook</string>
+    <string name="login_label_or">OR</string>
+
+
+    <!-- Register Page -->
+    <string name="register_label">Register</string>
+    <string name="register_label_email_hint">Email</string>
+    <string name="register_label_email_me_hint">Email Me</string>
+    <string name="register_label_pwd_hint">Password</string>
+    <string name="register_label_cnf_pwd_hint">Confirm Password</string>
+    <string name="register_label_username_hint">Name</string>
+    <string name="register_label_phone_hint">Mobile Number</string>
+    <string name="register_label_code_hint">Code</string>
+    <string name="register_label_dummy_text">By Continuing , i agree RoadStar Courier\'s User Agreement and Terms of Services</string>
+
+    <string name="login_label_privacypolicy">By Continuing, I agree RoadStar Courier\'s</string>
+    <string name="login_label_Terms_of_service">User Agreement</string>
+    <string name="login_label_and">and</string>
+    <string name="login_label_Privacy_Policy">Terms of Services</string>
+
+
+    <string name="register_label_referal_hint">Referral Code(Optional)</string>
+    <string name="register_label_register">REGISTER</string>
+    <string name="register_label_create_account">Create Account</string>
+    <string name="register_label_alert_username">UserName can\'t be empty</string>
+    <!--<string name="register_label_alert_password">Password must be at least 6 characters, and must include at least one lower case letter, and one numeric digit.</string>-->
+    <string name="register_label_alert_password">Password must be at least 6 characters.</string>
+    <string name="register_label_alert_email">Email address is invalid</string>
+    <string name="register_label_alert_email_register">Email should not empty</string>
+    <string name="register_label_alertpassword_register">Password should not empty</string>
+    <string name="register_label_alert_email_empty">Please Enter your Email</string>
+    <string name="register_label_alert_phoneNo">Enter phone number between 6 to 15</string>
+    <string name="register_label_alert_country_code">Enter country code</string>
+    <string name="register_label_alert_pass_not_match">Password does not match</string>
+    <string name="register_label_referal_schema">Referral Schema!</string>
+    <string name="register_label_referal_ok">OK</string>
+    <string name="register_label_referal_schema_content1">Enter a referral code here to earn free ride coupons.</string>
+    <string name="register_label_referal_schema_content2">Note : Referral schema is only applicable for users who have never booked an Wsalna Taxi Passenger cab before.</string>
+    <string name="login_label_alert_register_failed">Registration Failed</string>
+
+    <!-- OTP Page -->
+    <string name="otp_label_verification">Verify Mobile</string>
+    <string name="otp_label_enter_otp">Enter OTP</string>
+    <string name="otp_label_send">Submit</string>
+    <string name="action_otp">Verifying</string>
+    <string name="otp_label_alert_otp">OTP can\'t be empty</string>
+    <string name="otp_label_alert_invalid">OTP is invalid</string>
+
+
+    <!-- Forgot Password Page -->
+    <string name="forgot_password_email_label_title">Forgot Password</string>
+    <string name="forgot_password_email_label_enter_email">Email Address</string>
+    <string name="forgot_password_email_label_send_email">E-mail Me</string>
+    <string name="forgot_password_email_label_enter_valid_email">Email address is invalid</string>
+    <string name="forgot_password_email_label_success">Verification code has been sent to your registered mobile number</string>
+
+    <!-- Reset Password Page -->
+    <string name="reset_password_label_title">RESET PASSWORD</string>
+    <string name="reset_password_label_email">Email Address</string>
+    <string name="reset_password_label_enter_new_password">New Password</string>
+    <string name="reset_password_label_show_password_text">Show Password</string>
+    <string name="reset_password_email_label_enter_valid_email">Enter valid email</string>
+    <string name="reset_password_email_label_enter_valid_password">Password can\'t be empty</string>
+    <string name="action_alert_empty_email">Email address cannot be empty</string>
+    <string name="action_alert_invalid_email">Email address is invalid</string>
+
+
+    <!-- Navigation Drawer Layout -->
+    <string name="navigation_label_bookmyride">Book My Ride</string>
+    <string name="navigation_label_myride">My Rides</string>
+    <string name="navigation_label_money">RoadStar Courier Money</string>
+    <string name="navigation_label_invite">Invite &amp; Earn</string>
+    <string name="navigation_label_ratecard">Rate Card</string>
+    <string name="navigation_label_emergency">Emergency Contact</string>
+    <string name="navigation_label_report_issue">Report Issues</string>
+    <string name="navigation_label_feedback">Feedback</string>
+    <string name="navigation_label_setting">Settings</string>
+    <string name="navigation_label_contactus">Contact us</string>
+    <string name="navigation_label_terms">Terms &amp; Condition</string>
+    <string name="navigation_label_aboutus">About Us</string>
+    <string name="action_email_toAddress">info@zoplay.com</string>
+    <string name="loading">Loading..</string>
+    <string name="aboutus_lable_header_wsalnawithus">Try use RoadStar Courier with us</string>
+    <string name="joinus_lable_header_textview">Join RoadStar Courier as a driver</string>
+    <string name="wsalnawithus">-	RoadStar Courier in Egypt and Saudi Arabia announces the activation of the delivery service within the Arab Republic of Egypt and the Kingdom through a fleet of modern cars 24 hours a day. This service provides a car reservation with the required specifications and information about the driver and determines the distance of the journey and its value and accuracy and efficiency of the companys staff.
+-	The company also applies the points system by adding 15 points to the account of any new customer deducted from the first journey with us and add 2 points for each customer using the service came through you through the promotional code, which you will get by registration and your first journey with us.
+-	The company also announces the addition of a transport service of goods, cars and the use of transport vehicles of all types and SATHA, which allows access to all cars of all types in the service of private cars and transport and SATHA
+</string>
+    <string name="wsalnajoinus">-	RoadStar Courier in Egypt and Saudi Arabia announces the start of registration and receipt of applications to join the company to provide the service by use your private car or rental car , achieve an additional income up to 5000 thousand pounds / riyals per month by visiting the headquarters of the company required papers
+-	Tree System (you will receive 2% for 6 months for each driver joining RoadStar Courier through you provided that the Service is published and used by at least 10 people)
+</string>
+
+
+    <!-- Home Page -->
+    <string name="home_label_ride_later">RIDE LATER</string>
+    <string name="home_label_ride_now">BOOK NOW</string>
+    <string name="home_label_cancel">CANCEL</string>
+    <string name="home_label_confirm">CONFIRM</string>
+    <string name="home_label_fromNow">from now</string>
+    <string name="home_label_confirmation">CONFIRMATION</string>
+    <string name="home_label_invalid_pickUp">Invalid pickup location</string>
+    <string name="home_label_invalid_drop">Invalid Drop location</string>
+
+    <!-- GPS Alert Dialog -->
+    <string name="gps_label_title">Use Location?</string>
+    <string name="gps_label_text1">This app wants to change your</string>
+    <string name="gps_label_text2">device settings:</string>
+    <string name="gps_label_text3">Use GPS,Wi-Fi and cell networks</string>
+    <string name="gps_label_text4">for location</string>
+    <string name="gps_label_no">No</string>
+    <string name="gps_label_yes">Yes</string>
+
+    <!-- Alert Dialog -->
+    <string name="alert_label_title">Sorry</string>
+    <string name="alert_label_ok">OK</string>
+    <string name="alert_label_content1">We could not accept your request</string>
+    <string name="alert_label_content2">No cabs has been available at your place. Kindly try again after sometime</string>
+
+    <!-- RIDE LATER Alert Dialog -->
+    <string name="alert_label_ridelater_title">Invalid pickup time</string>
+    <string name="alert_label_ridelater_content">Please make sure that pickup time is at least after an hour from now</string>
+
+    <!-- Book My Ride Layout -->
+    <string name="ridenow_label_ratecard">Rate Card</string>
+    <string name="ridenow_label_estimate">Get Estimate Fare</string>
+    <string name="ridenow_label_enter_drop_loc">Enter Drop Location</string>
+    <string name="ridenow_label_coupon">Apply Coupon</string>
+    <string name="ridenow_label_cartype">Car Type</string>
+    <string name="ridenow_no_driver">No Driver Available, Please Select other Category</string>
+    <string name="ridenow_label_available_wallet_amount">Your Wallet :</string>
+    <string name="ridenow_label_pickup_time">Pickup Time</string>
+    <string name="ridenow_label_confirm_success">Your booking has been successfully registered. Our driver will contact you soon.</string>
+
+    <!-- Rate Card Dilaog -->
+    <string name="ratecard_label_fare">Fare Breakup</string>
+    <string name="ratecard_label_ok">OK</string>
+
+    <!-- Coupon Code Dilaog -->
+    <string name="couponcode_label_title">Enter Coupon Code</string>
+    <string name="couponcode_label_apply">APPLY</string>
+    <string name="couponcode_label_remove">CLEAR</string>
+    <string name="couponcode_label_cancel">CANCEL</string>
+    <string name="couponcode_label_verifying">Verifying...</string>
+    <string name="couponcode_label_verifed">Verified</string>
+    <string name="couponcode_label_invalid_code">Invalid coupon code</string>
+    <string name="couponcode_label_empty_code">Empty coupon code</string>
+    <string name="couponcode_label_allowance_text1">You have successfully applied coupon code and </string>
+    <string name="couponcode_label_allowance_text2"> will be deducted from your total amount.</string>
+    <string name="couponcode_label_allowance_text3"> will be deducted from your total amount.</string>
+    <string name="couponcode_label_allowance">Your Allowance</string>
+    <string name="couponcode_allowance_type">Percent</string>
+
+
+    <!-- Timer Alert Dilaog -->
+    <string name="timer_label_alert_retry">Retry</string>
+    <string name="timer_label_alert_cancel">Cancel</string>
+    <string name="timer_label_alert_sorry">Sorry!</string>
+    <string name="timer_label_alert_content">No driver available </string>
+
+    <!-- Timer Activity -->
+    <string name="timer_label">We are searching driver for you, \n be relax!</string>
+    <string name="timer_label_cancel_ride">Cancelling your ride</string>
+    <string name="timer_label_alert_yes">YES</string>
+    <string name="timer_label_alert_no">NO</string>
+    <string name="timer_label_alert_cancel_ride">Cancel Ride</string>
+    <string name="timer_label_alert_cancel_ride_message">Are your sure you want to cancel this ride?</string>
+
+    <!-- Track Your Ride Activity -->
+    <string name="track_your_ride_label_cancelRide">Cancel Ride</string>
+    <string name="track_your_ride_label_track">TRACK YOUR RIDE</string>
+    <string name="track_your_ride_label_done">Done</string>
+    <string name="track_your_ride_label_callDriver">CONTACT</string>
+    <string name="track_your_ride_label_endTrip">CANCEL</string>
+    <string name="track_your_ride_label_arrive_in">ARRIVING IN</string>
+    <string name="track_your_ride_label_minutes">MINUTES</string>
+    <string name="track_your_ride_label_hours">HOURS</string>
+    <string name="track_your_ride_label_rating">Rating:</string>
+    <string name="track_your_ride_alert_content1">Unable to contact driver. Please try again after sometime</string>
+
+    <!--Home Car Type Select Dialog -->
+    <string name="car_type_select_dialog_label_carType">Select Car Type</string>
+    <string name="car_type_select_dialog_label_shareSeat">Select Share Seat</string>
+    <string name="car_type_select_dialog_label_cancel">Cancel</string>
+
+    <!-- Estimate Price Activity -->
+    <string name="estimate_price_label_search">Enter Place to Search</string>
+    <string name="estimate_price_label_place_notAvailable">No Search Found</string>
+    <string name="estimate_price_label_not_found">No Rate Available</string>
+    <string name="estimated_fare_label">Estimated Fare</string>
+    <!-- Estimate Detail Activity -->
+    <string name="estimate_detail_label_rideEstimation">Ride Estimation</string>
+    <string name="estimate_detail_label_ok">OK</string>
+    <string name="estimate_detail_label_pickup">Pickup</string>
+    <string name="estimate_detail_label_drop">Drop</string>
+    <string name="estimate_detail_label_approx">APPROX TRAVEL TIME :</string>
+    <string name="estimate_detail_label_peekTime">PEAK TIME CHARGE :</string>
+    <string name="estimate_detail_label_nightCharge">NIGHT CHARGE :</string>
+
+    <string name="terms">Terms and Conditions</string>
+    <string name="term1"><b><i>Contractual relationship</i></b>
+
+-	Your acceptance of the terms and conditions of the use of the applications, websites, content, products and services provided by the company and its headquarters in Egypt is a contractual relationship between you and the company, and if you do not agree to these conditions, you may not obtain or use these services, Agreements or arrangements entered into with you. We may terminate these terms or any of your services immediately or generally stop the offer of services or prevent access to them or any part thereof at any time and for any reason whatsoever.\n
+-	A company may have modified the terms relating to the Services from time to time. The amendments shall apply when we publish these updated terms on this site or publish revised policies or supplementary terms relating to the service provided. Your continued access to or use of the Services after this publication constitutes your consent to be bound by the terms as amended.
+-	We have collected and used personal data in connection with the Services as set out in our Company Privacy Policy and can be accessed from www.wsalna.com. We may provide the necessary information (including your contact information) to companies Settlement of claims or insurance companies In the event of a complaint, dispute or dispute which may include an incident between you and others where such information or data is necessary for the settlement of the complaint, dispute or dispute, all rights and services are the property of the company we have come to.\n
+<b><i>Services and how to use them</i></b>
+
+-	Through mobile applications or websites, we use apps designed specifically for mobile devices running Apple IOS, Android, or Microsoft Windows to enable their customers to use services, arrange and schedule transport services provided they are approved to: (i) access applications Use on your personal computer in connection with your use of the Services only, and (ii) access to and use of any content, information and related material that may be provided through the Services and in all such cases, the use is personal and non-commercial. The Company reserves any rights not expressly granted in these Terms.\n \t
+-	In order to use the services available on the application, you must register and obtain a personal account by entering correct and up-to-date information to avoid the interruption or termination of the service. You are fully responsible for all activities carried out in your account name \n
+-	Once you create the account, you will receive some informational text messages as part of the service delivery sequence. The company may use promotional codes at its absolute discretion through which you can add other benefits and benefits related to the services provided or the service providers \n
+-	Fixed prices are applied to direct traffic between specific locations. Additional stops may increase the fare. Road charges and peak pricing charges may be added to your fee. Our prices may change at times according to general conditions and seasons to provide a sufficient number of cars and provide better service \n
+<b><i>Disclaimer; Limitation of Liability;</i></b>
+
+-	The Company is not responsible for the quality, safety or ability of the Service Providers and agrees that the full risks arising from the use of these services remain your responsibility and that of the Service Provider in accordance with applicable law \n
+-	The Company is not responsible for indirect damages including loss of personal data or belongings or for delay. In no case shall the value of compensation for all losses and damages exceed 100 Egyptian Pounds / Riyal Saudi \n
+<b><i>Rewards</i></b>
+
+-	The company applies the points system by adding 15 points to the account of any new customer deducted from the first journey with a link and add 2 points for each customer uses a service link through you by the promotional code, which will get the registration and the first journey with us \n
+</string>
+
+
+    <!--Profile Activity-->
+    <string name="profile_lable_signin_myprofile"> MY PROFILE</string>
+    <string name="profile_lable_signindetails">SIGN IN DETAILS</string>
+    <string name="profile_lable_emailid">Email Id</string>
+    <string name="profile_lable_emailiduser">ani@gmail.com</string>
+    <string name="profile_lable_signinstar">*************</string>
+    <string name="profile_lable_signinchangepassword">Change Password</string>
+    <string name="profile_lable_signin_hintname">Name</string>
+    <string name="profile_lable_signin_hint_code">Code</string>
+    <string name="profile_lable_signinhintmobileno">Mobile Number</string>
+    <string name="profile_lable_signinmydetails">MY DETAILS</string>
+    <string name="profile_lable_signinlogout">Logout</string>
+    <string name="profile_lable_saves">Update</string>
+    <string name="profile_lable_save">Save</string>
+    <string name="profile_lable_username_success">Name updated successfully</string>
+    <string name="profile_lable_mobile_success">Mobile number updated successfully</string>
+    <string name="profile_lable_error_name">Name can\'t be empty</string>
+    <string name="profile_lable_error_mobile">Enter  phone number between 6 to 15</string>
+    <string name="profile_lable_error_mobilecode">Enter country code</string>
+    <string name="profile_lable_logout_title">LOGOUT</string>
+    <string name="profile_lable_logout_message">Are you sure you want to logout?</string>
+    <string name="profile_lable_logout_yes">YES</string>
+    <string name="profile_lable_logout_no">NO</string>
+
+    <!--ChangePassword Activity-->
+    <string name="changepassword_lable_headertextview">CHANGE PASSWORD</string>
+    <string name="changepassword_lable_old_password_edittext">Enter old password</string>
+    <string name="changepassword_lable_new_password_edittext">Enter new password</string>
+    <string name="changepassword_lable_confirm_new_password_edittext">Enter confirm password</string>
+    <string name="changepassword_lable_confirm_notmatch_edittext">Password Should match with New Password</string>
+    <string name="changepassword_lable_old_notmatch_edittext">Password Should not match with  Old Password</string>
+    <string name="changepassword_lable_submit">Submit</string>
+    <string name="changepassword_label_alert_oldpassword">Please enter old password</string>
+    <string name="changepassword_label_alert_newpassword">Password must be at least 6 characters.</string>
+    <string name="changepassword_label_alert_confirmpassword">Please enter confirm password</string>
+    <string name="changepassword_label_changed_success">Password has been changed successfully</string>
+
+    <!--AboutUs-->
+    <string name="aboutus_lable_header_textview">ABOUT US</string>
+    <string name="termsnandcondition_lable_header_textview">Terms and Conditions</string>
+    <string name="aboutus_lable_version_textview">Version</string>
+    <string name="aboutus_lable_poweredby_textview">POWERED BY : Road Star Corrier</string>
+    <string name="aboutus_lable_company_textview">Road Star Corrier</string>
+    <string name="aboutus_lable_version_code_textview">VERSION 2.1</string>
+    <string name="aboutus_lable_moreinfo_textview">More Info</string>
+    <string name="cabily_aboutus_webview_lable_header_textview">ABOUT US</string>
+    <string name="aboutus_lable_aboutus_description_textview">RoadStar Courier – A taxi booking app that will take the hassle out of getting to your destination quickly and without having to spend too much. Using highly advanced taxi booking software, It will provide you with a quick quote to help you avoid any surprises when you get to your destination, and assign you to a professional and responsible driver.</string>
+
+    <!--Emergency Contact-->
+    <string name="emergencycontact_lable_header_textview">EMERGENCY CONTACT</string>
+    <string name="emergencycontact_lable_entername_textview">Enter Name</string>
+    <string name="emergencycontact_lable_entercode_textview">+91</string>
+    <string name="emergencycontact_lable_entermobileno_textview">Enter  Mobile Number</string>
+    <string name="emergencycontact_lable_enteremail_id_textview">Enter Email Id</string>
+    <string name="emergencycontact_lable_list_textview">List your emergency contact\'s name,mobile number and email here.</string>
+    <string name="emergencycontact_lable_note_textview">Note : Your contact can be alerted only after verification.</string>
+    <string name="emergencycontact_lable_sharealways_textview">Always share my ride with my contact</string>
+    <string name="emergencycontact_lable_heremove_contact_textview">Remove contact</string>
+    <string name="emergencycontact_lable_save_contact_textview">Save</string>
+    <string name="emergencycontact_lable_namevalidate_textview">Name can\'t be empty</string>
+    <string name="emergencycontact_lable_mobilenovalidate_textview">Enter  phone number between 6 to 15</string>
+    <string name="emergencycontact_lable_email_validate_textview">Enter valid email</string>
+    <string name="emergencycontact_lable_code_validate_textview">Enter country code</string>
+    <string name="emergencycontact_lable_saved_emergencycontacts">Emergency contact has been saved successfully</string>
+    <string name="emergencycontact_lable_savingtextview">Saving...</string>
+    <string name="emergencycontact_lable_deletesuccess_textview">Emergency contact has been deleted successfully</string>
+
+    <!-- Invite And Earn Activity-->
+    <string name="invite_earn_label_shareAndEarn">INVITE AND EARN</string>
+    <string name="invite_earn_label_friends_earn">Friend joins,friend earns</string>
+    <string name="invite_earn_label_friends_ride">Friends ride</string>
+    <string name="invite_earn_label_friend_ride">You earn</string>
+    <string name="invite_earn_label_on_first_ride">on friends first Ride</string>
+    <string name="invite_earn_label_shareReferralCode">Share your referral code</string>
+    <string name="invite_earn_label_start_invite">Start inviting friends via</string>
+    <string name="invite_earn_label_invite_sms">SMS</string>
+    <string name="invite_earn_label_invite_email">Email</string>
+    <string name="invite_earn_label_facebook">Facebook</string>
+    <string name="invite_earn_label_whatsApp">WhatsApp</string>
+    <string name="invite_earn_label_messenger">Messenger</string>
+    <string name="invite_earn_label_twitter">Twitter</string>
+    <string name="invite_earn_label_letWorldKnow">Let the world know</string>
+    <string name="invite_earn_label_problem_server">There was a problem connecting to the server. Please try again after sometime</string>
+    <string name="invite_earn_label_whatsApp_not_installed">We could not find WhatsApp installed on your device.</string>
+    <string name="invite_earn_label_messenger_not_installed">We could not find Messenger installed on your device.</string>
+    <string name="invite_earn_label_email_not_installed">There is no email client installed on your device.</string>
+    <string name="invite_earn_label_twitter_not_installed">We could not find Twitter installed on your device.</string>
+    <string name="invite_earn_label_facebook_not_installed">We could not find Facebook installed on your device.</string>
+    <string name="invite_earn_label_share_messgae1">I have an cabily coupon worth</string>
+    <string name="invite_earn_label_share_messgae2">for you. Sign up with my code</string>
+    <string name="invite_earn_label_share_messgae3">to avail the coupon and ride for free.Have a great ride!Download: http://dectar.com</string>
+    <string name="invite_earn_label_twitter_share_messgae">to ride free.Enjoy! http://dectar.com</string>
+    <string name="invite_earn_label_app_invitation">Wsalna Taxi Passenger App Invitation</string>
+
+    <!--RateCard Activity-->
+    <string name="ratecard_lable_header_textview">RATE CARD</string>
+    <string name="ratecard_lable_city">Select City</string>
+    <string name="ratecard_lable_carType">Select Car Type</string>
+    <string name="ratecard_lable_standardRate">STANDARD RATE</string>
+    <string name="ratecard_lable_charges">EXTRA CHARGES</string>
+    <string name="ratecard_lable_firstKM">First 1 Km</string>
+    <string name="ratecard_lable_afterKM">After 1 Km</string>
+    <string name="ratecard_lable_perKM">per km</string>
+    <string name="ratecard_lable_select_city">Select City</string>
+    <string name="ratecard_lable_selected_city_hint">Selected City</string>
+    <string name="ratecard_lable_selected_car_hint">Selected Car Type</string>
+    <string name="ratecard_lable_select_city_alert">First select city</string>
+    <string name="ratecard_lable_perMin">per min</string>
+
+    <!--Click4Cabs Passenger Money-->
+    <string name="cabily_lable_header_textview">Wsalna Taxi Passenger MONEY</string>
+    <string name="cabilymoney_lable_textview">Cash less, hassle-free Corrier and more... </string>
+    <string name="cabilymoney_lable_yourcurrent_balance_textview">Your current balance</string>
+    <string name="cabilymoney_lable_rechargemoney_textview">Recharge Wsalna Taxi Passenger Money</string>
+    <string name="cabilymoney_lable_rechargemoney_edittext_hinr">Enter the amount</string>
+    <string name="cabilymoney_lable_rechargemoney_edittext">Enter amount between $10 - $100</string>
+    <string name="cabilymoney_lable_rechargemoney_edittext_hint">Enter amount between</string>
+    <string name="cabilymoney_lable_rechargemoney_alert">Recharge amount should be between</string>
+    <string name="cabilymoney_lable_addcabilymoney">ADD RoadStar Corrier MONEY</string>
+    <string name="cabilymoney_enter_amount">please enter amount to add your wallet</string>
+    <string name="action_loading_cabily_money_empty_field">Amount can\'t be empty</string>
+    <string name="action_loading_cabilymoney_transaction_wallet_success">Transaction successful</string>
+
+    <!--Click4Cabs Passenger Money WebView-->
+    <string name="cabily_webview_lable_header_textview">Payment Transaction</string>
+    <string name="cabily_webview_lable_transaction_cancel">Transaction has been cancelled</string>
+    <string name="cabily_webview_lable_transaction_failed">Transaction has been failed</string>
+    <string name="cabily_webview_lable_transaction_success">Payment was successful</string>
+    <string name="cabily_webview_lable_cancel_transaction">Cancel Transaction</string>
+    <string name="cabily_webview_lable_cancel_transaction_proceed">Pressing back would cancel your current transaction. Proceed anyway ?</string>
+
+    <!--Click4Cabs Passenger Money Transaction-->
+    <string name="cabily_transaction_lable_header_textview">Recent Transaction</string>
+    <string name="cabily_money_lable_transaction_all">ALL</string>
+    <string name="cabily_money_lable_transaction_credit">CREDIT</string>
+    <string name="cabily_money_lable_transaction_debit">DEBIT</string>
+    <string name="cabily_money_lable_no_transaction_yet">No Transaction Yet!</string>
+    <string name="cabily_money_lable_transaction_list_credit">CR</string>
+    <string name="cabily_money_lable_transaction_list_debit">DR</string>
+    <string name="cabily_money_lable_transaction_list_balance">Balance :</string>
+
+
+    <!--MyRides-->
+    <string name="my_rides_header_textview">MY RIDES</string>
+    <string name="my_rides_all">ALL RIDES</string>
+    <string name="my_rides_upcoming">UPCOMING</string>
+    <string name="my_rides_completed">COMPLETED</string>
+    <string name="my_rides_no_ride_yet">No Rides Booked!</string>
+    <string name="my_rides_status_booked_label">Booked</string>
+    <string name="my_rides_status_completed_label">Completed</string>
+    <string name="my_rides_status_cancelled_label">Cancelled</string>
+    <string name="my_rides_status_accept_label">Accept</string>
+    <string name="my_rides_status_onride_label">On Ride</string>
+    <string name="my_rides_status_finished_label">Finished</string>
+    <string name="my_rides_from_label">from</string>
+
+
+    <!--MyRides Details-->
+    <string name="my_rides_detail_header_textview">RIDE DETAILS</string>
+    <string name="my_rides_detail_ride_distance_textview">RIDE DISTANCE</string>
+    <string name="my_rides_detail_time_taken_textview">TIME TAKEN</string>
+    <string name="my_rides_detail_wait_time_textview">WAIT TIME</string>
+    <string name="my_rides_detail_mail_invoice_textview">MAIL INVOICE</string>
+    <string name="my_rides_detail_report_issue_textview">REPORT ISSUE</string>
+    <string name="my_feedback_textview">FEEDBACK</string>
+    <string name="my_rides_detail_pickup_textview">Pickup</string>
+    <string name="my_rides_detail_drop_textview">Drop</string>
+    <string name="my_rides_detail_total_bill_textview">Total Bill :</string>
+    <string name="my_rides_detail_total_paid_textview">Total Paid :</string>
+    <string name="my_rides_detail_tips_textview">Tips :</string>
+    <string name="my_rides_detail_crn_textview">CRN</string>
+    <string name="my_rides_detail_city_taxi_textview">City Taxi</string>
+    <string name="my_rides_detail_ride_textview">ride</string>
+    <string name="my_rides_detail_coupon_discount_textview">Coupon Discount :</string>
+    <string name="my_rides_detail_wallet_usuage_textview">Wallet Usage :</string>
+    <string name="my_rides_detail_cancel_trip_textview">CANCEL TRIP</string>
+    <string name="my_rides_detail_track_ride_textview">TRACK RIDE</string>
+    <string name="my_rides_detail_payment_textview">PAYMENT</string>
+    <string name="my_rides_detail_kms_textview">km</string>
+    <string name="my_rides_detail_mins_textview">mins</string>
+    <string name="my_rides_detail_enter_emailId">Enter your Email Address</string>
+    <string name="my_rides_detail_cancel">CANCEL</string>
+    <string name="my_rides_detail_send">SEND</string>
+    <string name="my_rides_detail_favourite_address">YOUR FAVOURITE ADDRESS</string>
+    <string name="my_rides_detail_favourite_enter_title">Enter title</string>
+    <string name="my_rides_detail_favourite_apply">APPLY</string>
+    <string name="my_rides_detail_favourite_alert_title">Enter your favourite address title</string>
+    <string name="my_rides_detail_cancel_ride_alert">Are you sure you want to cancel this ride?</string>
+    <string name="my_rides_detail_cancel_ride_alert_yes">YES</string>
+    <string name="my_rides_detail_cancel_ride_alert_no">NO</string>
+    <string name="my_rides_detail_cancel_ride_alert_title">CANCEL RIDE</string>
+    <string name="my_rides_detail_tip_label">Enter Tips Amount</string>
+    <string name="my_rides_detail_tip_apply_label">APPLY</string>
+    <string name="my_rides_detail_tip_remove_label">REMOVE</string>
+    <string name="my_rides_detail_tip_empty_label">Invalid tip amount</string>
+    <string name="my_rides_detail_tip_amount_label">Tips</string>
+    <string name="my_rides_detail_tip_amount_message">Are you willing to provide tips to driver</string>
+    <string name="my_rides_detail_share_message">SHARE</string>
+
+
+    <!--MyRides cancel Trip -->
+    <string name="my_rides_cancel_trip_header_textview">CANCEL RIDE</string>
+    <string name="my_rides_cancel_trip_why_label">Why are you cancelling ?</string>
+    <string name="my_rides_cancel_trip_action_cancel">Cancelling Your Ride</string>
+
+    <!--MyRides payment List -->
+    <string name="my_rides_payment_header_textview">MAKE PAYMENT</string>
+    <string name="my_rides_payment_mode_label">Select Payment Mode</string>
+    <string name="my_rides_payment_cash_success">Payment Successful</string>
+    <string name="my_rides_payment_wallet_success">Payment Successfully Completed</string>
+    <string name="my_rides_payment_cash_driver_confirm_label">Please wait till the driver confirms.</string>
+    <string name="my_rides_payment_empty_wallet">Wallet is Empty</string>
+    <string name="my_rides_payment_empty_wallet_sorry">Sorry</string>
+    <string name="my_rides_payment_webview_lable">PAYMENT TRANSACTION</string>
+
+
+    <string name="action_alert_sub">Subject  can\'t be empty</string>
+    <string name="action_alert_msg">Message can\'t be empty</string>
+
+
+    <!--MyRides Rating List -->
+    <string name="my_rides_rating_header_textview">RATING</string>
+    <string name="my_rides_rating_header_skip_textview">Skip</string>
+    <string name="my_rides_rating_header_submit_textview">SUBMIT</string>
+    <string name="my_rides_rating_header_comment_textview">Please enter your comment about your ride</string>
+    <string name="my_rides_rating_header_sorry_textview">Sorry</string>
+    <string name="my_rides_rating_header_enter_all">Please rate all</string>
+    <string name="my_rides_rating_submit_successfully">Your ratings submitted successfully</string>
+
+
+    <!--PushNotificatoin Alert Page-->
+    <string name="pushnotification_alert_label_message">MESSAGE</string>
+    <string name="pushnotification_alert_label_cab_arrived">Cab has arrived.</string>
+    <string name="pushnotification_alert_label_ok">OK</string>
+    <string name="pushnotification_alert_label_ride_completed">Your ride has been completed</string>
+    <string name="pushnotification_alert_label_ride_cancelled_sorry">Sorry</string>
+    <string name="pushnotification_alert_label_ride_arrived_success">Success</string>
+    <string name="pushnotification_alert_label">Alert</string>
+    <string name="pushnotification_alert_label_ride_completed_thanks">Thank you!</string>
+
+    <!--Fare BreakUp Page-->
+    <string name="fare_breakup_label_message">FARE BREAKUP</string>
+    <string name="fare_breakup_label_total_amount">Base Fare</string>
+    <string name="fare_breakup_label_duration">Duration</string>
+    <string name="fare_breakup_label_waiting">Waiting</string>
+    <string name="fare_breakup_label_timeTravel">Distance</string>
+    <string name="fare_breakup_label_subtotal">Subtotal</string>
+    <string name="fare_breakup_label_tips">Tips</string>
+    <string name="fare_breakup_label_serviceTax">Service Tax</string>
+    <string name="fare_breakup_label_driverRating">DRIVER RATING</string>
+    <string name="fare_breakup_label_tripTotal">TRIP TOTAL</string>
+    <string name="fare_breakup_label_total">Total</string>
+    <string name="fare_breakup_label_remove">Remove</string>
+    <string name="fare_breakup_label_payment">MAKE PAYMENT</string>
+    <string name="fare_breakup_label_complete_payment">Please complete your payment</string>
+    <string name="fare_breakup_label_tip_remove_failed">Failed to add tip to driver</string>
+
+
+    <!--Favorite List Page-->
+    <string name="favorite_list_label_title">FAVOURITES</string>
+    <string name="favorite_list_label_no_favorite_yet">No  Favourites added yet !</string>
+    <string name="favorite_list_label_frequent_access">Select frequent locations and save them as favourite for instant access</string>
+    <string name="favorite_list_label_add_favorite">ADD FAVOURITES</string>
+    <string name="favorite_list_label_select_location">Invalid favourite address</string>
+
+    <!--Add Favorite Page-->
+    <string name="favorite_add_label_title">Add Favourite</string>
+    <string name="favorite_add_label_name">Name of your favourites</string>
+    <string name="favorite_add_label_save">Save</string>
+    <string name="favorite_add_label_gettingAddress">Getting Address....</string>
+    <string name="favorite_add_label_no_address">Cannot get address!</string>
+    <string name="favorite_add_label_invalid_address">Invalid address</string>
+    <string name="favorite_add_label_name_empty">Name of your favourites can\'t be empty</string>
+    <string name="call_police_lable">Call Police</string>
+    <string name="call_fireservice_lable">Call Fire Service</string>
+    <string name="call_ambulance_lable">Call Ambulance</string>
+    <string name="alert_multiple_login">Signed Out on all other devices</string>
+
+
+    <!--Share-->
+    <string name="action_share_header">SHARE</string>
+    <string name="action_share_summery">Share Your Trip</string>
+    <string name="action_complete_submit">Submit</string>
+    <string name="action_complete_cancel">Cancel</string>
+
+
+    <!--Track your ride-->
+    <string name="action_driver_arrived">Driver Has Arrived</string>
+    <string name="action_enjy_your_ride">Enjoy Your Ride !!</string>
+
+    <!--Home page-->
+    <string name="action_enter_drop_location">Drop off Location</string>
+
+
+    <!--Destination Address Search-->
+    <string name="destination_address_search_done">DONE</string>
+    <string name="destination_address_search_drag">Drag your address</string>
+    <string name="destination_address_search_invalid">Invalid destination address</string>
+
+
+    <!--Splash App Info-->
+    <string name="app_info_header_textView">SORRY FOR THE DELAY</string>
+    <string name="app_info_content">WE HAD SOME TROUBLE CONNECTING, BUT SHOULD HAVE YOU MOVING  SHORTLY</string>
+
+
+    <string name="demo_json">{"status": "1","message": "Facebook app is successfully integrated","facebook_id": "2505192316174046"}</string>
+
+
+    <!--service_request_alert-->
+    <string name="service_request_net_slow_alert">Network connection is slow. Please try again.</string>
+    <string name="service_request_auth_failure">Authentication Failure Error</string>
+    <string name="service_request_server_error">Server Error</string>
+    <string name="service_request_network_error">Network Error</string>
+    <string name="service_request_parseerror">Parse Error</string>
+
+
+    <!--home page Toast-->
+    <string name="home_page_toast_incompatible_version">incompatible version of Google Play Services</string>
+    <string name="home_page_toast_cancel">Canceled</string>
+    <string name="home_page_toast_loaction_enable">Location enabled!</string>
+
+    <!--language changess-->
+    <string name="profile_lable_language">Language</string>
+    <string name="profile_lable_language_change">Change</string>
+
+    <!--ratecard-->
+    <string name="ratecard_select_city">Select City</string>
+    <string name="ratecard_select_car_type">Select Car Type</string>
+
+
+    <!--Myridesdetais toast-->
+    <string name="myrides_toast_sorry_unable">Sorry! unable to create maps</string>
+    <string name="myrides_toast_there_is_no">There is no email client installed.</string>
+
+
+    <!--splash toast-->
+    <string name="splash_toast_loaction_enable">Location enabled!</string>
+
+    <string name="dialog_app_exiting">Are you sure you want to Exit</string>
+    <string name="home_label__pickUp">PICKUP LOCATION</string>
+    <string name="home_label__no_cabs">NO CABS AVAILABLE</string>
+    <string name="home_label_min">Mins</string>
+    <string name="navigation_drawer_ok">ok</string>
+    <string name="navigation_drawer_cancel">cancel</string>
+    <string name="takephoto">How do you want to take your photo? </string>
+    <string name="camra">Take photo from camera</string>
+    <string name="existingcamera">Choose an existing photo from gallery</string>
+    <string name="edit_profile_success_label">Image uploaded successfully</string>
+    <string name="action_select_drop_location">Select drop location</string>
+    <string name="tripsummery_add_Ride_label">Ride</string>
+    <string name="tripsummery_add_Payment_label">Payment</string>
+
+    <string name="feedback_subject">Subject</string>
+    <string name="feedback_message">Message</string>
+
+    <string name="conatct_call">Call</string>
+    <string name="contact_message">Message</string>
+
+    <string name="away_label">away</string>
+
+
+    <string name="sms_masking_text">Enter your text</string>
+    <string name="Track_ur_ride_co_passenger">Looking for another rider</string>
+    <string name="Track_ur_ride_co_passenger_yes">You are Riding with</string>
+
+    <string name="home_share_pool_is_available">share pool is available</string>
+    <string name="home_seat">seat</string>
+    <string name="home_share_count">share count</string>
+    <string name="home_share">share</string>
+
+    <string name="update_paly_service">please udpate your google play service</string>
+    <string name="all_fields_are_mandatory">All fields are required</string>
+    <string name="book_your_ride">Book your ride</string>
+
+
+    <string-array name="titles">
+        <item>your ride , one touch away with Wsalna</item>
+        <item>Scalable app to book rides in your city</item>
+        <item>Schedule rides now or late</item>
+        <item>Earn money by referring your friends</item>
+        <item>Real time tracking of your rides</item>
+        <item>Go cashless by recharging your Wsalna Taxi Passenger wallet money</item>
+    </string-array>
+
+
+    <string name="select_country_label">Select Country</string>
+    <string name="search">Search&#8230;</string>
+
+    <string name="terms_and_condition_lable">Terms and Conditions</string>
+    <string name="resend_code_lable">Resend Code</string>
+    <string name="my_rides_detail_un_fav_alert_message">Are you sure you want to cancel this favourite location?</string>
+    <string name="currect_location_fetching_issue">We cannot able to get your accurate location. Please try again. If you still facing this kind of problem try again in open sky instead of closed area.</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="country_code">Country Code</string>
+
+    <string name="update">Update</string>
+    <string name="enter_amount_here_in_usd">Enter Amount Here in USD</string>
+    <string name="digits_amount">1234567890.</string>
+    <string name="receipt_history">Receipt History</string>
+    <string name="cabily_recepit_list_textview">Receipt\'s History</string>
+    <string name="alert_select_image">Please Select Image First</string>
+    <string name="action_loading_cabilymoney_transaction_wallet_success_admin_confirm">Thankyou! , Your Amount Will be Add to your Wallet While Confirmed.</string>
+
+
+    <string name="termsandcondition_point_one">1- Using good car with good AC condition \n "model start from 2018"</string>
+    <string name="termsandcondition_point_two">2- Respect the Roles and the time of services.</string>
+    <string name="termsandcondition_point_three">3- Serivce provider will have 80% and 20% for company</string>
+    <string name="termsandcondition_point_four">4- Service provider will have 2% for six months for each one join the \n company through him in condition share it between minimum 10 persons</string>
+    <string name="termsandcondition_point_five">5- Using good car with good AC condition \n  "model start from 2018"</string>
+    <string name="termsandcondition_point_six">6- Using good car with good AC condition \n  "model start from 2018"</string>
+    <string name="paragraph">-	Road star for Transportation and Information Technology Company is a limited liability company established in Egypt and another branch in the Kingdom of Saudi Arabia. It is one of the leading companies in the field of transporting people and goods in the Arab Republic of Egypt through a fleet of modern cars 24 hours a day. The distance, value, accuracy and efficiency of the company \s staff through the application we got and available on the iPhone and Android devices.
+</string>
+    <string name="countries_code">W3sibmFtZSI6IkFmZ2hhbmlzdGFuIiwiZGlhbF9jb2RlIjoiKzkzIiwiY29kZSI6IkFGIn0seyJuYW1lIjoiQWxiYW5pYSIsImRpYWxfY29kZSI6IiszNTUiLCJjb2RlIjoiQUwifSx7Im5hbWUiOiJBbGdlcmlhIiwiZGlhbF9jb2RlIjoiKzIxMyIsImNvZGUiOiJEWiJ9LHsibmFtZSI6IkFtZXJpY2FuU2Ftb2EiLCJkaWFsX2NvZGUiOiIrMSA2ODQiLCJjb2RlIjoiQVMifSx7Im5hbWUiOiJBbmRvcnJhIiwiZGlhbF9jb2RlIjoiKzM3NiIsImNvZGUiOiJBRCJ9LHsibmFtZSI6IkFuZ29sYSIsImRpYWxfY29kZSI6IisyNDQiLCJjb2RlIjoiQU8ifSx7Im5hbWUiOiJBbmd1aWxsYSIsImRpYWxfY29kZSI6IisxIDI2NCIsImNvZGUiOiJBSSJ9LHsibmFtZSI6IkFudGFyY3RpY2EiLCJkaWFsX2NvZGUiOiIrNjcyIiwiY29kZSI6IkFRIn0seyJuYW1lIjoiQW50aWd1YSBhbmQgQmFyYnVkYSIsImRpYWxfY29kZSI6IisxMjY4IiwiY29kZSI6IkFHIn0seyJuYW1lIjoiQXJnZW50aW5hIiwiZGlhbF9jb2RlIjoiKzU0IiwiY29kZSI6IkFSIn0seyJuYW1lIjoiQXJtZW5pYSIsImRpYWxfY29kZSI6IiszNzQiLCJjb2RlIjoiQU0ifSx7Im5hbWUiOiJBcnViYSIsImRpYWxfY29kZSI6IisyOTciLCJjb2RlIjoiQVcifSx7Im5hbWUiOiJBdXN0cmFsaWEiLCJkaWFsX2NvZGUiOiIrNjEiLCJjb2RlIjoiQVUifSx7Im5hbWUiOiJBdXN0cmlhIiwiZGlhbF9jb2RlIjoiKzQzIiwiY29kZSI6IkFUIn0seyJuYW1lIjoiQXplcmJhaWphbiIsImRpYWxfY29kZSI6Iis5OTQiLCJjb2RlIjoiQVoifSx7Im5hbWUiOiJCYWhhbWFzIiwiZGlhbF9jb2RlIjoiKzEgMjQyIiwiY29kZSI6IkJTIn0seyJuYW1lIjoiQmFocmFpbiIsImRpYWxfY29kZSI6Iis5NzMiLCJjb2RlIjoiQkgifSx7Im5hbWUiOiJCYW5nbGFkZXNoIiwiZGlhbF9jb2RlIjoiKzg4MCIsImNvZGUiOiJCRCJ9LHsibmFtZSI6IkJhcmJhZG9zIiwiZGlhbF9jb2RlIjoiKzEgMjQ2IiwiY29kZSI6IkJCIn0seyJuYW1lIjoiQmVsYXJ1cyIsImRpYWxfY29kZSI6IiszNzUiLCJjb2RlIjoiQlkifSx7Im5hbWUiOiJCZWxnaXVtIiwiZGlhbF9jb2RlIjoiKzMyIiwiY29kZSI6IkJFIn0seyJuYW1lIjoiQmVsaXplIiwiZGlhbF9jb2RlIjoiKzUwMSIsImNvZGUiOiJCWiJ9LHsibmFtZSI6IkJlbmluIiwiZGlhbF9jb2RlIjoiKzIyOSIsImNvZGUiOiJCSiJ9LHsibmFtZSI6IkJlcm11ZGEiLCJkaWFsX2NvZGUiOiIrMSA0NDEiLCJjb2RlIjoiQk0ifSx7Im5hbWUiOiJCaHV0YW4iLCJkaWFsX2NvZGUiOiIrOTc1IiwiY29kZSI6IkJUIn0seyJuYW1lIjoiQm9saXZpYSwgUGx1cmluYXRpb25hbCBTdGF0ZSBvZiIsImRpYWxfY29kZSI6Iis1OTEiLCJjb2RlIjoiQk8ifSx7Im5hbWUiOiJCb3NuaWEgYW5kIEhlcnplZ292aW5hIiwiZGlhbF9jb2RlIjoiKzM4NyIsImNvZGUiOiJCQSJ9LHsibmFtZSI6IkJvdHN3YW5hIiwiZGlhbF9jb2RlIjoiKzI2NyIsImNvZGUiOiJCVyJ9LHsibmFtZSI6IkJyYXppbCIsImRpYWxfY29kZSI6Iis1NSIsImNvZGUiOiJCUiJ9LHsibmFtZSI6IkJyaXRpc2ggSW5kaWFuIE9jZWFuIFRlcnJpdG9yeSIsImRpYWxfY29kZSI6IisyNDYiLCJjb2RlIjoiSU8ifSx7Im5hbWUiOiJCcnVuZWkgRGFydXNzYWxhbSIsImRpYWxfY29kZSI6Iis2NzMiLCJjb2RlIjoiQk4ifSx7Im5hbWUiOiJCdWxnYXJpYSIsImRpYWxfY29kZSI6IiszNTkiLCJjb2RlIjoiQkcifSx7Im5hbWUiOiJCdXJraW5hIEZhc28iLCJkaWFsX2NvZGUiOiIrMjI2IiwiY29kZSI6IkJGIn0seyJuYW1lIjoiQnVydW5kaSIsImRpYWxfY29kZSI6IisyNTciLCJjb2RlIjoiQkkifSx7Im5hbWUiOiJDYW1ib2RpYSIsImRpYWxfY29kZSI6Iis4NTUiLCJjb2RlIjoiS0gifSx7Im5hbWUiOiJDYW1lcm9vbiIsImRpYWxfY29kZSI6IisyMzciLCJjb2RlIjoiQ00ifSx7Im5hbWUiOiJDYW5hZGEiLCJkaWFsX2NvZGUiOiIrMSIsImNvZGUiOiJDQSJ9LHsibmFtZSI6IkNhcGUgVmVyZGUiLCJkaWFsX2NvZGUiOiIrMjM4IiwiY29kZSI6IkNWIn0seyJuYW1lIjoiQ2F5bWFuIElzbGFuZHMiLCJkaWFsX2NvZGUiOiIrIDM0NSIsImNvZGUiOiJLWSJ9LHsibmFtZSI6IkNlbnRyYWwgQWZyaWNhbiBSZXB1YmxpYyIsImRpYWxfY29kZSI6IisyMzYiLCJjb2RlIjoiQ0YifSx7Im5hbWUiOiJDaGFkIiwiZGlhbF9jb2RlIjoiKzIzNSIsImNvZGUiOiJURCJ9LHsibmFtZSI6IkNoaWxlIiwiZGlhbF9jb2RlIjoiKzU2IiwiY29kZSI6IkNMIn0seyJuYW1lIjoiQ2hpbmEiLCJkaWFsX2NvZGUiOiIrODYiLCJjb2RlIjoiQ04ifSx7Im5hbWUiOiJDaHJpc3RtYXMgSXNsYW5kIiwiZGlhbF9jb2RlIjoiKzYxIiwiY29kZSI6IkNYIn0seyJuYW1lIjoiQ29jb3MgKEtlZWxpbmcpIElzbGFuZHMiLCJkaWFsX2NvZGUiOiIrNjEiLCJjb2RlIjoiQ0MifSx7Im5hbWUiOiJDb2xvbWJpYSIsImRpYWxfY29kZSI6Iis1NyIsImNvZGUiOiJDTyJ9LHsibmFtZSI6IkNvbW9yb3MiLCJkaWFsX2NvZGUiOiIrMjY5IiwiY29kZSI6IktNIn0seyJuYW1lIjoiQ29uZ28iLCJkaWFsX2NvZGUiOiIrMjQyIiwiY29kZSI6IkNHIn0seyJuYW1lIjoiQ29uZ28sIFRoZSBEZW1vY3JhdGljIFJlcHVibGljIG9mIHRoZSIsImRpYWxfY29kZSI6IisyNDMiLCJjb2RlIjoiQ0QifSx7Im5hbWUiOiJDb29rIElzbGFuZHMiLCJkaWFsX2NvZGUiOiIrNjgyIiwiY29kZSI6IkNLIn0seyJuYW1lIjoiQ29zdGEgUmljYSIsImRpYWxfY29kZSI6Iis1MDYiLCJjb2RlIjoiQ1IifSx7Im5hbWUiOiJDb3RlIGQnSXZvaXJlIiwiZGlhbF9jb2RlIjoiKzIyNSIsImNvZGUiOiJDSSJ9LHsibmFtZSI6IkNyb2F0aWEiLCJkaWFsX2NvZGUiOiIrMzg1IiwiY29kZSI6IkhSIn0seyJuYW1lIjoiQ3ViYSIsImRpYWxfY29kZSI6Iis1MyIsImNvZGUiOiJDVSJ9LHsibmFtZSI6IkN5cHJ1cyIsImRpYWxfY29kZSI6IiszNTciLCJjb2RlIjoiQ1kifSx7Im5hbWUiOiJDemVjaCBSZXB1YmxpYyIsImRpYWxfY29kZSI6Iis0MjAiLCJjb2RlIjoiQ1oifSx7Im5hbWUiOiJEZW5tYXJrIiwiZGlhbF9jb2RlIjoiKzQ1IiwiY29kZSI6IkRLIn0seyJuYW1lIjoiRGppYm91dGkiLCJkaWFsX2NvZGUiOiIrMjUzIiwiY29kZSI6IkRKIn0seyJuYW1lIjoiRG9taW5pY2EiLCJkaWFsX2NvZGUiOiIrMSA3NjciLCJjb2RlIjoiRE0ifSx7Im5hbWUiOiJEb21pbmljYW4gUmVwdWJsaWMiLCJkaWFsX2NvZGUiOiIrMSA4NDkiLCJjb2RlIjoiRE8ifSx7Im5hbWUiOiJFY3VhZG9yIiwiZGlhbF9jb2RlIjoiKzU5MyIsImNvZGUiOiJFQyJ9LHsibmFtZSI6IkVneXB0IiwiZGlhbF9jb2RlIjoiKzIwIiwiY29kZSI6IkVHIn0seyJuYW1lIjoiRWwgU2FsdmFkb3IiLCJkaWFsX2NvZGUiOiIrNTAzIiwiY29kZSI6IlNWIn0seyJuYW1lIjoiRXF1YXRvcmlhbCBHdWluZWEiLCJkaWFsX2NvZGUiOiIrMjQwIiwiY29kZSI6IkdRIn0seyJuYW1lIjoiRXJpdHJlYSIsImRpYWxfY29kZSI6IisyOTEiLCJjb2RlIjoiRVIifSx7Im5hbWUiOiJFc3RvbmlhIiwiZGlhbF9jb2RlIjoiKzM3MiIsImNvZGUiOiJFRSJ9LHsibmFtZSI6IkV0aGlvcGlhIiwiZGlhbF9jb2RlIjoiKzI1MSIsImNvZGUiOiJFVCJ9LHsibmFtZSI6IkZhbGtsYW5kIElzbGFuZHMgKE1hbHZpbmFzKSIsImRpYWxfY29kZSI6Iis1MDAiLCJjb2RlIjoiRksifSx7Im5hbWUiOiJGYXJvZSBJc2xhbmRzIiwiZGlhbF9jb2RlIjoiKzI5OCIsImNvZGUiOiJGTyJ9LHsibmFtZSI6IkZpamkiLCJkaWFsX2NvZGUiOiIrNjc5IiwiY29kZSI6IkZKIn0seyJuYW1lIjoiRmlubGFuZCIsImRpYWxfY29kZSI6IiszNTgiLCJjb2RlIjoiRkkifSx7Im5hbWUiOiJGcmFuY2UiLCJkaWFsX2NvZGUiOiIrMzMiLCJjb2RlIjoiRlIifSx7Im5hbWUiOiJGcmVuY2ggR3VpYW5hIiwiZGlhbF9jb2RlIjoiKzU5NCIsImNvZGUiOiJHRiJ9LHsibmFtZSI6IkZyZW5jaCBQb2x5bmVzaWEiLCJkaWFsX2NvZGUiOiIrNjg5IiwiY29kZSI6IlBGIn0seyJuYW1lIjoiR2Fib24iLCJkaWFsX2NvZGUiOiIrMjQxIiwiY29kZSI6IkdBIn0seyJuYW1lIjoiR2FtYmlhIiwiZGlhbF9jb2RlIjoiKzIyMCIsImNvZGUiOiJHTSJ9LHsibmFtZSI6Ikdlb3JnaWEiLCJkaWFsX2NvZGUiOiIrOTk1IiwiY29kZSI6IkdFIn0seyJuYW1lIjoiR2VybWFueSIsImRpYWxfY29kZSI6Iis0OSIsImNvZGUiOiJERSJ9LHsibmFtZSI6IkdoYW5hIiwiZGlhbF9jb2RlIjoiKzIzMyIsImNvZGUiOiJHSCJ9LHsibmFtZSI6IkdpYnJhbHRhciIsImRpYWxfY29kZSI6IiszNTAiLCJjb2RlIjoiR0kifSx7Im5hbWUiOiJHcmVlY2UiLCJkaWFsX2NvZGUiOiIrMzAiLCJjb2RlIjoiR1IifSx7Im5hbWUiOiJHcmVlbmxhbmQiLCJkaWFsX2NvZGUiOiIrMjk5IiwiY29kZSI6IkdMIn0seyJuYW1lIjoiR3JlbmFkYSIsImRpYWxfY29kZSI6IisxIDQ3MyIsImNvZGUiOiJHRCJ9LHsibmFtZSI6Ikd1YWRlbG91cGUiLCJkaWFsX2NvZGUiOiIrNTkwIiwiY29kZSI6IkdQIn0seyJuYW1lIjoiR3VhbSIsImRpYWxfY29kZSI6IisxIDY3MSIsImNvZGUiOiJHVSJ9LHsibmFtZSI6Ikd1YXRlbWFsYSIsImRpYWxfY29kZSI6Iis1MDIiLCJjb2RlIjoiR1QifSx7Im5hbWUiOiJHdWVybnNleSIsImRpYWxfY29kZSI6Iis0NCIsImNvZGUiOiJHRyJ9LHsibmFtZSI6Ikd1aW5lYSIsImRpYWxfY29kZSI6IisyMjQiLCJjb2RlIjoiR04ifSx7Im5hbWUiOiJHdWluZWEtQmlzc2F1IiwiZGlhbF9jb2RlIjoiKzI0NSIsImNvZGUiOiJHVyJ9LHsibmFtZSI6Ikd1eWFuYSIsImRpYWxfY29kZSI6Iis1OTUiLCJjb2RlIjoiR1kifSx7Im5hbWUiOiJIYWl0aSIsImRpYWxfY29kZSI6Iis1MDkiLCJjb2RlIjoiSFQifSx7Im5hbWUiOiJIb2x5IFNlZSAoVmF0aWNhbiBDaXR5IFN0YXRlKSIsImRpYWxfY29kZSI6IiszNzkiLCJjb2RlIjoiVkEifSx7Im5hbWUiOiJIb25kdXJhcyIsImRpYWxfY29kZSI6Iis1MDQiLCJjb2RlIjoiSE4ifSx7Im5hbWUiOiJIb25nIEtvbmciLCJkaWFsX2NvZGUiOiIrODUyIiwiY29kZSI6IkhLIn0seyJuYW1lIjoiSHVuZ2FyeSIsImRpYWxfY29kZSI6IiszNiIsImNvZGUiOiJIVSJ9LHsibmFtZSI6IkljZWxhbmQiLCJkaWFsX2NvZGUiOiIrMzU0IiwiY29kZSI6IklTIn0seyJuYW1lIjoiSW5kaWEiLCJkaWFsX2NvZGUiOiIrOTEiLCJjb2RlIjoiSU4ifSx7Im5hbWUiOiJJbmRvbmVzaWEiLCJkaWFsX2NvZGUiOiIrNjIiLCJjb2RlIjoiSUQifSx7Im5hbWUiOiJJcmFuLCBJc2xhbWljIFJlcHVibGljIG9mIiwiZGlhbF9jb2RlIjoiKzk4IiwiY29kZSI6IklSIn0seyJuYW1lIjoiSXJhcSIsImRpYWxfY29kZSI6Iis5NjQiLCJjb2RlIjoiSVEifSx7Im5hbWUiOiJJcmVsYW5kIiwiZGlhbF9jb2RlIjoiKzM1MyIsImNvZGUiOiJJRSJ9LHsibmFtZSI6IklzbGUgb2YgTWFuIiwiZGlhbF9jb2RlIjoiKzQ0IiwiY29kZSI6IklNIn0seyJuYW1lIjoiSXNyYWVsIiwiZGlhbF9jb2RlIjoiKzk3MiIsImNvZGUiOiJJTCJ9LHsibmFtZSI6Ikl0YWx5IiwiZGlhbF9jb2RlIjoiKzM5IiwiY29kZSI6IklUIn0seyJuYW1lIjoiSmFtYWljYSIsImRpYWxfY29kZSI6IisxIDg3NiIsImNvZGUiOiJKTSJ9LHsibmFtZSI6IkphcGFuIiwiZGlhbF9jb2RlIjoiKzgxIiwiY29kZSI6IkpQIn0seyJuYW1lIjoiSmVyc2V5IiwiZGlhbF9jb2RlIjoiKzQ0IiwiY29kZSI6IkpFIn0seyJuYW1lIjoiSm9yZGFuIiwiZGlhbF9jb2RlIjoiKzk2MiIsImNvZGUiOiJKTyJ9LHsibmFtZSI6IkthemFraHN0YW4iLCJkaWFsX2NvZGUiOiIrNyA3IiwiY29kZSI6IktaIn0seyJuYW1lIjoiS2VueWEiLCJkaWFsX2NvZGUiOiIrMjU0IiwiY29kZSI6IktFIn0seyJuYW1lIjoiS2lyaWJhdGkiLCJkaWFsX2NvZGUiOiIrNjg2IiwiY29kZSI6IktJIn0seyJuYW1lIjoiS29yZWEsIERlbW9jcmF0aWMgUGVvcGxlJ3MgUmVwdWJsaWMgb2YiLCJkaWFsX2NvZGUiOiIrODUwIiwiY29kZSI6IktQIn0seyJuYW1lIjoiS29yZWEsIFJlcHVibGljIG9mIiwiZGlhbF9jb2RlIjoiKzgyIiwiY29kZSI6IktSIn0seyJuYW1lIjoiS3V3YWl0IiwiZGlhbF9jb2RlIjoiKzk2NSIsImNvZGUiOiJLVyJ9LHsibmFtZSI6Ikt5cmd5enN0YW4iLCJkaWFsX2NvZGUiOiIrOTk2IiwiY29kZSI6IktHIn0seyJuYW1lIjoiTGFvIFBlb3BsZSdzIERlbW9jcmF0aWMgUmVwdWJsaWMiLCJkaWFsX2NvZGUiOiIrODU2IiwiY29kZSI6IkxBIn0seyJuYW1lIjoiTGF0dmlhIiwiZGlhbF9jb2RlIjoiKzM3MSIsImNvZGUiOiJMViJ9LHsibmFtZSI6IkxlYmFub24iLCJkaWFsX2NvZGUiOiIrOTYxIiwiY29kZSI6IkxCIn0seyJuYW1lIjoiTGVzb3RobyIsImRpYWxfY29kZSI6IisyNjYiLCJjb2RlIjoiTFMifSx7Im5hbWUiOiJMaWJlcmlhIiwiZGlhbF9jb2RlIjoiKzIzMSIsImNvZGUiOiJMUiJ9LHsibmFtZSI6IkxpYnlhbiBBcmFiIEphbWFoaXJpeWEiLCJkaWFsX2NvZGUiOiIrMjE4IiwiY29kZSI6IkxZIn0seyJuYW1lIjoiTGllY2h0ZW5zdGVpbiIsImRpYWxfY29kZSI6Iis0MjMiLCJjb2RlIjoiTEkifSx7Im5hbWUiOiJMaXRodWFuaWEiLCJkaWFsX2NvZGUiOiIrMzcwIiwiY29kZSI6IkxUIn0seyJuYW1lIjoiTHV4ZW1ib3VyZyIsImRpYWxfY29kZSI6IiszNTIiLCJjb2RlIjoiTFUifSx7Im5hbWUiOiJNYWNhbyIsImRpYWxfY29kZSI6Iis4NTMiLCJjb2RlIjoiTU8ifSx7Im5hbWUiOiJNYWNlZG9uaWEsIFRoZSBGb3JtZXIgWXVnb3NsYXYgUmVwdWJsaWMgb2YiLCJkaWFsX2NvZGUiOiIrMzg5IiwiY29kZSI6Ik1LIn0seyJuYW1lIjoiTWFkYWdhc2NhciIsImRpYWxfY29kZSI6IisyNjEiLCJjb2RlIjoiTUcifSx7Im5hbWUiOiJNYWxhd2kiLCJkaWFsX2NvZGUiOiIrMjY1IiwiY29kZSI6Ik1XIn0seyJuYW1lIjoiTWFsYXlzaWEiLCJkaWFsX2NvZGUiOiIrNjAiLCJjb2RlIjoiTVkifSx7Im5hbWUiOiJNYWxkaXZlcyIsImRpYWxfY29kZSI6Iis5NjAiLCJjb2RlIjoiTVYifSx7Im5hbWUiOiJNYWxpIiwiZGlhbF9jb2RlIjoiKzIyMyIsImNvZGUiOiJNTCJ9LHsibmFtZSI6Ik1hbHRhIiwiZGlhbF9jb2RlIjoiKzM1NiIsImNvZGUiOiJNVCJ9LHsibmFtZSI6Ik1hcnNoYWxsIElzbGFuZHMiLCJkaWFsX2NvZGUiOiIrNjkyIiwiY29kZSI6Ik1IIn0seyJuYW1lIjoiTWFydGluaXF1ZSIsImRpYWxfY29kZSI6Iis1OTYiLCJjb2RlIjoiTVEifSx7Im5hbWUiOiJNYXVyaXRhbmlhIiwiZGlhbF9jb2RlIjoiKzIyMiIsImNvZGUiOiJNUiJ9LHsibmFtZSI6Ik1hdXJpdGl1cyIsImRpYWxfY29kZSI6IisyMzAiLCJjb2RlIjoiTVUifSx7Im5hbWUiOiJNYXlvdHRlIiwiZGlhbF9jb2RlIjoiKzI2MiIsImNvZGUiOiJZVCJ9LHsibmFtZSI6Ik1leGljbyIsImRpYWxfY29kZSI6Iis1MiIsImNvZGUiOiJNWCJ9LHsibmFtZSI6Ik1pY3JvbmVzaWEsIEZlZGVyYXRlZCBTdGF0ZXMgb2YiLCJkaWFsX2NvZGUiOiIrNjkxIiwiY29kZSI6IkZNIn0seyJuYW1lIjoiTW9sZG92YSwgUmVwdWJsaWMgb2YiLCJkaWFsX2NvZGUiOiIrMzczIiwiY29kZSI6Ik1EIn0seyJuYW1lIjoiTW9uYWNvIiwiZGlhbF9jb2RlIjoiKzM3NyIsImNvZGUiOiJNQyJ9LHsibmFtZSI6Ik1vbmdvbGlhIiwiZGlhbF9jb2RlIjoiKzk3NiIsImNvZGUiOiJNTiJ9LHsibmFtZSI6Ik1vbnRlbmVncm8iLCJkaWFsX2NvZGUiOiIrMzgyIiwiY29kZSI6Ik1FIn0seyJuYW1lIjoiTW9udHNlcnJhdCIsImRpYWxfY29kZSI6IisxNjY0IiwiY29kZSI6Ik1TIn0seyJuYW1lIjoiTW9yb2NjbyIsImRpYWxfY29kZSI6IisyMTIiLCJjb2RlIjoiTUEifSx7Im5hbWUiOiJNb3phbWJpcXVlIiwiZGlhbF9jb2RlIjoiKzI1OCIsImNvZGUiOiJNWiJ9LHsibmFtZSI6Ik15YW5tYXIiLCJkaWFsX2NvZGUiOiIrOTUiLCJjb2RlIjoiTU0ifSx7Im5hbWUiOiJOYW1pYmlhIiwiZGlhbF9jb2RlIjoiKzI2NCIsImNvZGUiOiJOQSJ9LHsibmFtZSI6Ik5hdXJ1IiwiZGlhbF9jb2RlIjoiKzY3NCIsImNvZGUiOiJOUiJ9LHsibmFtZSI6Ik5lcGFsIiwiZGlhbF9jb2RlIjoiKzk3NyIsImNvZGUiOiJOUCJ9LHsibmFtZSI6Ik5ldGhlcmxhbmRzIiwiZGlhbF9jb2RlIjoiKzMxIiwiY29kZSI6Ik5MIn0seyJuYW1lIjoiTmV0aGVybGFuZHMgQW50aWxsZXMiLCJkaWFsX2NvZGUiOiIrNTk5IiwiY29kZSI6IkFOIn0seyJuYW1lIjoiTmV3IENhbGVkb25pYSIsImRpYWxfY29kZSI6Iis2ODciLCJjb2RlIjoiTkMifSx7Im5hbWUiOiJOZXcgWmVhbGFuZCIsImRpYWxfY29kZSI6Iis2NCIsImNvZGUiOiJOWiJ9LHsibmFtZSI6Ik5pY2FyYWd1YSIsImRpYWxfY29kZSI6Iis1MDUiLCJjb2RlIjoiTkkifSx7Im5hbWUiOiJOaWdlciIsImRpYWxfY29kZSI6IisyMjciLCJjb2RlIjoiTkUifSx7Im5hbWUiOiJOaWdlcmlhIiwiZGlhbF9jb2RlIjoiKzIzNCIsImNvZGUiOiJORyJ9LHsibmFtZSI6Ik5pdWUiLCJkaWFsX2NvZGUiOiIrNjgzIiwiY29kZSI6Ik5VIn0seyJuYW1lIjoiTm9yZm9sayBJc2xhbmQiLCJkaWFsX2NvZGUiOiIrNjcyIiwiY29kZSI6Ik5GIn0seyJuYW1lIjoiTm9ydGhlcm4gTWFyaWFuYSBJc2xhbmRzIiwiZGlhbF9jb2RlIjoiKzEgNjcwIiwiY29kZSI6Ik1QIn0seyJuYW1lIjoiTm9yd2F5IiwiZGlhbF9jb2RlIjoiKzQ3IiwiY29kZSI6Ik5PIn0seyJuYW1lIjoiT21hbiIsImRpYWxfY29kZSI6Iis5NjgiLCJjb2RlIjoiT00ifSx7Im5hbWUiOiJQYWtpc3RhbiIsImRpYWxfY29kZSI6Iis5MiIsImNvZGUiOiJQSyJ9LHsibmFtZSI6IlBhbGF1IiwiZGlhbF9jb2RlIjoiKzY4MCIsImNvZGUiOiJQVyJ9LHsibmFtZSI6IlBhbGVzdGluaWFuIFRlcnJpdG9yeSwgT2NjdXBpZWQiLCJkaWFsX2NvZGUiOiIrOTcwIiwiY29kZSI6IlBTIn0seyJuYW1lIjoiUGFuYW1hIiwiZGlhbF9jb2RlIjoiKzUwNyIsImNvZGUiOiJQQSJ9LHsibmFtZSI6IlBhcHVhIE5ldyBHdWluZWEiLCJkaWFsX2NvZGUiOiIrNjc1IiwiY29kZSI6IlBHIn0seyJuYW1lIjoiUGFyYWd1YXkiLCJkaWFsX2NvZGUiOiIrNTk1IiwiY29kZSI6IlBZIn0seyJuYW1lIjoiUGVydSIsImRpYWxfY29kZSI6Iis1MSIsImNvZGUiOiJQRSJ9LHsibmFtZSI6IlBoaWxpcHBpbmVzIiwiZGlhbF9jb2RlIjoiKzYzIiwiY29kZSI6IlBIIn0seyJuYW1lIjoiUGl0Y2Fpcm4iLCJkaWFsX2NvZGUiOiIrODcyIiwiY29kZSI6IlBOIn0seyJuYW1lIjoiUG9sYW5kIiwiZGlhbF9jb2RlIjoiKzQ4IiwiY29kZSI6IlBMIn0seyJuYW1lIjoiUG9ydHVnYWwiLCJkaWFsX2NvZGUiOiIrMzUxIiwiY29kZSI6IlBUIn0seyJuYW1lIjoiUHVlcnRvIFJpY28iLCJkaWFsX2NvZGUiOiIrMSA5MzkiLCJjb2RlIjoiUFIifSx7Im5hbWUiOiJRYXRhciIsImRpYWxfY29kZSI6Iis5NzQiLCJjb2RlIjoiUUEifSx7Im5hbWUiOiJSb21hbmlhIiwiZGlhbF9jb2RlIjoiKzQwIiwiY29kZSI6IlJPIn0seyJuYW1lIjoiUnVzc2lhIiwiZGlhbF9jb2RlIjoiKzciLCJjb2RlIjoiUlUifSx7Im5hbWUiOiJSd2FuZGEiLCJkaWFsX2NvZGUiOiIrMjUwIiwiY29kZSI6IlJXIn0seyJuYW1lIjoiUsOpdW5pb24iLCJkaWFsX2NvZGUiOiIrMjYyIiwiY29kZSI6IlJFIn0seyJuYW1lIjoiU2FpbnQgQmFydGjDqWxlbXkiLCJkaWFsX2NvZGUiOiIrNTkwIiwiY29kZSI6IkJMIn0seyJuYW1lIjoiU2FpbnQgSGVsZW5hLCBBc2NlbnNpb24gYW5kIFRyaXN0YW4gRGEgQ3VuaGEiLCJkaWFsX2NvZGUiOiIrMjkwIiwiY29kZSI6IlNIIn0seyJuYW1lIjoiU2FpbnQgS2l0dHMgYW5kIE5ldmlzIiwiZGlhbF9jb2RlIjoiKzEgODY5IiwiY29kZSI6IktOIn0seyJuYW1lIjoiU2FpbnQgTHVjaWEiLCJkaWFsX2NvZGUiOiIrMSA3NTgiLCJjb2RlIjoiTEMifSx7Im5hbWUiOiJTYWludCBNYXJ0aW4iLCJkaWFsX2NvZGUiOiIrNTkwIiwiY29kZSI6Ik1GIn0seyJuYW1lIjoiU2FpbnQgUGllcnJlIGFuZCBNaXF1ZWxvbiIsImRpYWxfY29kZSI6Iis1MDgiLCJjb2RlIjoiUE0ifSx7Im5hbWUiOiJTYWludCBWaW5jZW50IGFuZCB0aGUgR3JlbmFkaW5lcyIsImRpYWxfY29kZSI6IisxIDc4NCIsImNvZGUiOiJWQyJ9LHsibmFtZSI6IlNhbW9hIiwiZGlhbF9jb2RlIjoiKzY4NSIsImNvZGUiOiJXUyJ9LHsibmFtZSI6IlNhbiBNYXJpbm8iLCJkaWFsX2NvZGUiOiIrMzc4IiwiY29kZSI6IlNNIn0seyJuYW1lIjoiU2FvIFRvbWUgYW5kIFByaW5jaXBlIiwiZGlhbF9jb2RlIjoiKzIzOSIsImNvZGUiOiJTVCJ9LHsibmFtZSI6IlNhdWRpIEFyYWJpYSIsImRpYWxfY29kZSI6Iis5NjYiLCJjb2RlIjoiU0EifSx7Im5hbWUiOiJTZW5lZ2FsIiwiZGlhbF9jb2RlIjoiKzIyMSIsImNvZGUiOiJTTiJ9LHsibmFtZSI6IlNlcmJpYSIsImRpYWxfY29kZSI6IiszODEiLCJjb2RlIjoiUlMifSx7Im5hbWUiOiJTZXljaGVsbGVzIiwiZGlhbF9jb2RlIjoiKzI0OCIsImNvZGUiOiJTQyJ9LHsibmFtZSI6IlNpZXJyYSBMZW9uZSIsImRpYWxfY29kZSI6IisyMzIiLCJjb2RlIjoiU0wifSx7Im5hbWUiOiJTaW5nYXBvcmUiLCJkaWFsX2NvZGUiOiIrNjUiLCJjb2RlIjoiU0cifSx7Im5hbWUiOiJTbG92YWtpYSIsImRpYWxfY29kZSI6Iis0MjEiLCJjb2RlIjoiU0sifSx7Im5hbWUiOiJTbG92ZW5pYSIsImRpYWxfY29kZSI6IiszODYiLCJjb2RlIjoiU0kifSx7Im5hbWUiOiJTb2xvbW9uIElzbGFuZHMiLCJkaWFsX2NvZGUiOiIrNjc3IiwiY29kZSI6IlNCIn0seyJuYW1lIjoiU29tYWxpYSIsImRpYWxfY29kZSI6IisyNTIiLCJjb2RlIjoiU08ifSx7Im5hbWUiOiJTb3V0aCBBZnJpY2EiLCJkaWFsX2NvZGUiOiIrMjciLCJjb2RlIjoiWkEifSx7Im5hbWUiOiJTb3V0aCBHZW9yZ2lhIGFuZCB0aGUgU291dGggU2FuZHdpY2ggSXNsYW5kcyIsImRpYWxfY29kZSI6Iis1MDAiLCJjb2RlIjoiR1MifSx7Im5hbWUiOiJTcGFpbiIsImRpYWxfY29kZSI6IiszNCIsImNvZGUiOiJFUyJ9LHsibmFtZSI6IlNyaSBMYW5rYSIsImRpYWxfY29kZSI6Iis5NCIsImNvZGUiOiJMSyJ9LHsibmFtZSI6IlN1ZGFuIiwiZGlhbF9jb2RlIjoiKzI0OSIsImNvZGUiOiJTRCJ9LHsibmFtZSI6IlN1cmluYW1lIiwiZGlhbF9jb2RlIjoiKzU5NyIsImNvZGUiOiJTUiJ9LHsibmFtZSI6IlN2YWxiYXJkIGFuZCBKYW4gTWF5ZW4iLCJkaWFsX2NvZGUiOiIrNDciLCJjb2RlIjoiU0oifSx7Im5hbWUiOiJTd2F6aWxhbmQiLCJkaWFsX2NvZGUiOiIrMjY4IiwiY29kZSI6IlNaIn0seyJuYW1lIjoiU3dlZGVuIiwiZGlhbF9jb2RlIjoiKzQ2IiwiY29kZSI6IlNFIn0seyJuYW1lIjoiU3dpdHplcmxhbmQiLCJkaWFsX2NvZGUiOiIrNDEiLCJjb2RlIjoiQ0gifSx7Im5hbWUiOiJTeXJpYW4gQXJhYiBSZXB1YmxpYyIsImRpYWxfY29kZSI6Iis5NjMiLCJjb2RlIjoiU1kifSx7Im5hbWUiOiJUYWl3YW4iLCJkaWFsX2NvZGUiOiIrODg2IiwiY29kZSI6IlRXIn0seyJuYW1lIjoiVGFqaWtpc3RhbiIsImRpYWxfY29kZSI6Iis5OTIiLCJjb2RlIjoiVEoifSx7Im5hbWUiOiJUYW56YW5pYSwgVW5pdGVkIFJlcHVibGljIG9mIiwiZGlhbF9jb2RlIjoiKzI1NSIsImNvZGUiOiJUWiJ9LHsibmFtZSI6IlRoYWlsYW5kIiwiZGlhbF9jb2RlIjoiKzY2IiwiY29kZSI6IlRIIn0seyJuYW1lIjoiVGltb3ItTGVzdGUiLCJkaWFsX2NvZGUiOiIrNjcwIiwiY29kZSI6IlRMIn0seyJuYW1lIjoiVG9nbyIsImRpYWxfY29kZSI6IisyMjgiLCJjb2RlIjoiVEcifSx7Im5hbWUiOiJUb2tlbGF1IiwiZGlhbF9jb2RlIjoiKzY5MCIsImNvZGUiOiJUSyJ9LHsibmFtZSI6IlRvbmdhIiwiZGlhbF9jb2RlIjoiKzY3NiIsImNvZGUiOiJUTyJ9LHsibmFtZSI6IlRyaW5pZGFkIGFuZCBUb2JhZ28iLCJkaWFsX2NvZGUiOiIrMSA4NjgiLCJjb2RlIjoiVFQifSx7Im5hbWUiOiJUdW5pc2lhIiwiZGlhbF9jb2RlIjoiKzIxNiIsImNvZGUiOiJUTiJ9LHsibmFtZSI6IlR1cmtleSIsImRpYWxfY29kZSI6Iis5MCIsImNvZGUiOiJUUiJ9LHsibmFtZSI6IlR1cmttZW5pc3RhbiIsImRpYWxfY29kZSI6Iis5OTMiLCJjb2RlIjoiVE0ifSx7Im5hbWUiOiJUdXJrcyBhbmQgQ2FpY29zIElzbGFuZHMiLCJkaWFsX2NvZGUiOiIrMSA2NDkiLCJjb2RlIjoiVEMifSx7Im5hbWUiOiJUdXZhbHUiLCJkaWFsX2NvZGUiOiIrNjg4IiwiY29kZSI6IlRWIn0seyJuYW1lIjoiVWdhbmRhIiwiZGlhbF9jb2RlIjoiKzI1NiIsImNvZGUiOiJVRyJ9LHsibmFtZSI6IlVrcmFpbmUiLCJkaWFsX2NvZGUiOiIrMzgwIiwiY29kZSI6IlVBIn0seyJuYW1lIjoiVW5pdGVkIEFyYWIgRW1pcmF0ZXMiLCJkaWFsX2NvZGUiOiIrOTcxIiwiY29kZSI6IkFFIn0seyJuYW1lIjoiVW5pdGVkIEtpbmdkb20iLCJkaWFsX2NvZGUiOiIrNDQiLCJjb2RlIjoiR0IifSx7Im5hbWUiOiJVbml0ZWQgU3RhdGVzIiwiZGlhbF9jb2RlIjoiKzEiLCJjb2RlIjoiVVMifSx7Im5hbWUiOiJVcnVndWF5IiwiZGlhbF9jb2RlIjoiKzU5OCIsImNvZGUiOiJVWSJ9LHsibmFtZSI6IlV6YmVraXN0YW4iLCJkaWFsX2NvZGUiOiIrOTk4IiwiY29kZSI6IlVaIn0seyJuYW1lIjoiVmFudWF0dSIsImRpYWxfY29kZSI6Iis2NzgiLCJjb2RlIjoiVlUifSx7Im5hbWUiOiJWZW5lenVlbGEsIEJvbGl2YXJpYW4gUmVwdWJsaWMgb2YiLCJkaWFsX2NvZGUiOiIrNTgiLCJjb2RlIjoiVkUifSx7Im5hbWUiOiJWaWV0IE5hbSIsImRpYWxfY29kZSI6Iis4NCIsImNvZGUiOiJWTiJ9LHsibmFtZSI6IlZpcmdpbiBJc2xhbmRzLCBCcml0aXNoIiwiZGlhbF9jb2RlIjoiKzEgMjg0IiwiY29kZSI6IlZHIn0seyJuYW1lIjoiVmlyZ2luIElzbGFuZHMsIFUuUy4iLCJkaWFsX2NvZGUiOiIrMSAzNDAiLCJjb2RlIjoiVkkifSx7Im5hbWUiOiJXYWxsaXMgYW5kIEZ1dHVuYSIsImRpYWxfY29kZSI6Iis2ODEiLCJjb2RlIjoiV0YifSx7Im5hbWUiOiJZZW1lbiIsImRpYWxfY29kZSI6Iis5NjciLCJjb2RlIjoiWUUifSx7Im5hbWUiOiJaYW1iaWEiLCJkaWFsX2NvZGUiOiIrMjYwIiwiY29kZSI6IlpNIn0seyJuYW1lIjoiWmltYmFid2UiLCJkaWFsX2NvZGUiOiIrMjYzIiwiY29kZSI6IlpXIn0seyJuYW1lIjoiw4VsYW5kIElzbGFuZHMiLCJkaWFsX2NvZGUiOiIrMzU4IiwiY29kZSI6IkFYIn1d</string>
+
+
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="welcome">Welcome back,</string>
+    <string name="signito">Sign in to continue</string>
+    <string name="emailadd">Email Address</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+    <string name="remember">Remember me and keep me logged in</string>
+    <string name="text">- Or you can also -</string>
+    <string name="googlesignin">Sign in with google</string>
+
+    <string name="hey">Hey, get on board</string>
+    <string name="signupto">Sign up to continue</string>
+    <string name="username">Username</string>
+    <string name="bysigning">By signing up you agree to our conditions and privacy policy</string>
+    <string name="googlesignup">Sign up with google</string>
+    <string name="welcomto">Welcom to \nRoadstar</string>
+    <string name="selectdeli">Select your Delivery type</string>
+    <string name="booknow">Book now</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+
+    <string name="menuhome">Home</string>
+    <string name="menubooking">My Bookings</string>
+    <string name="menupayments">Payments</string>
+    <string name="menuprofile">My profile</string>
+    <string name="menudelivery">Delivery History</string>
+    <string name="menuratings">Customer Ratings</string>
+    <string name="menuhelp">Help &amp; Support</string>
+    <string name="menusettings">Settings</string>
+    <string name="menuslogout">Logout</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="enterpickup">Enter Pickup Location</string>
+    <string name="enterdrop">Enter Drop off Location</string>
+    <string name="next">Next</string>
+    <string name="get_started">Get Started</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="easy">Easy &amp; Secure Payments</string>
+    <string name="door">Door to Door Delivery</string>
+    <string name="easytrack">Easy Tracking</string>
+
+    <string name="personalinfo">----Personal Info----</string>
+    <string name="companyname">Company Name</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="emailid">Email Id</string>
+
+    <string name="addressdetail">----Address Detail----</string>
+    <string name="Pickupdetail">----Pickup Address----</string>
+    <string name="addressline1">Address Line1</string>
+    <string name="addressline2">Address Line2</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="postal">Postal Code</string>
+    <string name="country">Country</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="dropinfo">----Dropoff Info----</string>
+    <string name="pickadd">Pickup Address</string>
+    <string name="dropoff">----Dropoff Address----</string>
+    <string name="parceldetail">----Parcel Detail----</string>
+    <string name="vehicletypep">----Vehicle Type----</string>
+    <string name="parcelheight">Parcel Height</string>
+    <string name="parcelwidth">Parcel Width</string>
+    <string name="parcelweight">Parcel Weight(kg)</string>
+    <string name="vehicletype">Vehicle Type</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_booking_available">No Booking Available..</string>
+    <string name="driver_name">Driver Name-</string>
+    <string name="booking_date">Booking Date-</string>
+    <string name="delivery_date">Delivery Date-</string>
+    <string name="pickup_contact_name">Pickup Contact name-</string>
+    <string name="track">Track</string>
+    <string name="review">Write your Review</string>
+    <string name="submit">Submit</string>
+    <string name="google_maps_key">AIzaSyAovVefAVvCcBEgVcucdqrTVMZFaA5Nr-8</string>
+    <string name="local">Local</string>
+    <string name="international">International</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="enter_email_to_continue">Enter email to continue,</string>
+    <string name="cash">Cash</string>
+    <string name="credit_debit_card">Credit/debit card</string>
+    <string name="howyouwant">How you want to Pay?</string>
+    <string name="deliveryorder">Delivery Order</string>
+    <string name="done">Done</string>
+    <string name="status">Status</string>
+    <string name="location">Location</string>
+    <string name="howcan">How can we help?</string>
+    <string name="contactus">----Contact us----</string>
+    <string name="send">Send</string>
+    <string name="otp">OTP</string>
+    <string name="enotp">Enter otp</string>
+    <string name="enter_otp">Enter OTP to continue,</string>
+    <string name="resetpassword">Reset Password</string>
+    <string name="enterpassword">change Password</string>
+    <string name="Newpass">New Password</string>
+    <string name="Conpass">Confirm Password</string>
+    <string name="confirm">Confirm</string>
+    <string name="skip">Skip</string>
+    <string name="drooffd">Delivery Address </string>
+    <string name="drooffdn">----Delivery Address ----</string>
+    <string name="pickd">Pickup Details</string>
+    <string name="parceld">Parcel Details</string>
+    <string name="paymenthis">Payment History</string>
+    <string name="pickloc">Pickup Location</string>
+    <string name="parcel_images">Parcel Images</string>
+    <string name="addimag">Add Images</string>
+    <string name="category">Category</string>
+
+
+    <string-array name="items_class">
+        <item>Category</item>
+        <item>Plastic Goods</item>
+        <item>Wood Items</item>
+        <item>Glass Materials</item>
+        <item>Cosmetics</item>
+    </string-array>
+
+    <string-array name="items_div_class_1">
+        <item>Storage box</item>
+        <item>Water bottles</item>
+
+    </string-array>
+
+    <string-array name="items_div_class_2">
+        <item>Table</item>
+        <item>sofa</item>
+        <item>shoe rack</item>
+    </string-array>
+
+    <string-array name="items_div_class_3">
+        <item>Glass Jar</item>
+        <item>Bowl set</item>
+    </string-array>
+
+    <string-array name="items_div_class_4">
+        <item>makeup kit</item>
+        <item>makeup brush</item>
+
+    </string-array>
+
+
+</resources>

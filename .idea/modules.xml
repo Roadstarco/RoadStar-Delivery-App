@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/RoadStarCorrierUser.iml" filepath="$PROJECT_DIR$/RoadStarCorrierUser.iml" group="RoadStarCorrierUser" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="RoadStarCorrierUser/app" />
+      <module fileurl="file://$PROJECT_DIR$/libraryimagepicker/libraryimagepicker.iml" filepath="$PROJECT_DIR$/libraryimagepicker/libraryimagepicker.iml" group="RoadStarCorrierUser/libraryimagepicker" />
+      <module fileurl="file://$PROJECT_DIR$/slideDateTimePicker/slideDateTimePicker.iml" filepath="$PROJECT_DIR$/slideDateTimePicker/slideDateTimePicker.iml" group="RoadStarCorrierUser/slideDateTimePicker" />
+      <module fileurl="file://$PROJECT_DIR$/ucrop/ucrop.iml" filepath="$PROJECT_DIR$/ucrop/ucrop.iml" group="RoadStarCorrierUser/ucrop" />
+    </modules>
+  </component>
+</project>

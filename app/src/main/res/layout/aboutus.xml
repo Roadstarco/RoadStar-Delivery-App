@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/aboutus_toolbar_shadow_layout"
+    android:fillViewport="true">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:id="@+id/aboutus_layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/app_color">
+
+        <RelativeLayout
+            android:id="@+id/aboutus_header_back_layout"
+            android:layout_width="55dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="26dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:background="@null"
+                android:src="@drawable/back_arrow" />
+        </RelativeLayout>
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/aboutus_header_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:text="@string/aboutus_lable_header_textview"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/aboutus_toolbar_shadow_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/aboutus_layout_header"
+        android:background="@xml/toolbar_shadow" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutus_toolbar_shadow_layout"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/aboutus_logo_imageview"
+                android:layout_width="220dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/wsalna" />
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/aboputus_poweredby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboutus_logo_imageview"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="10dp"
+                android:text="@string/aboutus_lable_poweredby_textview"
+                android:textColor="#4e4e4e"
+                android:textSize="13sp"
+                android:visibility="gone"/>
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/aboputus_poweredby_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboutus_logo_imageview"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/aboputus_poweredby"
+                android:text="@string/aboutus_lable_company_textview"
+                android:textColor="#4e4e4e"
+                android:visibility="gone"
+                android:textSize="13sp" />
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/aboutus_versioncode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboputus_poweredby"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="@string/aboutus_lable_version_code_textview"
+                android:textColor="#000"
+                android:textSize="13sp" />
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboutus_versioncode"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/aboutus_lable_aboutus_description_textview"
+                android:textAlignment="gravity"
+                android:textColor="#4e4e4e"
+                android:textSize="14sp"
+                android:visibility="gone"/>
+
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/moreinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:gravity="left"
+                android:text="@string/aboutus_lable_moreinfo_textview"
+                android:textAlignment="gravity"
+                android:textColor="@color/app_color"
+                android:textSize="20sp"
+                android:visibility="gone"/>
+
+
+
+            <ImageView
+                android:id="@+id/aboutus_link_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/moreinfo"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/about_link1"
+                android:visibility="gone"/>
+
+
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/more_info_baseurl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/moreinfo"
+                android:layout_toRightOf="@+id/aboutus_link_image"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="8dp"
+                android:gravity="left"
+                android:text=""
+                android:textAlignment="gravity"
+                android:textColor="#CC2793ff"
+                android:textSize="15sp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/aboutus_phone_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/more_info_baseurl"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/about_phone"
+                android:visibility="gone"/>
+
+
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/more_phone_baseurl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/more_info_baseurl"
+                android:layout_toRightOf="@+id/aboutus_phone_image"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:text=""
+                android:textAlignment="gravity"
+                android:textColor="#CC2793ff"
+                android:textSize="15sp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/aboutus_address_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/more_phone_baseurl"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/about_address"
+                android:visibility="gone"/>
+
+
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/more_address_baseurl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/more_phone_baseurl"
+                android:layout_toRightOf="@+id/aboutus_address_image"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="12dp"
+                android:gravity="left"
+                android:text=""
+                android:textAlignment="gravity"
+                android:textColor="#bfbfbf"
+                android:textSize="15sp"
+                android:visibility="gone"/>
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/layout_line0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="145dp"
+        android:layout_below="@+id/aboutus_toolbar_shadow_layout"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/point1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/paragraph"
+            android:textAlignment="gravity"
+            android:textColor="#000"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/moreinfo"
+            android:layout_alignStart="@+id/moreinfo"
+            android:visibility="visible"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/point2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/point1"-->
+            <!--android:textAlignment="gravity"-->
+            <!--android:textColor="#fff"-->
+            <!--android:padding="5dp"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_alignLeft="@+id/moreinfo"-->
+            <!--android:layout_alignStart="@+id/moreinfo"-->
+            <!--android:visibility="visible"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/point3"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="5dp"-->
+            <!--android:text="@string/point2"-->
+            <!--android:textAlignment="gravity"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_alignLeft="@+id/moreinfo"-->
+            <!--android:layout_alignStart="@+id/moreinfo"-->
+            <!--android:visibility="visible"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/point4"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignStart="@+id/moreinfo"-->
+            <!--android:layout_alignLeft="@+id/moreinfo"-->
+            <!--android:padding="5dp"-->
+            <!--android:text="@string/point3"-->
+            <!--android:textAlignment="gravity"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="16sp"-->
+            <!--android:visibility="visible" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/point5"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="5dp"-->
+            <!--android:text="@string/point4"-->
+            <!--android:textAlignment="gravity"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_alignLeft="@+id/moreinfo"-->
+            <!--android:layout_alignStart="@+id/moreinfo"-->
+            <!--android:visibility="visible"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/point6"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="5dp"-->
+            <!--android:text="@string/point5"-->
+            <!--android:textAlignment="gravity"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_alignLeft="@+id/moreinfo"-->
+            <!--android:layout_alignStart="@+id/moreinfo"-->
+            <!--android:visibility="visible"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/point7"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="5dp"-->
+            <!--android:text="@string/point6"-->
+            <!--android:textAlignment="gravity"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_alignLeft="@+id/moreinfo"-->
+            <!--android:layout_alignStart="@+id/moreinfo"-->
+            <!--android:visibility="visible"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/point8"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="5dp"-->
+            <!--android:text="@string/point7"-->
+            <!--android:textAlignment="gravity"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_alignLeft="@+id/moreinfo"-->
+            <!--android:layout_alignStart="@+id/moreinfo"-->
+            <!--android:visibility="visible"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/point9"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="5dp"-->
+            <!--android:text="@string/point8"-->
+            <!--android:textAlignment="gravity"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_alignLeft="@+id/moreinfo"-->
+            <!--android:layout_alignStart="@+id/moreinfo"-->
+            <!--android:visibility="visible"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/point10"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="5dp"-->
+            <!--android:text="@string/point9"-->
+            <!--android:textAlignment="gravity"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_alignLeft="@+id/moreinfo"-->
+            <!--android:layout_alignStart="@+id/moreinfo"-->
+            <!--android:visibility="visible"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/point11"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="5dp"-->
+            <!--android:text="@string/point10"-->
+            <!--android:textAlignment="gravity"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_alignLeft="@+id/moreinfo"-->
+            <!--android:layout_alignStart="@+id/moreinfo"-->
+            <!--android:visibility="visible"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/para"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="5dp"-->
+            <!--android:text="@string/para"-->
+            <!--android:textAlignment="gravity"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_alignLeft="@+id/moreinfo"-->
+            <!--android:layout_alignStart="@+id/moreinfo"-->
+            <!--android:visibility="visible"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/point12"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="5dp"-->
+            <!--android:text="@string/point11"-->
+            <!--android:textAlignment="gravity"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_alignLeft="@+id/moreinfo"-->
+            <!--android:layout_alignStart="@+id/moreinfo"-->
+            <!--android:visibility="visible"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/point13"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="5dp"-->
+            <!--android:text="@string/point12"-->
+            <!--android:textAlignment="gravity"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_alignLeft="@+id/moreinfo"-->
+            <!--android:layout_alignStart="@+id/moreinfo"-->
+            <!--android:visibility="visible"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/point14"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="5dp"-->
+            <!--android:text="@string/point13"-->
+            <!--android:textAlignment="gravity"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_alignLeft="@+id/moreinfo"-->
+            <!--android:layout_alignStart="@+id/moreinfo"-->
+            <!--android:visibility="visible"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/aboutus_terms_condition"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="@string/login_label_Terms_of_service"-->
+            <!--android:textColor="@color/app_color"-->
+            <!--android:textSize="15sp"-->
+            <!--android:layout_marginBottom="15dp"/>-->
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+</ScrollView>

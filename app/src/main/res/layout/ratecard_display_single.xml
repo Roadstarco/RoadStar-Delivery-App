@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp">
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/ratecard_display_single_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textColor="#4e4e4e"
+            android:textSize="13sp"/>
+
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/ratecard_display_single_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:singleLine="true"
+            android:layout_toRightOf="@+id/ratecard_display_single_title"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textColor="#4e4e4e"
+            android:textSize="13sp"/>
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/ratecard_display_single_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ratecard_display_single_title"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textColor="#969696"
+            android:textSize="13sp"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

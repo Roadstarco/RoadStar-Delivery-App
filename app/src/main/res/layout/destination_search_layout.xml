@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/destination_search_actionbar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="@color/app_color">
+
+        <RelativeLayout
+            android:id="@+id/destination_search_back_layout"
+            android:layout_width="55dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="26dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:background="@null"
+                android:src="@drawable/back_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/destination_search_address_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/destination_search_progressBar"
+            android:layout_toRightOf="@+id/destination_search_back_layout"
+            android:background="#FFFFFF">
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/destination_search_address_textView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="4dp"
+                android:singleLine="true"
+                android:text="@string/destination_address_search_drag"
+                android:textColor="#4e4e4e"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/destination_search_progressBar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/destination_search_map_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/destination_search_done_layout"
+        android:layout_below="@+id/destination_search_actionbar_layout"
+        android:visibility="visible">
+
+        <fragment
+            android:id="@+id/destination_search_mapView"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false" />
+
+        <ImageView
+            android:id="@+id/destination_search_center_marker"
+            android:layout_width="230dp"
+            android:layout_height="110dp"
+            android:layout_above="@+id/destination_search_center_view1"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/destination_map_pointer"
+            android:visibility="visible" />
+
+        <View
+            android:id="@+id/destination_search_center_view1"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#ffffff"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/destination_search_done_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_color"
+        android:visibility="visible">
+
+        <com.mylibrary.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/destination_address_search_done"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+
+        <ListView
+            android:id="@+id/panic_listView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#ffffff"
+            android:divider="@null"></ListView>
+
+
+
+       <!-- <Button
+            android:id="@+id/call_police_button"
+            android:layout_width="fill_parent"
+            android:layout_height="42dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/spinner_floatlabel_color"
+            android:text="@string/call_police_lable"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/call_fireservice_button"
+            android:layout_width="fill_parent"
+            android:layout_height="42dp"
+            android:layout_below="@+id/call_police_button"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/spinner_floatlabel_color"
+            android:text="@string/call_fireservice_lable"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/call_ambulance_button"
+            android:layout_width="fill_parent"
+            android:layout_height="42dp"
+            android:layout_below="@+id/call_fireservice_button"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/spinner_floatlabel_color"
+            android:text="@string/call_ambulance_lable"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="bold" />-->
+    </RelativeLayout>
+
+</RelativeLayout>

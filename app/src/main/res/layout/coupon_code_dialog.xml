@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff">
+
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/couponcode_cancel_imageIcon"
+        android:src="@drawable/cancel"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"/>
+
+    <com.mylibrary.widgets.CustomTextView
+        android:id="@+id/couponcode_title_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/couponcode_label_title"
+        android:textColor="#4e4e4e"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/couponcode_editText"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/couponcode_title_label"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/grey_border_background"
+        android:imeOptions="actionDone"
+        android:inputType="textCapSentences"
+        android:textAllCaps="true"
+        android:capitalize="sentences"
+
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#3f3e3e"
+        android:textColorHint="#3f3e3e"
+        android:textCursorDrawable="@drawable/edittext_cursor_color"
+        android:textSize="15dp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/couponcode_apply_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/couponcode_editText"
+        android:layout_marginTop="5dp"
+        android:visibility="visible">
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/couponcode_nointernet_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/alert_nointernet"
+            android:textColor="#95BF35"
+            android:textSize="16sp"
+            android:visibility="invisible"/>
+
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/couponcode_cancel_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/couponcode_nointernet_textView"
+            android:layout_marginLeft="20dp"
+            android:text="@string/couponcode_label_cancel"
+            android:textColor="#95BF35"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"/>
+
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/couponcode_apply_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/couponcode_nointernet_textView"
+            android:layout_marginRight="20dp"
+            android:text="@string/couponcode_label_apply"
+            android:textColor="#95BF35"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/couponcode_allowance_amount_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/couponcode_apply_layout"
+        android:layout_margin="10dp"
+        android:background="#CCffffff"
+        android:visibility="gone"
+       >
+
+        <RelativeLayout
+            android:id="@+id/couponcode_yourallowance_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#FFFFFF"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_centerHorizontal="true">
+
+            <com.mylibrary.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/couponcode_label_allowance"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:textColor="#198ED1"
+                android:textSize="18dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/couponcode_allowance_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/couponcode_yourallowance_layout"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:typeface="sans"
+            android:textSize="14dp"
+            android:textColor="#4e4e4e"
+            android:textAlignment="center"
+            android:text="@string/couponcode_label_allowance_text1"
+            android:gravity="center_horizontal" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/couponcode_loading_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/couponcode_editText"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="7dp"
+            android:layout_toLeftOf="@+id/verifying_label"/>
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/verifying_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/couponcode_label_verifying"
+            android:textColor="#95BF35"
+            android:textSize="15sp"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

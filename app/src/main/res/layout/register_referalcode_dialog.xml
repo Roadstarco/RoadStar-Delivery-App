@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/curve_background" >
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/referral_code_popup_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:text="@string/register_label_referal_schema"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/referral_code_popup_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/referral_code_popup_text1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/register_label_referal_schema_content1"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+        
+          <com.mylibrary.widgets.CustomTextView
+              android:id="@+id/referral_code_popup_text3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/referral_code_popup_text2"
+              android:layout_centerHorizontal="true"
+              android:layout_marginLeft="30dp"
+              android:layout_marginRight="30dp"
+              android:gravity="center_horizontal"
+              android:text="@string/register_label_referal_schema_content2"
+              android:textColor="#666666"
+              android:textSize="16sp" />
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/referral_code_popup_text_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/referral_code_popup_text3"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/register_label_referal_ok"
+            android:textColor="#006400"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <com.mylibrary.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@+id/referral_code_popup_text_ok"
+            android:layout_marginTop="8dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</RelativeLayout>

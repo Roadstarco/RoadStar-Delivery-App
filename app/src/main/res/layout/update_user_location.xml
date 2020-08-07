@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/update_location_avLoadingIndicatorView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/update_location_label"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:visibility="visible"
+        app:indicator="BallSpinFadeLoader"
+        app:indicator_color="@color/colororange"/>
+
+    <com.mylibrary.widgets.CustomTextView
+        android:id="@+id/update_location_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:text="@string/alert_update_location"
+        android:textColor="@color/colororange"
+        android:textSize="20sp"/>
+
+
+</RelativeLayout>

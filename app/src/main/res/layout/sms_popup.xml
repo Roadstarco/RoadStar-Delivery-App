@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/sms_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        <EditText
+            android:id="@+id/text_editview"
+            android:layout_width="fill_parent"
+            android:background="@drawable/edittext_curve_background_grey"
+            android:layout_height="100dp"
+            android:textSize="13dp"
+            android:gravity="top"
+            android:textColorHint="#8f8a8a"
+            android:minLines="1"
+
+            android:layout_margin="5dp"
+            android:imeOptions="actionDone"
+            android:maxLength="140"
+            android:padding="5dp"
+            android:hint="@string/sms_masking_text"
+            android:textColor="#000000"/>
+
+<View
+    android:id="@+id/v"
+    android:layout_width="1dp"
+    android:layout_height="1dp"
+    android:layout_below="@+id/text_editview"
+    android:layout_centerInParent="true"/>
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:background="@color/app_color"
+            android:layout_below="@+id/text_editview"
+            android:text="@string/action_cancel"
+            android:textColor="#ffffff"
+            android:layout_toLeftOf="@+id/v"
+            />
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/send"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:background="@color/app_color"
+            android:text="@string/otp_label_send"
+            android:layout_below="@+id/text_editview"
+            android:layout_toRightOf="@+id/v"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "839872295076",
+    "firebase_url": "https://roadstar-2d6ea.firebaseio.com",
+    "project_id": "roadstar-2d6ea",
+    "storage_bucket": "roadstar-2d6ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839872295076:android:a75295984ba55dfe217631",
+        "android_client_info": {
+          "package_name": "shrinkcom.roadstarcorrieruser.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "839872295076-bfm6f2doleqn88s9l3lmlisaoklh1t1k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKabmX1UwmJ3w_KjmO3cxskbsLrlvklbs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "839872295076-bfm6f2doleqn88s9l3lmlisaoklh1t1k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839872295076:android:43d9417de7718804217631",
+        "android_client_info": {
+          "package_name": "shrinkcom.roadstardriver.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "839872295076-bfm6f2doleqn88s9l3lmlisaoklh1t1k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKabmX1UwmJ3w_KjmO3cxskbsLrlvklbs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "839872295076-bfm6f2doleqn88s9l3lmlisaoklh1t1k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

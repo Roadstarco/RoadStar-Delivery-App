@@ -1,0 +1,1173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/my_rides_detail_layout_header"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/app_color">
+
+        <RelativeLayout
+            android:id="@+id/my_rides_detail_header_back_layout"
+            android:layout_width="55dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="26dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:background="@null"
+                android:src="@drawable/back_arrow" />
+        </RelativeLayout>
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/my_rides_detail_textview_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/my_rides_detail_header_textview"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/my_rides_detail_button_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/my_rides_detail_cancel_trip_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#D94C5F"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#00000000"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:src="@drawable/shutdown_icon" />
+
+                    <com.mylibrary.widgets.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="@string/my_rides_detail_cancel_trip_textview"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/my_rides_detail_track_ride_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#186B35"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#00000000"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/track_ride_icon" />
+
+                    <com.mylibrary.widgets.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/my_rides_detail_track_ride_textview"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/my_rides_detail_payment_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#004F46"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#00000000"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:src="@drawable/payment_icon" />
+
+                    <com.mylibrary.widgets.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="@string/my_rides_detail_payment_textview"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/my_rides_detail_mail_invoice_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#0181A1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#00000000"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:src="@drawable/mail_invoice_icon" />
+
+                    <com.mylibrary.widgets.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/my_rides_detail_mail_invoice_textview"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/my_rides_detail_share_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#0181A1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#00000000"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:src="@drawable/share" />
+
+                    <com.mylibrary.widgets.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/my_rides_detail_share_message"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/my_rides_detail_report_issue_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#D94C5F"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#00000000"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:src="@drawable/bug_icon" />
+
+                    <com.mylibrary.widgets.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/my_rides_detail_report_issue_textview"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/my_rides_detail_button_layout"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/my_rides_detail_layout_header"
+        android:background="#00000000"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#00000000">
+
+            <RelativeLayout
+                android:id="@+id/my_rides_detail_content_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#ffffff">
+
+                <RelativeLayout
+                    android:id="@+id/my_rides_detail_web_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff">
+
+                    <RelativeLayout
+                        android:id="@+id/my_rides_detail_mapview_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:visibility="visible">
+
+                        <fragment
+                            android:id="@+id/my_rides_detail_mapview"
+                            android:name="com.google.android.gms.maps.MapFragment"
+                            android:layout_width="fill_parent"
+                            android:layout_height="240dp"
+                            android:clickable="false"
+                            android:visibility="visible" />
+
+                        <ProgressBar
+                            android:id="@+id/my_rides_detail_mapview_progressBar"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+                    <!-- <RelativeLayout
+                         android:id="@+id/my_rides_detail_mapview_layout1"
+                         android:layout_width="match_parent"
+                         android:layout_height="240dp"
+                         android:background="#ffffff"
+                         android:visibility="visible">-->
+
+                    <ImageView
+                        android:id="@+id/my_rides_detail_route_map_imageview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/aaaaa"
+                        android:visibility="gone" />
+
+                    <!--</RelativeLayout>-->
+
+                </RelativeLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/my_rides_detail_panic_cardview_layout"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignTop="@+id/my_rides_detail_web_layout"
+                    android:layout_margin="10dp"
+                    android:visibility="gone"
+                    card_view:cardBackgroundColor="#ccffffff"
+                    card_view:cardElevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/panic_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/panic1" />
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/my_rides_detail_cardview_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/my_rides_detail_web_layout"
+                    card_view:cardBackgroundColor="#ccffffff"
+                    card_view:cardElevation="4dp">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:background="#00000000">
+
+                        <com.mylibrary.widgets.CustomTextView
+                            android:id="@+id/my_rides_detail_car_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text=""
+                            android:textColor="#4e4e4e"
+                            android:textSize="13sp" />
+
+                        <com.mylibrary.widgets.CustomTextView
+                            android:id="@+id/my_rides_detail_car_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/my_rides_detail_car_type"
+                            android:layout_marginLeft="10dp"
+                            android:text=""
+                            android:textColor="#918e8e"
+                            android:textSize="12sp" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true">
+
+
+                            <com.mylibrary.widgets.CustomTextView
+                                android:id="@+id/my_rides_detail_ride_status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:layout_toLeftOf="@+id/my_rides_detail_favorite_layout"
+                                android:text=""
+                                android:textColor="#4e4e4e"
+                                android:textSize="14sp" />
+
+                            <RelativeLayout
+                                android:id="@+id/my_rides_detail_favorite_layout"
+                                android:layout_width="55dp"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentRight="true"
+                                android:background="#00000000"
+                                android:visibility="gone">
+
+                                <View
+                                    android:id="@+id/my_rides_detail_favorite_view"
+                                    android:layout_width="1px"
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="3dp"
+                                    android:layout_marginRight="7dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_toLeftOf="@+id/my_rides_detail_favorite_imageView"
+                                    android:background="#4e4e4e" />
+
+                                <ImageView
+                                    android:id="@+id/my_rides_detail_favorite_imageView"
+                                    android:layout_width="33dp"
+                                    android:layout_height="33dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="10dp"
+                                    android:src="@drawable/heart_grey_icon" />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <RelativeLayout
+                    android:id="@+id/layout_trip_summery_details_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/my_rides_detail_cardview_layout"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/button_background_black"
+
+                    >
+
+
+                    <com.mylibrary.widgets.CustomTextView
+                        android:id="@+id/tripdetail_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text=""
+                        android:textColor="#cc0000"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/my_rides_detail_address_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/my_rides_detail_cardview_layout"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/my_rides_detail_address_location_imageView"
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:layout_marginLeft="10dp"
+
+                        android:src="@drawable/location_icon_ride_detail" />
+
+
+                    <LinearLayout
+                        android:id="@+id/address_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/my_rides_detail_address_location_imageView"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/my_rides_detail_address_location_imageView"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/pickup_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:orientation="horizontal">
+
+                                <com.mylibrary.widgets.CustomTextView
+                                    android:id="@+id/pickup_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:text="@string/my_rides_detail_pickup_textview"
+                                    android:textColor="#606060"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="3dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:text=":"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="8.5">
+
+                                <com.mylibrary.widgets.CustomTextView
+                                    android:id="@+id/my_rides_detail_location_textview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="7"
+                                    android:text=""
+                                    android:textColor="#606060"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/drop_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:orientation="horizontal">
+
+                                <com.mylibrary.widgets.CustomTextView
+                                    android:id="@+id/drop_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:text="@string/my_rides_detail_drop_textview"
+                                    android:textColor="#606060"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="3dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="right"
+                                    android:text=":"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="8.5">
+
+                                <com.mylibrary.widgets.CustomTextView
+                                    android:id="@+id/my_rides_detail_Droplocation_textview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="7"
+                                    android:text=""
+                                    android:textColor="#606060"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <com.mylibrary.widgets.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/address_layout"
+                        android:layout_marginTop="10dp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/my_rides_detail_time_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/my_rides_detail_address_layout"
+                    android:layout_marginTop="3dp"
+                    android:background="#ffffff"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/my_rides_detail_clock_imageView"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="12dp"
+                        android:src="@drawable/clock_icon" />
+
+                    <LinearLayout
+                        android:id="@+id/detail_time_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/my_rides_detail_clock_imageView"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/my_rides_detail_clock_imageView"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/pickup_time_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:orientation="horizontal">
+
+                                <com.mylibrary.widgets.CustomTextView
+                                    android:id="@+id/pickup_time_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:text="@string/my_rides_detail_pickup_textview"
+                                    android:textColor="#606060"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="3dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:text=":"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="8.5">
+
+                                <com.mylibrary.widgets.CustomTextView
+                                    android:id="@+id/my_rides_detail_pickup_time_textview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text=""
+                                    android:textColor="#606060"
+                                    android:textSize="13sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/drop_time_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:orientation="horizontal">
+
+                                <com.mylibrary.widgets.CustomTextView
+                                    android:id="@+id/drop_time_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:text="@string/my_rides_detail_drop_textview"
+                                    android:textColor="#606060"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="3dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="right"
+                                    android:text=":"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="8.5">
+
+                                <com.mylibrary.widgets.CustomTextView
+                                    android:id="@+id/my_rides_detail_drop_time_textview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="1dp"
+                                    android:text=""
+                                    android:textColor="#606060"
+                                    android:textSize="13sp"
+                                    android:visibility="visible" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <com.mylibrary.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/my_rides_detail_time_layout"
+                    android:layout_marginTop="8dp"
+
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:id="@+id/my_rides_detail_price_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/my_rides_detail_time_layout"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:id="@+id/my_rides_detail_price_inner_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff">
+
+                        <View
+                            android:id="@+id/my_rides_detail_location_view"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="#918e8e" />
+
+                        <LinearLayout
+                            android:id="@+id/my_rides_detail_price_linear_layout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/my_rides_detail_location_view"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <com.mylibrary.widgets.CustomTextView
+                                    android:id="@+id/my_rides_detail_ride_distance_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/my_rides_detail_ride_distance_textview"
+                                    android:textColor="#918e8e"
+                                    android:textSize="12sp"
+                                    android:visibility="visible" />
+
+                                <com.mylibrary.widgets.CustomTextView
+                                    android:id="@+id/my_rides_detail_ride_distance_textview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="2dp"
+                                    android:text=""
+                                    android:textColor="#606060"
+                                    android:textSize="13sp"
+                                    android:visibility="visible" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <com.mylibrary.widgets.CustomTextView
+                                    android:id="@+id/my_rides_detail_time_taken_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/my_rides_detail_time_taken_textview"
+                                    android:textColor="#918e8e"
+                                    android:textSize="12sp"
+                                    android:visibility="visible" />
+
+                                <com.mylibrary.widgets.CustomTextView
+                                    android:id="@+id/my_rides_detail_time_taken_textview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="2dp"
+                                    android:text=""
+                                    android:textColor="#606060"
+                                    android:textSize="13sp"
+                                    android:visibility="visible" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/my_rides_detail_wait_time_layout"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <com.mylibrary.widgets.CustomTextView
+                                    android:id="@+id/my_rides_detail_wait_time_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/my_rides_detail_wait_time_textview"
+                                    android:textColor="#918e8e"
+                                    android:textSize="12sp"
+                                    android:visibility="visible" />
+
+                                <com.mylibrary.widgets.CustomTextView
+                                    android:id="@+id/my_rides_detail_wait_time_textview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="2dp"
+                                    android:text=""
+                                    android:textColor="#606060"
+                                    android:textSize="13sp"
+                                    android:visibility="visible" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/my_rides_detail_price_view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_below="@+id/my_rides_detail_price_inner_layout"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#918e8e" />
+
+
+                    <com.mylibrary.widgets.CustomTextView
+                        android:id="@+id/my_rides_detail_Faredetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/my_rides_detail_price_view"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/fare_breakup_label_message"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+
+                    <com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView
+                        android:id="@+id/my_rides_payment_detail_listView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_below="@+id/my_rides_detail_Faredetail"
+                        android:layout_marginTop="5dp"
+                        android:background="#ffffff"
+                        android:divider="@null"></com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView>
+
+
+                    <ImageView
+                        android:id="@+id/my_rides_detail_bill_imageView"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_below="@+id/my_rides_detail_price_view"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginTop="13dp"
+                        android:src="@drawable/bill_icon"
+                        android:visibility="gone" />
+
+                    <com.mylibrary.widgets.CustomTextView
+                        android:id="@+id/my_rides_detail_total_bill_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/my_rides_detail_price_view"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/my_rides_detail_bill_imageView"
+                        android:text="@string/my_rides_detail_total_bill_textview"
+                        android:textColor="#4e4e4e"
+                        android:textSize="13sp"
+                        android:visibility="gone" />
+
+                    <com.mylibrary.widgets.CustomTextView
+                        android:id="@+id/my_rides_detail_total_bill_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/my_rides_detail_price_view"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="7dp"
+                        android:text=""
+                        android:textColor="#606060"
+                        android:textSize="13sp"
+                        android:visibility="gone" />
+
+                    <com.mylibrary.widgets.CustomTextView
+                        android:id="@+id/my_rides_detail_total_paid_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/my_rides_detail_display_tip_layout"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/my_rides_detail_bill_imageView"
+                        android:text="@string/my_rides_detail_total_paid_textview"
+                        android:textColor="#4e4e4e"
+                        android:textSize="13sp"
+                        android:visibility="gone" />
+
+
+                    <com.mylibrary.widgets.CustomTextView
+                        android:id="@+id/my_rides_detail_total_paid_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/my_rides_detail_display_tip_layout"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="7dp"
+                        android:text=""
+                        android:textColor="#606060"
+                        android:textSize="13sp"
+                        android:visibility="gone" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/my_rides_detail_display_tip_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/my_rides_detail_total_bill_label"
+                        android:layout_toRightOf="@+id/my_rides_detail_bill_imageView"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/my_rides_detail_tip_amount_layout"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="7dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="vertical"
+                                android:visibility="visible">
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <com.mylibrary.widgets.CustomTextView
+                                        android:id="@+id/my_rides_detail_tip_amount_label"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:text="@string/my_rides_detail_tips_textview"
+                                        android:textColor="#4e4e4e"
+                                        android:textSize="13sp" />
+
+                                    <com.mylibrary.widgets.CustomTextView
+                                        android:id="@+id/my_rides_detail_tip_amount_textView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginTop="2dp"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:text=""
+                                        android:textColor="#606060"
+                                        android:textSize="13sp" />
+
+                                    <LinearLayout
+                                        android:id="@+id/my_rides_detail_tip_amount_remove_layout"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_gravity="right"
+                                        android:layout_marginTop="1dp"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone">
+
+                                        <ImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_gravity="center_horizontal|top"
+                                            android:layout_weight="1"
+                                            android:src="@drawable/minus_icon" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <com.mylibrary.widgets.CustomTextView
+                                    android:id="@+id/my_rides_detail_coupon_discount_textview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="7dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:text=""
+                                    android:textColor="#918e8e"
+                                    android:textSize="11sp"
+                                    android:visibility="visible" />
+
+                                <com.mylibrary.widgets.CustomTextView
+                                    android:id="@+id/my_rides_detail_wallet_usuage_textview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_weight="1"
+                                    android:gravity="right"
+                                    android:text=""
+                                    android:textColor="#918e8e"
+                                    android:textSize="11sp"
+                                    android:visibility="visible" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/my_rides_detail_tip_top_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/my_rides_detail_price_layout"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff"
+                    android:visibility="gone">
+
+                    <View
+                        android:id="@+id/fare_breakup_view3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#918e8e" />
+
+                    <CheckBox
+                        android:id="@+id/my_rides_detail_tip_checkBox"
+                        android:layout_width="265dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/fare_breakup_view3"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="10dp"
+                        android:button="@xml/fare_breakup_checkbox"
+                        android:gravity="center"
+                        android:text="@string/my_rides_detail_tip_amount_message"
+                        android:textColor="#4e4e4e"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/my_rides_detail_tip_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/my_rides_detail_tip_checkBox"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/my_rides_detail_tip_editText"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@xml/edittext_border_grey_background"
+                            android:hint="@string/my_rides_detail_tip_label"
+                            android:imeOptions="actionDone"
+                            android:inputType="number|numberDecimal"
+                            android:maxEms="3"
+                            android:maxLength="3"
+                            android:paddingLeft="10dp"
+                            android:textColor="#3f3e3e"
+                            android:textColorHint="#918e8e"
+                            android:textCursorDrawable="@drawable/edittext_cursor_color"
+                            android:textSize="13sp" />
+
+                        <Button
+                            android:id="@+id/my_rides_detail_tip_apply_button"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_toRightOf="@+id/my_rides_detail_tip_editText"
+                            android:background="#76CDE1"
+                            android:text="@string/my_rides_detail_tip_apply_label"
+                            android:textColor="#ffffff"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <com.mylibrary.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/my_rides_detail_tip_top_layout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

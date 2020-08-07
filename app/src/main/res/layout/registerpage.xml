@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#1aB43526">
+
+    <RelativeLayout
+        android:id="@+id/register_header_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/app_color"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:id="@+id/register_header_back_layout"
+            android:layout_width="55dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="26dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:background="@null"
+                android:src="@drawable/back_arrow"/>
+        </RelativeLayout>
+
+        <com.mylibrary.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/register_header_back_layout"
+            android:text="@string/register_label"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/register_header_layout"
+        android:background="#00000000"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#00000000">
+
+        <RelativeLayout
+            android:id="@+id/rr"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000">
+
+            <Button
+                android:id="@+id/login_facebook_button"
+                android:layout_width="fill_parent"
+                android:layout_height="43dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/facebook_full_icon"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rrr"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           android:layout_below="@+id/rr"
+
+            android:layout_centerInParent="true"
+            android:background="#00000000">
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/login_or_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:text="@string/login_label_or"
+                android:textColor="#006400"
+                android:textSize="15sp" />
+        </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/register_signin_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rrr"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#CCffffff">
+
+                <com.mylibrary.widgets.CustomEdittext
+                    android:id="@+id/register_email_editText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/edittext_background"
+                    android:hint="@string/register_label_email_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="textImeMultiLine"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="#006400"
+                    android:textColorHint="#006400"
+                    android:textCursorDrawable="@drawable/edittext_cursor_color"
+                    android:textSize="14dp"/>
+
+                <View
+                    android:id="@+id/register_view1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/register_email_editText"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#898585"/>
+
+                <com.mylibrary.widgets.CustomEdittext
+                    android:id="@+id/register_password_editText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="46dp"
+                    android:layout_below="@+id/register_view1"
+                    android:background="@drawable/edittext_background"
+                    android:hint="@string/register_label_pwd_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="textImeMultiLine"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="#006400"
+                    android:textColorHint="#006400"
+                    android:textCursorDrawable="@drawable/edittext_cursor_color"
+                    android:textSize="14dp"/>
+
+                <View
+                    android:id="@+id/register_view2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/register_password_editText"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#898585"/>
+
+
+                <com.mylibrary.widgets.CustomEdittext
+                    android:id="@+id/register_conpassword_editText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="46dp"
+                    android:layout_below="@+id/register_view2"
+                    android:background="@drawable/edittext_background"
+                    android:hint="@string/register_label_cnf_pwd_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="textImeMultiLine"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="#006400"
+                    android:textColorHint="#006400"
+                    android:textCursorDrawable="@drawable/edittext_cursor_color"
+                    android:textSize="14dp"/>
+
+
+
+                <View
+                    android:id="@+id/register_view23"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/register_conpassword_editText"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#898585"/>
+
+
+                <com.mylibrary.widgets.CustomEdittext
+                    android:id="@+id/register_username_editText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="44dp"
+                    android:layout_below="@+id/register_view23"
+                    android:background="@drawable/edittext_background"
+                    android:hint="@string/register_label_username_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="textImeMultiLine"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="#006400"
+                    android:textColorHint="#006400"
+                    android:textCursorDrawable="@drawable/edittext_cursor_color"
+                    android:textSize="14dp"/>
+
+                <View
+                    android:id="@+id/register_view3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/register_username_editText"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#898585"/>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/register_center_view"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_below="@+id/register_signin_layout"
+                android:visibility="invisible"/>
+
+            <RelativeLayout
+                android:id="@+id/register_signin_bottom_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/register_center_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#CCffffff">
+
+                <RelativeLayout
+                    android:id="@+id/register_country_code_layout"
+                    android:layout_width="70dp"
+                    android:layout_height="46dp"
+                    android:background="@drawable/edittext_background">
+
+                    <com.mylibrary.widgets.CustomTextView
+                        android:id="@+id/register_country_code_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/register_label_code_hint"
+                        android:textColor="#006400"
+                        android:textSize="14sp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/register_view5"
+                    android:layout_width="1px"
+                    android:layout_height="26dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/register_country_code_layout"
+                    android:background="#898585"/>
+
+                <com.mylibrary.widgets.CustomEdittext
+                    android:id="@+id/register_phone_editText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="46dp"
+                    android:layout_toRightOf="@+id/register_view5"
+                    android:background="@drawable/edittext_background"
+                    android:digits="+0123456789"
+                    android:hint="@string/register_label_phone_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="15"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="#006400"
+                    android:textColorHint="#006400"
+                    android:textCursorDrawable="@drawable/edittext_cursor_color"
+                    android:textSize="14dp"/>
+
+                <View
+                    android:id="@+id/register_view4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/register_phone_editText"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#898585"/>
+
+                <com.mylibrary.widgets.CustomEdittext
+                    android:id="@+id/register_referalcode_editText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/register_view4"
+                    android:layout_marginRight="4dp"
+                    android:layout_toLeftOf="@+id/register_referalcode_help_image"
+                    android:background="@drawable/edittext_background"
+                    android:hint="@string/register_label_referal_hint"
+                    android:imeOptions="actionDone"
+                    android:inputType="textImeMultiLine"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="#006400"
+                    android:textColorHint="#006400"
+                    android:textCursorDrawable="@drawable/edittext_cursor_color"
+                    android:textSize="14dp"/>
+
+                <ImageView
+                    android:id="@+id/register_referalcode_help_image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/register_view4"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/help_icon"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/register_submit_button"
+                android:layout_width="fill_parent"
+                android:layout_height="42dp"
+                android:layout_below="@+id/register_signin_bottom_layout"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/app_color"
+                android:text="@string/register_label_register"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

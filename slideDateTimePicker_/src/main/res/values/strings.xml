@@ -1,0 +1,604 @@
+<resources>
+    <string name="app_name">Cabily</string>
+    <string name="app_name_heading">CABILY</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_signingIn">Signing In</string>
+    <string name="action_signingUp">Signing Up</string>
+    <string name="action_updating">Updating</string>
+    <string name="action_logging_out">Logging Out</string>
+    <string name="action_sending_invoice">Sending Invoice</string>
+    <string name="action_processing">Processing</string>
+    <string name="action_deleting">Deleting</string>
+    <string name="action_success">Success</string>
+    <string name="action_pleasewait">Please Wait...</string>
+    <string name="action_loading">Loading</string>
+    <string name="action_saving">Saving</string>
+    <string name="action_error">Sorry</string>
+    <string name="action_verifying">Verifying</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_retry">Retry</string>
+    <string name="action_ok">OK</string>
+    <string name="fragment_edit">Edit</string>
+    <string name="action_cancel_alert">CANCEL</string>
+    <string name="alert_nointernet">No Internet Connection</string>
+    <string name="alert_no_gps">GPS not Enabled !!!</string>
+    <string name="forgotpassword">Please enter the email address of your account</string>
+    <string name="alert_nointernet_message">You are offline please check your internet connection</string>
+    <string name="alert_servererror">Server Error</string>
+    <string name="alert_gpsEnable">Enable GPS to locate your location</string>
+    <string name="alert_nocar">Sorry! We do not provide services in your city yet.</string>
+    <string name="alert_update_location">Updating Your Location</string>
+    <string name="action_session_expired_title">Session Expired</string>
+    <string name="action_session_expired_message">Please re-login to renew your session</string>
+    <string name="action_unable_to_create_map">Unable to create map. Install Google Play service To View Location !!!</string>
+
+    <!-- signup and Signin Page -->
+    <string name="signin_main_label_Signin">SIGN IN</string>
+    <string name="signin_main_label_register">REGISTER</string>
+
+    <!-- Login Page -->
+    <string name="login_label">SIGN IN</string>
+    <string name="login_label_forgotpwd">Forgot Password?</string>
+    <string name="login_label_email_hint">Email Address</string>
+    <string name="login_label_pwd_hint">Password</string>
+    <string name="login_label_login">Sign In</string>
+    <string name="login_label_alert_username">Email address can\'t be empty</string>
+    <string name="login_label_alert_email_invalid">Email address is invalid</string>
+    <string name="login_label_alert_password">Password can\'t be empty</string>
+    <string name="login_label_alert_signIn_failed">Sign In Failed</string>
+    <string name="login_label_facecook_login">Facebook Log in</string>
+    <string name="login_label_or">OR</string>
+
+
+    <!-- Register Page -->
+    <string name="register_label">Register</string>
+    <string name="register_label_email_hint">Email</string>
+    <string name="register_label_email_me_hint">Email Me</string>
+    <string name="register_label_pwd_hint">Password</string>
+    <string name="register_label_cnf_pwd_hint">Confirm Password</string>
+    <string name="register_label_username_hint">Name</string>
+    <string name="register_label_phone_hint">Mobile Number</string>
+    <string name="register_label_code_hint">Code</string>
+    <string name="register_label_dummy_text">By Continuing , i agree Cabilys User Agreement and Terms of Services</string>
+    <string name="register_label_referal_hint">Referral Code(Optional)</string>
+    <string name="register_label_register">REGISTER</string>
+    <string name="register_label_create_account">Create Account</string>
+    <string name="register_label_alert_username">UserName can\'t be empty</string>
+    <!--<string name="register_label_alert_password">Password must be at least 6 characters, and must include at least one lower case letter, and one numeric digit.</string>-->
+    <string name="register_label_alert_password">Password must be at least 6 characters.</string>
+    <string name="register_label_alert_email">Email address is invalid</string>
+    <string name="register_label_alert_email_register">Email should not empty</string>
+    <string name="register_label_alertpassword_register">Password should not empty</string>
+    <string name="register_label_alert_email_empty">Please Enter your Email</string>
+    <string name="register_label_alert_phoneNo">Enter phone number between 6 to 15</string>
+    <string name="register_label_alert_country_code">Enter country code</string>
+    <string name="register_label_alert_pass_not_match">Password does not match</string>
+    <string name="register_label_referal_schema">Referral Schema!</string>
+    <string name="register_label_referal_ok">OK</string>
+    <string name="register_label_referal_schema_content1">Enter a referral code here to earn free ride coupons.</string>
+    <string name="register_label_referal_schema_content2">Note : Referral schema is only applicable for users who have never booked an Cabily cab before.</string>
+    <string name="login_label_alert_register_failed">Registration Failed</string>
+
+    <!-- OTP Page -->
+    <string name="otp_label_verification">Verify Mobile</string>
+    <string name="otp_label_enter_otp">Enter OTP</string>
+    <string name="otp_label_send">Submit</string>
+    <string name="action_otp">Verifying</string>
+    <string name="otp_label_alert_otp">OTP can\'t be empty</string>
+    <string name="otp_label_alert_invalid">OTP is invalid</string>
+
+
+    <!-- Forgot Password Page -->
+    <string name="forgot_password_email_label_title">Forgot Password</string>
+    <string name="forgot_password_email_label_enter_email">Email Address</string>
+    <string name="forgot_password_email_label_send_email">E-mail Me</string>
+    <string name="forgot_password_email_label_enter_valid_email">Email address is invalid</string>
+    <string name="forgot_password_email_label_success">Verification code has been sent to your registered mobile number</string>
+
+    <!-- Reset Password Page -->
+    <string name="reset_password_label_title">RESET PASSWORD</string>
+    <string name="reset_password_label_email">Email Address</string>
+    <string name="reset_password_label_enter_new_password">New Password</string>
+    <string name="reset_password_label_show_password_text">Show Password</string>
+    <string name="reset_password_email_label_enter_valid_email">Enter valid email</string>
+    <string name="reset_password_email_label_enter_valid_password">Password can\'t be empty</string>
+
+
+
+    <!-- Navigation Drawer Layout -->
+    <string name="navigation_label_bookmyride">Book My Ride</string>
+    <string name="navigation_label_myride">My Rides</string>
+    <string name="navigation_label_money">Cabily Money</string>
+    <string name="navigation_label_invite">Invite &amp; Earn</string>
+    <string name="navigation_label_ratecard">Rate Card</string>
+    <string name="navigation_label_emergency">Emergency Contact</string>
+    <string name="navigation_label_report_issue">Report Issues</string>
+    <string name="navigation_label_feedback">Feedback</string>
+    <string name="navigation_label_aboutus">About Us</string>
+    <string name="action_email_toAddress">info@zoplay.com</string>
+
+
+    <!-- Home Page -->
+    <string name="home_label_ride_later">RIDE LATER</string>
+    <string name="home_label_ride_now">RIDE NOW</string>
+    <string name="home_label_cancel">CANCEL</string>
+    <string name="home_label_confirm">CONFIRM</string>
+    <string name="home_label_fromNow">from now</string>
+    <string name="home_label_confirmation">CONFIRMATION</string>
+    <string name="home_label_invalid_pickUp">Invalid pickup location</string>
+
+    <!-- GPS Alert Dialog -->
+    <string name="gps_label_title">Use Location?</string>
+    <string name="gps_label_text1">This app wants to change your</string>
+    <string name="gps_label_text2">device settings:</string>
+    <string name="gps_label_text3">Use GPS,Wi-Fi and cell networks</string>
+    <string name="gps_label_text4">for location</string>
+    <string name="gps_label_no">No</string>
+    <string name="gps_label_yes">Yes</string>
+
+    <!-- Alert Dialog -->
+    <string name="alert_label_title">Sorry</string>
+    <string name="alert_label_ok">OK</string>
+    <string name="alert_label_content1">We could not accept your request</string>
+    <string name="alert_label_content2">No cabs has been available at your place. Kindly try again after sometime</string>
+
+    <!-- RIDE LATER Alert Dialog -->
+    <string name="alert_label_ridelater_title">Invalid pickup time</string>
+    <string name="alert_label_ridelater_content">Please make sure that pickup time is at least after an hour from now</string>
+
+    <!-- Book My Ride Layout -->
+    <string name="ridenow_label_ratecard">Rate Card</string>
+    <string name="ridenow_label_estimate">Get Estimate Fare</string>
+    <string name="ridenow_label_enter_drop_loc">Enter Drop Location</string>
+    <string name="ridenow_label_coupon">Apply Coupon</string>
+    <string name="ridenow_label_cartype">Car Type</string>
+    <string name="ridenow_no_driver">No Driver Available , Please Select other Category</string>
+    <string name="ridenow_label_available_wallet_amount">Your Wallet :</string>
+    <string name="ridenow_label_pickup_time">Pickup Time</string>
+    <string name="ridenow_label_confirm_success">Your booking has been successfully registered. Our driver will contact you soon.</string>
+
+    <!-- Rate Card Dilaog -->
+    <string name="ratecard_label_fare">Fare Breakup</string>
+    <string name="ratecard_label_ok">OK</string>
+
+    <!-- Coupon Code Dilaog -->
+    <string name="couponcode_label_title">Enter Coupon Code</string>
+    <string name="couponcode_label_apply">APPLY</string>
+    <string name="couponcode_label_remove">CLEAR</string>
+    <string name="couponcode_label_cancel">CANCEL</string>
+    <string name="couponcode_label_verifying">Verifying...</string>
+    <string name="couponcode_label_verifed">Verified</string>
+    <string name="couponcode_label_invalid_code">Invalid coupon code</string>
+    <string name="couponcode_label_empty_code">Empty coupon code</string>
+    <string name="couponcode_label_allowance_text1">You have successfully applied coupon code and </string>
+    <string name="couponcode_label_allowance_text2">% will be deducted from your total amount.</string>
+    <string name="couponcode_label_allowance_text3"> will be deducted from your total amount.</string>
+    <string name="couponcode_label_allowance">Your Allowance</string>
+    <string name="couponcode_allowance_type">Percent</string>
+
+
+    <!-- Timer Alert Dilaog -->
+    <string name="timer_label_alert_retry">Retry</string>
+    <string name="timer_label_alert_cancel">Cancel</string>
+    <string name="timer_label_alert_sorry">Sorry!</string>
+    <string name="timer_label_alert_content">No driver available </string>
+
+    <!-- Timer Activity -->
+    <string name="timer_label">We are searching driver for you, \n be relax!</string>
+    <string name="timer_label_cancel_ride">Cancelling your ride</string>
+    <string name="timer_label_alert_yes">YES</string>
+    <string name="timer_label_alert_no">NO</string>
+    <string name="timer_label_alert_cancel_ride">Cancel Ride</string>
+    <string name="timer_label_alert_cancel_ride_message">Are your sure you want to cancel this ride?</string>
+
+    <!-- Track Your Ride Activity -->
+    <string name="track_your_ride_label_cancelRide">Cancel Ride</string>
+    <string name="track_your_ride_label_track">TRACK YOUR RIDE</string>
+    <string name="track_your_ride_label_done">Done</string>
+    <string name="track_your_ride_label_callDriver">CONTACT</string>
+    <string name="track_your_ride_label_endTrip">CANCEL</string>
+    <string name="track_your_ride_label_arrive_in">ARRIVING IN</string>
+    <string name="track_your_ride_label_minutes">MINUTES</string>
+    <string name="track_your_ride_label_hours">HOURS</string>
+    <string name="track_your_ride_label_rating">Rating \t:</string>
+    <string name="track_your_ride_alert_content1">Unable to contact driver. Please try again after sometime</string>
+
+    <!--Home Car Type Select Dialog -->
+    <string name="car_type_select_dialog_label_carType">Select Car Type</string>
+    <string name="car_type_select_dialog_label_shareSeat">Select Share Seat</string>
+    <string name="car_type_select_dialog_label_cancel">Cancel</string>
+
+    <!-- Estimate Price Activity -->
+    <string name="estimate_price_label_search">Enter Place to Search</string>
+    <string name="estimate_price_label_place_notAvailable">No Search Found</string>
+    <string name="estimate_price_label_not_found">No Rate Available</string>
+    <string name="estimated_fare_label">Estimated Fare</string>
+    <!-- Estimate Detail Activity -->
+    <string name="estimate_detail_label_rideEstimation">Ride Estimation</string>
+    <string name="estimate_detail_label_ok">OK</string>
+    <string name="estimate_detail_label_pickup">Pickup</string>
+    <string name="estimate_detail_label_drop">Drop</string>
+    <string name="estimate_detail_label_approx">APPROX TRAVEL TIME :</string>
+    <string name="estimate_detail_label_peekTime">PEAK TIME CHARGE :</string>
+    <string name="estimate_detail_label_nightCharge">NIGHT CHARGE :</string>
+
+
+    <!--Profile Activity-->
+    <string name="profile_lable_signin_myprofile"> MY PROFILE</string>
+    <string name="profile_lable_signindetails">SIGN IN DETAILS</string>
+    <string name="profile_lable_emailid">Email Id</string>
+    <string name="profile_lable_emailiduser">ani@gmail.com</string>
+    <string name="profile_lable_signinstar">*************</string>
+    <string name="profile_lable_signinchangepassword">Change Password</string>
+    <string name="profile_lable_signin_hintname">Name</string>
+    <string name="profile_lable_signin_hint_code">Code</string>
+    <string name="profile_lable_signinhintmobileno">Mobile Number</string>
+    <string name="profile_lable_signinmydetails">MY DETAILS</string>
+    <string name="profile_lable_signinlogout">Logout</string>
+    <string name="profile_lable_save">Save</string>
+    <string name="profile_lable_username_success">Name updated successfully</string>
+    <string name="profile_lable_mobile_success">Mobile number updated successfully</string>
+    <string name="profile_lable_error_name">Name can\'t be empty</string>
+    <string name="profile_lable_error_mobile">Enter  phone number between 6 to 15</string>
+    <string name="profile_lable_error_mobilecode">Enter country code</string>
+    <string name="profile_lable_logout_title">LOGOUT</string>
+    <string name="profile_lable_logout_message">Are you sure you want to logout?</string>
+    <string name="profile_lable_logout_yes">YES</string>
+    <string name="profile_lable_logout_no">NO</string>
+
+    <!--ChangePassword Activity-->
+    <string name="changepassword_lable_headertextview">CHANGE PASSWORD</string>
+    <string name="changepassword_lable_old_password_edittext">Enter old password</string>
+    <string name="changepassword_lable_new_password_edittext">Enter new password</string>
+    <string name="changepassword_lable_confirm_new_password_edittext">Enter confirm password</string>
+    <string name="changepassword_lable_confirm_notmatch_edittext">Password Should match with New Password</string>
+    <string name="changepassword_lable_old_notmatch_edittext">Password Should not match with  Old Password</string>
+    <string name="changepassword_lable_submit">Submit</string>
+    <string name="changepassword_label_alert_oldpassword">Please enter old password</string>
+    <string name="changepassword_label_alert_newpassword">Password must be at least 6 characters.</string>
+    <string name="changepassword_label_alert_confirmpassword">Please enter confirm password</string>
+    <string name="changepassword_label_changed_success">Password has been changed successfully</string>
+
+    <!--AboutUs-->
+    <string name="aboutus_lable_header_textview">ABOUT US</string>
+    <string name="aboutus_lable_version_textview">Version</string>
+    <string name="aboutus_lable_poweredby_textview">POWERED BY : CABILY</string>
+    <string name="aboutus_lable_company_textview">CABILY</string>
+    <string name="aboutus_lable_version_code_textview">VERSION 2.1</string>
+    <string name="aboutus_lable_moreinfo_textview">More Info</string>
+    <string name="cabily_aboutus_webview_lable_header_textview">ABOUT US</string>
+    <string name="aboutus_lable_aboutus_description_textview">Cabily – A taxi booking app that will take the hassle out of getting to your destination quickly and without having to spend too much. Using highly advanced taxi booking software, It will provide you with a quick quote to help you avoid any surprises when you get to your destination, and assign you to a professional and responsible driver.</string>
+
+    <!--Emergency Contact-->
+    <string name="emergencycontact_lable_header_textview">EMERGENCY CONTACT</string>
+    <string name="emergencycontact_lable_entername_textview">Enter Name</string>
+    <string name="emergencycontact_lable_entercode_textview">+91</string>
+    <string name="emergencycontact_lable_entermobileno_textview">Enter  Mobile Number</string>
+    <string name="emergencycontact_lable_enteremail_id_textview">Enter Email Id</string>
+    <string name="emergencycontact_lable_list_textview">List your emergency contact\'s name,mobile number and email here.</string>
+    <string name="emergencycontact_lable_note_textview">Note : Your contact can be alerted only after verification.</string>
+    <string name="emergencycontact_lable_sharealways_textview">Always share my ride with my contact</string>
+    <string name="emergencycontact_lable_heremove_contact_textview">Remove contact</string>
+    <string name="emergencycontact_lable_save_contact_textview">Save</string>
+    <string name="emergencycontact_lable_namevalidate_textview">Name can\'t be empty</string>
+    <string name="emergencycontact_lable_mobilenovalidate_textview">Enter  phone number between 6 to 15</string>
+    <string name="emergencycontact_lable_email_validate_textview">Enter valid email</string>
+    <string name="emergencycontact_lable_code_validate_textview">Enter country code</string>
+    <string name="emergencycontact_lable_saved_emergencycontacts">Emergency contact has been saved successfully</string>
+    <string name="emergencycontact_lable_savingtextview">Saving...</string>
+    <string name="emergencycontact_lable_deletesuccess_textview">Emergency contact has been deleted successfully</string>
+
+    <!-- Invite And Earn Activity-->
+    <string name="invite_earn_label_shareAndEarn">INVITE AND EARN</string>
+    <string name="invite_earn_label_friends_earn">Friend joins,friend earns</string>
+    <string name="invite_earn_label_friends_ride">Friends ride</string>
+    <string name="invite_earn_label_friend_ride">You earn</string>
+    <string name="invite_earn_label_on_first_ride">on friends first Ride</string>
+    <string name="invite_earn_label_shareReferralCode">Share your referral code</string>
+    <string name="invite_earn_label_start_invite">Start inviting friends via</string>
+    <string name="invite_earn_label_invite_sms">SMS</string>
+    <string name="invite_earn_label_invite_email">Email</string>
+    <string name="invite_earn_label_facebook">Facebook</string>
+    <string name="invite_earn_label_whatsApp">WhatsApp</string>
+    <string name="invite_earn_label_messenger">Messenger</string>
+    <string name="invite_earn_label_twitter">Twitter</string>
+    <string name="invite_earn_label_letWorldKnow">Let the world know</string>
+    <string name="invite_earn_label_problem_server">There was a problem connecting to the server. Please try again after sometime</string>
+    <string name="invite_earn_label_whatsApp_not_installed">We could not find WhatsApp installed on your device.</string>
+    <string name="invite_earn_label_messenger_not_installed">We could not find Messenger installed on your device.</string>
+    <string name="invite_earn_label_email_not_installed">There is no email client installed on your device.</string>
+    <string name="invite_earn_label_twitter_not_installed">We could not find Twitter installed on your device.</string>
+    <string name="invite_earn_label_facebook_not_installed">We could not find Facebook installed on your device.</string>
+    <string name="invite_earn_label_share_messgae1">I have an cabily coupon worth</string>
+    <string name="invite_earn_label_share_messgae2">for you. Sign up with my code</string>
+    <string name="invite_earn_label_share_messgae3">to avail the coupon and ride for free.Have a great ride!Download: http://dectar.com</string>
+    <string name="invite_earn_label_twitter_share_messgae">to ride free.Enjoy! http://dectar.com</string>
+    <string name="invite_earn_label_app_invitation">Cabily App Invitation</string>
+
+    <!--RateCard Activity-->
+    <string name="ratecard_lable_header_textview">RATE CARD</string>
+    <string name="ratecard_lable_city">Select City</string>
+    <string name="ratecard_lable_carType">Select Car Type</string>
+    <string name="ratecard_lable_standardRate">STANDARD RATE</string>
+    <string name="ratecard_lable_charges">EXTRA CHARGES</string>
+    <string name="ratecard_lable_firstKM">First 1 Km \t\t\t :</string>
+    <string name="ratecard_lable_afterKM">After 1 Km \t\t\t :</string>
+    <string name="ratecard_lable_space">\t\t\t :</string>
+    <string name="ratecard_lable_single_space">\t </string>
+    <string name="ratecard_lable_perKM">per km</string>
+    <string name="ratecard_lable_select_city">Select City</string>
+    <string name="ratecard_lable_selected_city_hint">Selected City</string>
+    <string name="ratecard_lable_selected_car_hint">Selected Car Type</string>
+    <string name="ratecard_lable_select_city_alert">First select city</string>
+    <string name="ratecard_lable_perMin">per min</string>
+
+    <!--Cabily Money-->
+    <string name="cabily_lable_header_textview">CABILY MONEY</string>
+    <string name="cabilymoney_lable_textview">Cash less, hassle-free rides &amp; more... </string>
+    <string name="cabilymoney_lable_yourcurrent_balance_textview">Your current balance</string>
+    <string name="cabilymoney_lable_rechargemoney_textview">Recharge Cabily Money</string>
+    <string name="cabilymoney_lable_rechargemoney_edittext_hinr">Enter the amount</string>
+    <string name="cabilymoney_lable_rechargemoney_edittext">Enter amount between $10 - $100</string>
+    <string name="cabilymoney_lable_rechargemoney_edittext_hint">Enter amount between</string>
+    <string name="cabilymoney_lable_rechargemoney_alert">Recharge amount should be between</string>
+    <string name="cabilymoney_lable_addcabilymoney">ADD CABILY MONEY</string>
+    <string name="cabilymoney_enter_amount">please enter amount to add your wallet</string>
+    <string name="action_loading_cabily_money_empty_field">Amount can\'t be empty</string>
+    <string name="action_loading_cabilymoney_transaction_wallet_success">Transaction successful</string>
+
+    <!--Cabily Money WebView-->
+    <string name="cabily_webview_lable_header_textview">Payment Transaction</string>
+    <string name="cabily_webview_lable_transaction_cancel">Transaction has been cancelled</string>
+    <string name="cabily_webview_lable_transaction_failed">Transaction has been failed</string>
+    <string name="cabily_webview_lable_transaction_success">Payment was successful</string>
+    <string name="cabily_webview_lable_cancel_transaction">Cancel Transaction</string>
+    <string name="cabily_webview_lable_cancel_transaction_proceed">Pressing back would cancel your current transaction. Proceed anyway ?</string>
+
+    <!--Cabily Money Transaction-->
+    <string name="cabily_transaction_lable_header_textview">Recent Transaction</string>
+    <string name="cabily_money_lable_transaction_all">ALL</string>
+    <string name="cabily_money_lable_transaction_credit">CREDIT</string>
+    <string name="cabily_money_lable_transaction_debit">DEBIT</string>
+    <string name="cabily_money_lable_no_transaction_yet">No Transaction Yet!</string>
+    <string name="cabily_money_lable_transaction_list_credit">CR</string>
+    <string name="cabily_money_lable_transaction_list_debit">DR</string>
+    <string name="cabily_money_lable_transaction_list_balance">Balance :</string>
+
+
+    <!--MyRides-->
+    <string name="my_rides_header_textview">MY RIDES</string>
+    <string name="my_rides_all">ALL RIDES</string>
+    <string name="my_rides_upcoming">UPCOMING</string>
+    <string name="my_rides_completed">COMPLETED</string>
+    <string name="my_rides_no_ride_yet">No Rides Booked!</string>
+    <string name="my_rides_status_booked_label">Booked</string>
+    <string name="my_rides_status_completed_label">Completed</string>
+    <string name="my_rides_status_cancelled_label">Cancelled</string>
+    <string name="my_rides_status_accept_label">Accept</string>
+    <string name="my_rides_status_onride_label">On Ride</string>
+    <string name="my_rides_status_finished_label">Finished</string>
+    <string name="my_rides_from_label">from</string>
+
+
+    <!--MyRides Details-->
+    <string name="my_rides_detail_header_textview">RIDE DETAILS</string>
+    <string name="my_rides_detail_ride_distance_textview">RIDE DISTANCE</string>
+    <string name="my_rides_detail_time_taken_textview">TIME TAKEN</string>
+    <string name="my_rides_detail_wait_time_textview">WAIT TIME</string>
+    <string name="my_rides_detail_mail_invoice_textview">MAIL INVOICE</string>
+    <string name="my_rides_detail_report_issue_textview">REPORT ISSUE</string>
+    <string name="my_feedback_textview">FEEDBACK</string>
+    <string name="my_rides_detail_pickup_textview">Pickup</string>
+    <string name="my_rides_detail_drop_textview">Drop \t</string>
+    <string name="my_rides_detail_total_bill_textview">Total Bill :</string>
+    <string name="my_rides_detail_total_paid_textview">Total Paid :</string>
+    <string name="my_rides_detail_tips_textview">Tips :</string>
+    <string name="my_rides_detail_crn_textview">CRN</string>
+    <string name="my_rides_detail_city_taxi_textview">City Taxi</string>
+    <string name="my_rides_detail_ride_textview">ride</string>
+    <string name="my_rides_detail_coupon_discount_textview">Coupon Discount :</string>
+    <string name="my_rides_detail_wallet_usuage_textview">Wallet Usage :</string>
+    <string name="my_rides_detail_cancel_trip_textview">CANCEL TRIP</string>
+    <string name="my_rides_detail_track_ride_textview">TRACK RIDE</string>
+    <string name="my_rides_detail_payment_textview">PAYMENT</string>
+    <string name="my_rides_detail_kms_textview">km</string>
+    <string name="my_rides_detail_mins_textview">mins</string>
+    <string name="my_rides_detail_enter_emailId">Enter your Email Address</string>
+    <string name="my_rides_detail_cancel">CANCEL</string>
+    <string name="my_rides_detail_send">SEND</string>
+    <string name="my_rides_detail_favourite_address">YOUR FAVOURITE ADDRESS</string>
+    <string name="my_rides_detail_favourite_enter_title">Enter title</string>
+    <string name="my_rides_detail_favourite_apply">APPLY</string>
+    <string name="my_rides_detail_favourite_alert_title">Enter your favourite address title</string>
+    <string name="my_rides_detail_cancel_ride_alert">Are you sure you want to cancel this ride?</string>
+    <string name="my_rides_detail_cancel_ride_alert_yes">YES</string>
+    <string name="my_rides_detail_cancel_ride_alert_no">NO</string>
+    <string name="my_rides_detail_cancel_ride_alert_title">CANCEL RIDE</string>
+    <string name="my_rides_detail_tip_label">Enter Tips Amount</string>
+    <string name="my_rides_detail_tip_apply_label">APPLY</string>
+    <string name="my_rides_detail_tip_remove_label">REMOVE</string>
+    <string name="my_rides_detail_tip_empty_label">Invalid tip amount</string>
+    <string name="my_rides_detail_tip_amount_label">Tips</string>
+    <string name="my_rides_detail_tip_amount_message">Are you willing to provide tips to driver</string>
+    <string name="my_rides_detail_share_message">SHARE</string>
+
+
+
+    <!--MyRides cancel Trip -->
+    <string name="my_rides_cancel_trip_header_textview">CANCEL RIDE</string>
+    <string name="my_rides_cancel_trip_why_label">Why are you cancelling ?</string>
+    <string name="my_rides_cancel_trip_action_cancel">Cancelling Your Ride</string>
+
+    <!--MyRides payment List -->
+    <string name="my_rides_payment_header_textview">MAKE PAYMENT</string>
+    <string name="my_rides_payment_mode_label">Select Payment Mode</string>
+    <string name="my_rides_payment_cash_success">Payment Successful</string>
+    <string name="my_rides_payment_wallet_success">Payment Successfully Completed</string>
+    <string name="my_rides_payment_cash_driver_confirm_label">Please wait till the driver confirms.</string>
+    <string name="my_rides_payment_empty_wallet">Wallet is Empty</string>
+    <string name="my_rides_payment_empty_wallet_sorry">Sorry</string>
+    <string name="my_rides_payment_webview_lable">PAYMENT TRANSACTION</string>
+
+
+
+    <string name="action_alert_sub">Subject  can\'t be empty</string>
+    <string name="action_alert_msg">Message can\'t be empty</string>
+
+
+    <!--MyRides Rating List -->
+    <string name="my_rides_rating_header_textview">RATING</string>
+    <string name="my_rides_rating_header_skip_textview">Skip</string>
+    <string name="my_rides_rating_header_submit_textview">SUBMIT</string>
+    <string name="my_rides_rating_header_comment_textview">Please enter your comment about your ride</string>
+    <string name="my_rides_rating_header_sorry_textview">Sorry</string>
+    <string name="my_rides_rating_header_enter_all">Please rate all</string>
+    <string name="my_rides_rating_submit_successfully">Your ratings submitted successfully</string>
+
+
+    <!--PushNotificatoin Alert Page-->
+    <string name="pushnotification_alert_label_message">MESSAGE</string>
+    <string name="pushnotification_alert_label_cab_arrived">Cab has arrived.</string>
+    <string name="pushnotification_alert_label_ok">OK</string>
+    <string name="pushnotification_alert_label_ride_completed">Your ride has been completed</string>
+    <string name="pushnotification_alert_label_ride_cancelled_sorry">Sorry</string>
+    <string name="pushnotification_alert_label_ride_arrived_success">Success</string>
+    <string name="pushnotification_alert_label">Alert</string>
+    <string name="pushnotification_alert_label_ride_completed_thanks">Thank you!</string>
+
+    <!--Fare BreakUp Page-->
+    <string name="fare_breakup_label_message">FARE BREAKUP</string>
+    <string name="fare_breakup_label_total_amount">Base Fare</string>
+    <string name="fare_breakup_label_duration">Duration</string>
+    <string name="fare_breakup_label_waiting">Waiting</string>
+    <string name="fare_breakup_label_timeTravel">Distance</string>
+    <string name="fare_breakup_label_subtotal">Subtotal</string>
+    <string name="fare_breakup_label_tips">Tips</string>
+    <string name="fare_breakup_label_serviceTax">Service Tax</string>
+    <string name="fare_breakup_label_driverRating">DRIVER RATING</string>
+    <string name="fare_breakup_label_tripTotal">TRIP TOTAL</string>
+    <string name="fare_breakup_label_total">Total</string>
+    <string name="fare_breakup_label_remove">Remove</string>
+    <string name="fare_breakup_label_payment">MAKE PAYMENT</string>
+    <string name="fare_breakup_label_complete_payment">Please complete your payment</string>
+    <string name="fare_breakup_label_tip_remove_failed">Failed to add tip to driver</string>
+
+
+    <!--Favorite List Page-->
+    <string name="favorite_list_label_title">FAVOURITES</string>
+    <string name="favorite_list_label_no_favorite_yet">No  Favourites added yet !</string>
+    <string name="favorite_list_label_frequent_access">Select frequent locations and save them as favourite for instant access</string>
+    <string name="favorite_list_label_add_favorite">ADD FAVOURITES</string>
+    <string name="favorite_list_label_select_location">Invalid favourite address</string>
+
+    <!--Add Favorite Page-->
+    <string name="favorite_add_label_title">Add Favourite</string>
+    <string name="favorite_add_label_name">Name of your favourites</string>
+    <string name="favorite_add_label_save">Save</string>
+    <string name="favorite_add_label_gettingAddress">Getting Address....</string>
+    <string name="favorite_add_label_no_address">Cannot get address!</string>
+    <string name="favorite_add_label_invalid_address">Invalid address</string>
+    <string name="favorite_add_label_name_empty">Name of your favourites can\'t be empty</string>
+    <string name="call_police_lable">Call Police</string>
+    <string name="call_fireservice_lable">Call Fire Service</string>
+    <string name="call_ambulance_lable">Call Ambulance</string>
+    <string name="alert_multiple_login">Signed Out on all other devices</string>
+
+
+    <!--Share-->
+    <string name="action_share_header">SHARE</string>
+    <string name="action_share_summery">Share Your Trip</string>
+    <string name="action_complete_submit">Submit</string>
+    <string name="action_complete_cancel">Cancel</string>
+
+
+    <!--Track your ride-->
+    <string name="action_driver_arrived">Driver Has Arrived</string>
+    <string name="action_enjy_your_ride">Enjoy Your Ride !!</string>
+
+    <!--Home page-->
+    <string name="action_enter_drop_location">Drop off Location</string>
+
+
+    <!--Destination Address Search-->
+    <string name="destination_address_search_done">DONE</string>
+    <string name="destination_address_search_drag">Drag your address</string>
+    <string name="destination_address_search_invalid">Invalid destination address</string>
+
+
+    <!--Splash App Info-->
+    <string name="app_info_header_textView">SORRY FOR THE DELAY</string>
+    <string name="app_info_content">WE HAD SOME TROUBLE CONNECTING, BUT SHOULD HAVE YOU MOVING  SHORTLY</string>
+
+
+    <string name="demo_json">{"status": "1","message": "Facebook app is successfully integrated","facebook_id": "123456487"}</string>
+
+
+
+
+    <!--service_request_alert-->
+    <string name="service_request_net_slow_alert">Network connection is slow. Please try again.</string>
+    <string name="service_request_auth_failure">Authentication Failure Error</string>
+    <string name="service_request_server_error">Server Error</string>
+    <string name="service_request_network_error">Network Error</string>
+    <string name="service_request_parseerror">Parse Error</string>
+
+
+    <!--home page Toast-->
+    <string name="home_page_toast_incompatible_version">incompatible version of Google Play Services</string>
+    <string name="home_page_toast_cancel">Canceled</string>
+    <string name="home_page_toast_loaction_enable">Location enabled!</string>
+
+    <!--language changess-->
+    <string name="profile_lable_language">Language</string>
+    <string name="profile_lable_language_change">Change</string>
+
+    <!--ratecard-->
+    <string name="ratecard_select_city">Select City</string>
+    <string name="ratecard_select_car_type">Select Car Type</string>
+
+
+    <!--Myridesdetais toast-->
+    <string name="myrides_toast_sorry_unable">Sorry! unable to create maps</string>
+    <string name="myrides_toast_there_is_no">There is no email client installed.</string>
+
+
+    <!--splash toast-->
+    <string name="splash_toast_loaction_enable">Location enabled!</string>
+
+    <string name="dialog_app_exiting">Are you sure you want to Exit</string>
+    <string name="home_label__pickUp">PICKUP LOCATION</string>
+    <string name="home_label__no_cabs">NO CABS AVAILABLE</string>
+    <string name="home_label_min">Mins</string>
+    <string name="navigation_drawer_ok">ok</string>
+    <string name="navigation_drawer_cancel">cancel</string>
+    <string name="takephoto">How do you want to take your photo? </string>
+    <string name="camra">Take photo from camera</string>
+    <string name="existingcamera">Choose an existing photo from gallery</string>
+    <string name="edit_profile_success_label">Image uploaded successfully</string>
+    <string name="action_select_drop_location">Select drop location</string>
+    <string name="tripsummery_add_Ride_label">Ride</string>
+    <string name="tripsummery_add_Payment_label">Payment</string>
+
+    <string name="feedback_subject">Subject</string>
+    <string name="feedback_message">Message</string>
+
+    <string name="conatct_call">Call</string>
+    <string name="contact_message">Message</string>
+
+    <string name="away_label">away</string>
+
+
+
+    <string name="sms_masking_text">Enter your text</string>
+
+    <string name="home_share_pool_is_available">share pool is available</string>
+    <string name="home_seat">seat</string>
+    <string name="home_share_count">share count</string>
+    <string name="home_share">share</string>
+    <string name="update_paly_service">please udpate your google play service</string>
+
+
+
+
+
+</resources>

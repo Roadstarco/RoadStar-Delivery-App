@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/my_rides_rating_layout_header"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/app_color">
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/my_rides_rating_textview_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/my_rides_rating_header_textview"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+
+
+        <RelativeLayout
+            android:id="@+id/my_rides_rating_header_skip_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <com.mylibrary.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="right"
+                android:layout_centerVertical="true"
+                android:text="@string/my_rides_rating_header_skip_textview"
+                android:textColor="#ffffff"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/my_rides_rating_toolbar_shadow_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/my_rides_rating_layout_header"
+        android:background="@xml/toolbar_shadow"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/my_rides_rating_submit_layout"
+        android:layout_below="@+id/my_rides_rating_toolbar_shadow_layout"
+        android:background="#00000000"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#00000000">
+
+            <com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView
+                android:id="@+id/my_rides_rating_listView"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:divider="@null">
+            </com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView>
+
+            <com.mylibrary.widgets.CustomEdittext
+                android:id="@+id/my_rides_rating_comment_edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/my_rides_rating_listView"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_curve_background_grey"
+                android:gravity="top|left"
+
+                android:hint="@string/my_rides_rating_header_comment_textview"
+                android:inputType="textMultiLine"
+                android:imeOptions="actionDone"
+                android:lines="30"
+                android:minLines="5"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:textColor="#4e4e4e"
+                android:textColorHint="#4e4e4e"
+                android:textSize="13sp"/>
+
+            <com.mylibrary.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="1px"
+                android:layout_below="@+id/my_rides_rating_comment_edittext"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/my_rides_rating_submit_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_color">
+
+        <com.mylibrary.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/my_rides_rating_header_submit_textview"
+            android:textColor="#ffffff"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

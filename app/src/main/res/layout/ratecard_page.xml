@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/ratecard_layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/app_color">
+
+        <RelativeLayout
+            android:id="@+id/ratecard_header_back_layout"
+            android:layout_width="55dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="26dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:background="@null"
+                android:src="@drawable/back_arrow"/>
+        </RelativeLayout>
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/ratecard_header_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:text="@string/ratecard_lable_header_textview"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/ratecard_toolbar_shadow_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/ratecard_layout_header"
+        android:background="@xml/toolbar_shadow"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/ratecard_toolbar_shadow_layout"
+        android:background="#ffffff"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true">
+
+            <RelativeLayout
+                android:id="@+id/ratecard_city_relativeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/ratecard_city_imageView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/city_icon"/>
+
+                <fr.ganfra.materialspinner.MaterialSpinner
+                    android:id="@+id/ratecard_city_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@+id/ratecard_city_downarrow_imageView"
+                    android:layout_toRightOf="@+id/ratecard_city_imageView"
+                    android:background="@drawable/edittext_background"
+                    android:popupBackground="#ffffff"
+                    android:textColor="#4e4e4e"
+                    android:textSize="16sp"
+                    app:ms_alignLabels="false"
+                    app:ms_arrowColor="@color/spinner_arrow_color"
+                    app:ms_arrowSize="14dp"
+                    app:ms_baseColor="@color/spinner_line_color"
+                    app:ms_floatingLabelColor="@color/spinner_floatlabel_color"
+                    app:ms_floatingLabelText="@string/ratecard_lable_selected_city_hint"
+                    app:ms_highlightColor="@color/spinner_highlight_color"
+                    app:ms_hint="@string/ratecard_lable_city"
+                    app:ms_multiline="false"
+                    app:ms_thickness="1px"/>
+
+                <ImageView
+                    android:id="@+id/ratecard_city_downarrow_imageView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/triangular_arrow_grey"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/ratecard__view1"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/ratecard_city_relativeLayout"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#cdcdcd"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:id="@+id/ratecard_cartype_relativeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratecard__view1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1px">
+
+                <ImageView
+                    android:id="@+id/ratecard_cartype_imageView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/car_type"/>
+
+                <fr.ganfra.materialspinner.MaterialSpinner
+                    android:id="@+id/ratecard_cartype_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@+id/ratecard_cartype_downarrow_imageView"
+                    android:layout_toRightOf="@+id/ratecard_cartype_imageView"
+                    android:background="@drawable/edittext_background"
+                    android:popupBackground="#ffffff"
+                    android:textColor="#4e4e4e"
+                    android:textSize="16sp"
+                    app:ms_alignLabels="false"
+                    app:ms_arrowColor="@color/spinner_arrow_color"
+                    app:ms_arrowSize="14dp"
+                    app:ms_baseColor="@color/spinner_line_color"
+                    app:ms_floatingLabelColor="@color/spinner_floatlabel_color"
+                    app:ms_floatingLabelText="@string/ratecard_lable_selected_car_hint"
+                    app:ms_highlightColor="@color/spinner_highlight_color"
+                    app:ms_hint="@string/ratecard_lable_carType"
+                    app:ms_multiline="false"
+                    app:ms_thickness="1px"/>
+
+                <ImageView
+                    android:id="@+id/ratecard_cartype_downarrow_imageView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/triangular_arrow_grey"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ratecard_ratedisplay_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/ratecard_cartype_relativeLayout"
+                android:visibility="gone">
+
+                <com.mylibrary.widgets.CustomTextView
+                    android:id="@+id/ratecard_standard_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/ratecard_lable_standardRate"
+                    android:textColor="#000000"
+                    android:textSize="16sp"/>
+
+
+                <com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView
+                    android:id="@+id/ratecard_standardRate_listView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ratecard_standard_label"
+                    android:layout_marginTop="15dp"
+                    android:divider="#ffffff"
+                    android:dividerHeight="0dp"/>
+
+                <com.mylibrary.widgets.CustomTextView
+                    android:id="@+id/ratecard_extra_charge_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ratecard_standardRate_listView"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/ratecard_lable_charges"
+                    android:textColor="#000000"
+                    android:textSize="16sp"/>
+
+                <com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView
+                    android:id="@+id/ratecard_listView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/ratecard_extra_charge_label"
+                    android:layout_marginTop="15dp"
+                    android:divider="#ffffff"
+                    android:dividerHeight="0dp"
+                    android:paddingBottom="10dp"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

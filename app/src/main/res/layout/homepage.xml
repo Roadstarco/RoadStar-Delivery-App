@@ -1,0 +1,1300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/book_my_ride_mapview"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false" />
+
+        <RelativeLayout
+            android:id="@+id/book_my_ride_center_iside_marker_RelativeLayout"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/book_my_ride_center_view1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/center_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/cur_position"
+                android:visibility="visible" />
+
+
+            <!-- <RelativeLayout
+                 android:id="@+id/book_my_ride_center_inside_marker_RelativeLayout"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                 android:layout_marginTop="5dp"
+                 android:visibility="visible">
+
+                 <ImageView
+                     android:id="@+id/book_my_ride_center_marker"
+                     android:layout_width="245dp"
+                     android:layout_height="95dp"
+                     android:layout_alignParentBottom="true"
+                     android:layout_centerHorizontal="true"
+                     android:src="@drawable/marker_setpickup_location_new"
+                     android:visibility="visible" />
+
+
+                 <RelativeLayout
+                     android:id="@+id/book_my_ride_center_marker_estimateLoading_layout"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentLeft="true"
+                     android:layout_centerVertical="true"
+                     android:layout_marginLeft="8dp"
+                     android:visibility="visible">
+
+                     <ProgressBar
+                         android:layout_width="35dp"
+                         android:layout_height="35dp"
+                         android:clickable="false"
+                         android:indeterminate="true"
+                         android:indeterminateDrawable="@xml/circle_progress_animation" />
+
+
+                     <RelativeLayout
+                         android:layout_width="35dp"
+                         android:layout_height="35dp"
+                         android:visibility="visible">
+
+                         <com.mylibrary.widgets.CustomTextView
+                             android:id="@+id/book_my_ride_center_marker_estimate_time"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerInParent="true"
+                             android:gravity="center"
+                             android:text=""
+                             android:textColor="#ffffff "
+                             android:textSize="10sp" />
+                     </RelativeLayout>
+                 </RelativeLayout>
+
+                 <com.mylibrary.materialprogresswheel.ProgressWheel
+                     android:id="@+id/book_my_ride_center_marker_progress_wheel"
+                     android:layout_width="33dp"
+                     android:layout_height="33dp"
+                     android:layout_alignParentLeft="true"
+                     android:layout_centerVertical="true"
+                     android:layout_marginLeft="9dp"
+                     android:visibility="invisible"
+                     app:matProg_barWidth="1dp"
+                     wheel:matProg_barColor="#FCC900 "
+                     wheel:matProg_fillRadius="true"
+                     wheel:matProg_progressIndeterminate="true" />
+
+
+             </RelativeLayout>-->
+            <RelativeLayout
+                android:id="@+id/book_my_ride_center_marker_RelativeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+
+                android:layout_centerVertical="true"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/book_my_ride_center_marker"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/marker_setpickup_location_new"
+                    android:visibility="visible" />
+
+
+                <LinearLayout
+                    android:id="@+id/book_my_ride_marker_time_layout"
+                    android:layout_width="38dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/book_my_ride_center_marker"
+
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="23dp"
+                    android:orientation="vertical">
+
+                    <com.mylibrary.widgets.CustomTextView
+                        android:id="@+id/book_my_ride_confirm_header_car_time_textView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="#ffffff"
+                        android:textSize="10sp" />
+
+                    <com.mylibrary.widgets.CustomTextView
+                        android:id="@+id/book_my_ride_confirm_header_car_time_min_textView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="#ffffff"
+                        android:textSize="8sp" />
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/book_my_ride_progress_wheel"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_alignTop="@+id/book_my_ride_center_marker"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="21dp"
+                    android:clickable="false"
+                    android:indeterminate="true"
+                    android:indeterminateDrawable="@xml/circle_progress_animation" />
+
+                <com.mylibrary.widgets.CustomTextView
+                    android:id="@+id/book_my_ride_confirm_header_car_Pick_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_toRightOf="@+id/book_my_ride_progress_wheel"
+                    android:text="@string/home_label__pickUp"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp" />
+
+                <com.mylibrary.materialprogresswheel.ProgressWheel
+                    android:id="@+id/book_my_ride_progress_wheel1"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_alignTop="@+id/book_my_ride_center_marker"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="21dp"
+                    android:visibility="invisible"
+                    app:matProg_barWidth="1dp"
+                    wheel:matProg_barColor="#FCC900"
+                    wheel:matProg_fillRadius="true"
+                    wheel:matProg_progressIndeterminate="true" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/book_my_ride_center_view1"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/book_my_ride_loading_layout"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/curve_background_black"
+            android:visibility="gone">
+
+            <com.mylibrary.materialprogresswheel.ProgressWheel
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:matProg_barWidth="3dp"
+                wheel:matProg_barColor="#FCC900"
+                wheel:matProg_fillRadius="true"
+                wheel:matProg_progressIndeterminate="true" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/book_my_ride_top_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/home_header"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/app_color">
+
+                <RelativeLayout
+                    android:id="@+id/book_navigation_layout"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/new_drawer" />
+                </RelativeLayout>
+
+                <com.mylibrary.widgets.CustomTextView
+                    android:id="@+id/book_navigation_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/app_name_heading"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/sos_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/ic_sos" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/home_header"
+                android:background="#8f8f8f" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_header"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="12dp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/book_cardview_address_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="13dp"
+                        android:background="#ffffff"
+                        card_view:cardElevation="5dp">
+
+                        <RelativeLayout
+                            android:id="@+id/book_navigation_main_layout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="43dp"
+                            android:background="#FFFFFF">
+
+                            <RelativeLayout
+                                android:id="@+id/book_navigation_address_layout"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentLeft="true"
+                                android:layout_toLeftOf="@+id/book_navigation_search_view1"
+                                android:background="#FFFFFF">
+
+                                <ImageView
+                                    android:id="@+id/book_navigation_search_imageView"
+                                    android:layout_width="10dp"
+                                    android:layout_height="10dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:src="@drawable/dot_bg"
+                                    android:visibility="visible" />
+
+                                <com.mylibrary.widgets.CustomTextView
+                                    android:id="@+id/book_navigation_search_address"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_toRightOf="@+id/book_navigation_search_imageView"
+                                    android:singleLine="true"
+                                    android:text=""
+                                    android:textColor="#4e4e4e"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <View
+                                android:id="@+id/book_navigation_search_view1"
+                                android:layout_width="1px"
+                                android:layout_height="fill_parent"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_toLeftOf="@+id/book_navigation_favorite_layout"
+                                android:background="#969393" />
+
+                            <RelativeLayout
+                                android:id="@+id/book_navigation_favorite_layout"
+                                android:layout_width="43dp"
+                                android:layout_height="43dp"
+                                android:layout_alignParentRight="true"
+                                android:background="#ffffff">
+
+                                <ImageView
+                                    android:layout_width="28dp"
+                                    android:layout_height="28dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/fav_new" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+
+
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/book_cardview_deliveraddress_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="13dp"
+                        android:background="#ffffff"
+                        card_view:cardElevation="5dp">
+
+                        <RelativeLayout
+                            android:id="@+id/book_navigation_main_layoutdeliver"
+                            android:layout_width="fill_parent"
+                            android:layout_height="43dp"
+                            android:background="#FFFFFF">
+
+                            <RelativeLayout
+                                android:id="@+id/book_navigation_address_layoutdeliver"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentLeft="true"
+                                android:layout_toLeftOf="@+id/book_navigation_search_view1deliver"
+                                android:background="#FFFFFF">
+
+                                <ImageView
+                                    android:id="@+id/book_navigation_search_imageViewdeliver"
+                                    android:layout_width="10dp"
+                                    android:layout_height="10dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:src="@drawable/dot_bg"
+                                    android:visibility="visible" />
+
+                                <com.mylibrary.widgets.CustomTextView
+                                    android:id="@+id/book_navigation_search_addressdeliver"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_toRightOf="@+id/book_navigation_search_imageViewdeliver"
+                                    android:singleLine="true"
+                                    android:text=""
+                                    android:textColor="#4e4e4e"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <View
+                                android:id="@+id/book_navigation_search_view1deliver"
+                                android:layout_width="1px"
+                                android:layout_height="fill_parent"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_toLeftOf="@+id/book_navigation_favorite_layoutdeliver"
+                                android:background="#969393" />
+
+                            <RelativeLayout
+                                android:id="@+id/book_navigation_favorite_layoutdeliver"
+                                android:layout_width="43dp"
+                                android:layout_height="43dp"
+                                android:layout_alignParentRight="true"
+                                android:background="#ffffff">
+
+                                <ImageView
+                                    android:layout_width="28dp"
+                                    android:layout_height="28dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/fav_new" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/book_current_location_imageview"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_above="@+id/book_my_ride_share_textView"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/navi_cur_loc" />
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/book_my_ride_share_textView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/book_my_ride_surge_textView"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFF66"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/home_share_pool_is_available"
+                android:textColor="#4e4e4e"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/book_my_ride_surge_textView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/book_my_ride_listview"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFF66"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="#4e4e4e"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+
+            <com.shrinkcom.utils.HorizontalListView
+                android:id="@+id/book_my_ride_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_above="@+id/book_my_ride_bottom_main_layout"
+                android:layout_weight="1"
+                android:background="#ccffffff"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:requiresFadingEdge="horizontal"
+                android:visibility="gone"
+                widget:dividerWidth="0dp" />
+
+
+            <!--second view starts from here-->
+
+            <RelativeLayout
+                android:id="@+id/book_my_ride_ridenow_option_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/book_my_ride_bottom_main_layout"
+                android:visibility="gone">
+
+
+                <RelativeLayout
+                    android:id="@+id/book_my_ride_ridenow_option_confirm_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="55dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/app_color">
+
+                    <RelativeLayout
+                        android:id="@+id/book_my_ride_confirm_header_back_layout"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_alignParentTop="true">
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="26dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="8dp"
+                            android:background="@null"
+                            android:src="@drawable/back_arrow" />
+                    </RelativeLayout>
+
+                    <com.mylibrary.widgets.CustomTextView
+                        android:id="@+id/book_my_ride_confirm_header_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/book_my_ride_confirm_header_back_layout"
+
+                        android:text=""
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/book_cardview_source_address_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/book_my_ride_ridenow_option_confirm_layout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="13dp"
+                    android:background="#ffffff"
+                    android:visibility="visible"
+                    card_view:cardElevation="5dp">
+
+                    <RelativeLayout
+                        android:id="@+id/book_my_ride_source_address_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="43dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="#FFFFFF"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/book_navigation_green_dot_imageView"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/dot_bg" />
+
+                        <com.mylibrary.widgets.CustomTextView
+                            android:id="@+id/book_navigation_source_address_address_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/book_navigation_green_dot_imageView"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="#4e4e4e"
+                            android:textSize="12sp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/book_navigation_green_dot_imageView"
+                            android:layout_marginLeft="14dp"
+                            android:background="@color/text_hint" />
+
+                    </RelativeLayout>
+                    <!--<View
+                        android:id="@+id/vv"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+
+                        android:layout_marginLeft="45dp"
+                        android:background="@color/black"
+                        android:layout_below="@+id/book_my_ride_source_address_layout"/>-->
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/book_cardview_destination_address_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/book_cardview_source_address_layout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+
+                    android:background="#ffffff"
+                    android:visibility="visible"
+                    card_view:cardElevation="5dp">
+
+                    <View
+                        android:id="@+id/vv"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+
+                        android:layout_marginLeft="45dp"
+                        android:background="@color/black" />
+
+                    <RelativeLayout
+                        android:id="@+id/book_navigation_destination_address_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="42dp"
+                        android:layout_below="@+id/vv"
+                        android:layout_centerHorizontal="true"
+                        android:background="#FFFFFF"
+                        android:visibility="visible">
+
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_above="@+id/book_navigation_destination_address_search_imageView"
+                            android:layout_marginLeft="14dp"
+                            android:background="@color/text_hint" />
+
+
+                        <com.mylibrary.widgets.CircularImageView
+                            android:id="@+id/book_navigation_destination_address_search_imageView"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/dot_red" />
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="43dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_toRightOf="@+id/book_navigation_destination_address_search_imageView"
+                            android:background="#FFFFFF"
+                            android:visibility="visible">
+
+                            <com.mylibrary.widgets.CustomTextView
+                                android:id="@+id/book_navigation_destination_address_search_address"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="5dp"
+                                android:singleLine="true"
+                                android:text="@string/action_enter_drop_location"
+
+                                android:textColor="#4e4e4e"
+                                android:textColorHint="#8e8e8e"
+                                android:textSize="12sp" />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="85dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ffffffff">
+
+
+                    <RelativeLayout
+                        android:id="@+id/rrr"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+
+                        >
+
+
+                        <RelativeLayout
+                            android:id="@+id/book_my_ride_share_main_layout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+
+                            android:background="#00000000"
+
+                            android:visibility="gone">
+
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:background="#00000000"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:id="@+id/book_my_ride_normal_ride_layout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/normalride_active_imageview"
+                                        android:layout_width="10dp"
+                                        android:layout_height="10dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@drawable/dot_red"
+                                        android:visibility="gone" />
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="1px"
+                                        android:layout_weight="1"
+                                        android:background="#00000000"
+                                        android:orientation="vertical">
+
+
+                                        <com.mylibrary.widgets.CustomTextView
+                                            android:id="@+id/book_my_ride_normal_ride_text"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginRight="3dp"
+                                            android:text="normal  ride"
+                                            android:textColor="#000000"
+                                            android:textSize="13sp" />
+
+                                        <com.mylibrary.widgets.CustomTextView
+                                            android:id="@+id/book_my_ride_normal_ride_text_value"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/book_my_ride_normal_ride_text"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_centerVertical="true"
+
+                                            android:layout_gravity="center"
+
+                                            android:layout_marginLeft="5dp"
+                                            android:text="100"
+                                            android:textColor="#4e4e4e"
+                                            android:textSize="13sp" />
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+                                <View
+                                    android:layout_width="1px"
+                                    android:layout_height="fill_parent"
+                                    android:background="@color/app_color_transperent" />
+
+                                <LinearLayout
+                                    android:id="@+id/book_my_ride_share_layout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/shareride_active_imageview"
+                                        android:layout_width="10dp"
+                                        android:layout_height="10dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@drawable/dot_red"
+                                        android:visibility="gone" />
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="1px"
+                                        android:layout_marginRight="1px"
+                                        android:layout_weight="1"
+                                        android:background="#00000000"
+                                        android:orientation="vertical">
+
+
+                                        <com.mylibrary.widgets.CustomTextView
+                                            android:id="@+id/book_my_ride_share_text"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginRight="3dp"
+                                            android:text="@string/home_share"
+                                            android:textColor="#000000"
+                                            android:textSize="13sp" />
+
+                                        <com.mylibrary.widgets.CustomTextView
+                                            android:id="@+id/book_my_ride_share_text_value"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/book_my_ride_share_text"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_centerVertical="true"
+
+                                            android:layout_gravity="center"
+
+                                            android:layout_marginLeft="5dp"
+                                            android:text="10"
+                                            android:textColor="#4e4e4e"
+                                            android:textSize="13sp" />
+
+
+                                        <!-- <ImageView
+                                             android:id="@+id/estimate_imageView"
+                                             android:layout_width="25dp"
+                                             android:layout_height="25dp"
+                                             android:layout_gravity="center_vertical"
+                                             android:layout_marginLeft="5dp"
+                                             android:src="@drawable/rateestimate" />
+
+                                         <com.mylibrary.widgets.CustomTextView
+                                             android:id="@+id/estimate_label"
+                                             android:layout_width="wrap_content"
+                                             android:layout_height="wrap_content"
+                                             android:layout_gravity="center_vertical"
+                                             android:layout_marginLeft="5dp"
+                                             android:layout_marginRight="3dp"
+                                             android:text="@string/ridenow_label_estimate"
+                                             android:textColor="#4e4e4e"
+                                             android:textSize="13sp" />-->
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="1px"
+                                    android:layout_height="fill_parent"
+                                    android:background="@color/app_color_transperent" />
+
+                                <LinearLayout
+                                    android:id="@+id/book_my_ride_share_count1"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="#00000000"
+                                    android:orientation="vertical"
+                                    android:visibility="gone">
+
+
+                                    <com.mylibrary.widgets.CustomTextView
+                                        android:id="@+id/book_my_ride_share_spinner"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginRight="3dp"
+                                        android:singleLine="true"
+                                        android:text="@string/home_share_count"
+                                        android:textColor="#000000"
+                                        android:textSize="13sp" />
+
+                                    <com.mylibrary.widgets.CustomTextView
+                                        android:id="@+id/book_my_ride_share_spinner_"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/book_my_ride_share_spinner"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+
+                                        android:layout_gravity="center"
+
+                                        android:layout_marginLeft="5dp"
+                                        android:text=""
+                                        android:textColor="#4e4e4e"
+                                        android:textSize="13sp" />
+
+
+                                    <!-- <ImageView
+                                         android:id="@+id/applycoupon_imageView1"
+                                         android:layout_width="25dp"
+                                         android:layout_height="25dp"
+                                         android:layout_gravity="center_vertical"
+                                         android:layout_marginLeft="5dp"
+                                         android:src="@drawable/coupons" />
+
+                                     <com.mylibrary.widgets.CustomTextView
+                                         android:id="@+id/applycoupon_label1"
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="wrap_content"
+                                         android:layout_gravity="center_vertical"
+                                         android:layout_marginLeft="5dp"
+                                         android:layout_marginRight="3dp"
+                                         android:text="@string/ridenow_label_coupon"
+                                         android:textColor="#4e4e4e"
+                                         android:textSize="13sp" />-->
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/rr"
+                            android:layout_width="fill_parent"
+                            android:layout_height="45dp"
+                            android:visibility="visible">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="#00000000">
+
+                                <com.mylibrary.widgets.CustomTextView
+                                    android:id="@+id/book_my_ride_eta_amount_label_"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="@string/ridenow_label_available_wallet_amount"
+                                    android:textColor="#4e4e4e"
+                                    android:textSize="13sp"
+                                    android:visibility="gone" />
+
+                                <com.mylibrary.widgets.CustomTextView
+                                    android:id="@+id/book_my_ride_eta_amount_textView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:gravity="right"
+                                    android:text=""
+                                    android:textColor="#008A07"
+                                    android:textSize="15sp"
+                                    android:visibility="gone" />
+
+
+                                <com.mylibrary.widgets.CustomTextView
+                                    android:id="@+id/book_my_ride_eta_amount_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:gravity="right"
+                                    android:text="@string/ridenow_label_estimate"
+                                    android:textColor="#000000"
+                                    android:textSize="15sp"
+                                    android:visibility="visible" />
+
+                                <com.mylibrary.widgets.CustomTextView
+                                    android:id="@+id/book_my_ride_enter_drop_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/book_my_ride_eta_amount_label"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginLeft="5dp"
+
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:gravity="right"
+                                    android:text="@string/ridenow_label_enter_drop_loc"
+                                    android:textColor="#4e4e4e"
+                                    android:textSize="10sp"
+                                    android:visibility="visible" />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/book_my_ride_main_wallet_view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_below="@+id/rrr"
+                        android:background="@color/app_color_transperent" />
+
+                    <RelativeLayout
+                        android:id="@+id/book_my_ride_cabtype_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/book_my_ride_main_wallet_view"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/book_my_ride_cab_view"
+                        android:background="#00000000">
+
+
+                        <LinearLayout
+                            android:id="@+id/book_my_ride_applycoupon_layout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#00000000"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/applycoupon_imageView"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+
+                                android:layout_marginLeft="15dp"
+                                android:src="@drawable/coupons" />
+
+                            <com.mylibrary.widgets.CustomTextView
+                                android:id="@+id/applycoupon_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="3dp"
+                                android:text="@string/ridenow_label_coupon"
+                                android:textColor="#4e4e4e"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+
+                        <com.mylibrary.widgets.CustomTextView
+                            android:id="@+id/cartype_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="3dp"
+                            android:text="@string/ridenow_label_cartype"
+                            android:textColor="#4e4e4e"
+                            android:textSize="13sp"
+                            android:visibility="gone" />
+
+
+                        <com.mylibrary.widgets.CustomTextView
+                            android:id="@+id/cartype_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/cartype_label"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="2dp"
+                            android:text=""
+                            android:textColor="#4e4e4e"
+                            android:textSize="13sp"
+                            android:visibility="gone" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/book_my_ride_cab_view"
+                        android:layout_width="1px"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/book_my_ride_main_wallet_view"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/app_color_transperent" />
+
+                    <RelativeLayout
+                        android:id="@+id/book_my_ride_pickup_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/book_my_ride_main_wallet_view"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/book_my_ride_cab_view"
+                        android:background="#00000000">
+
+                        <com.mylibrary.widgets.CustomTextView
+                            android:id="@+id/pickup_time_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="3dp"
+                            android:text="@string/ridenow_label_pickup_time"
+                            android:textColor="#4e4e4e"
+                            android:textSize="13sp"
+                            android:visibility="gone" />
+
+
+                        <com.mylibrary.widgets.CustomTextView
+                            android:id="@+id/pickup_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pickup_time_label"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="2dp"
+                            android:text=""
+                            android:textColor="#4e4e4e"
+                            android:textSize="13sp"
+                            android:visibility="gone" />
+
+
+                        <ImageView
+                            android:id="@+id/cabily_money_imageView"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="15dp"
+
+
+                            android:layout_toLeftOf="@+id/book_my_ride_wallet_amount_label"
+                            android:src="@drawable/cabily_money" />
+
+                        <com.mylibrary.widgets.CustomTextView
+                            android:id="@+id/book_my_ride_wallet_amount_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="3dp"
+
+                            android:text="@string/navigation_label_money"
+
+                            android:textColor="#4e4e4e"
+                            android:textSize="13sp" />
+
+                        <com.mylibrary.widgets.CustomTextView
+                            android:id="@+id/book_my_ride_wallet_amount_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/book_my_ride_wallet_amount_label"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+
+
+                            android:layout_marginLeft="5dp"
+                            android:text=""
+                            android:textColor="#008A07"
+                            android:textSize="13sp" />
+
+
+                    </RelativeLayout>
+
+
+                    <View
+                        android:id="@+id/book_my_ride_main_view1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_below="@+id/book_my_ride_pickup_layout"
+                        android:background="@color/app_color_transperent" />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/book_my_ride_bottom_main_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/book_my_ride_alert_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:background="#D9030303"
+                        android:visibility="gone">
+
+                        <com.mylibrary.widgets.CustomTextView
+                            android:id="@+id/book_my_ride_alert_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:text=""
+                            android:textColor="#FCC900"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/book_my_ride_bottom_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/app_color"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:id="@+id/book_my_ride_rideLater_layout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentLeft="true"
+                            android:visibility="gone"
+                            android:layout_toLeftOf="@+id/book_my_ride_bottom_view1"
+                            android:layout_weight="1">
+
+                            <com.mylibrary.widgets.CustomTextView
+                                android:id="@+id/book_my_ride_rideLater_textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/home_label_ride_later"
+                                android:textColor="#ffffff"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <View
+                            android:id="@+id/book_my_ride_bottom_view1"
+                            android:layout_width="1px"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:background="#ffffff" />
+
+                        <RelativeLayout
+                            android:id="@+id/book_my_ride_rideNow_layout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_toRightOf="@+id/book_my_ride_bottom_view1"
+                            android:layout_weight="1">
+
+                            <com.mylibrary.widgets.CustomTextView
+                                android:id="@+id/book_my_ride_rideNow_textview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/home_label_ride_now"
+                                android:textColor="#ffffff"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

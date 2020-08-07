@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/invite_earn_layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/app_color">
+
+        <RelativeLayout
+            android:id="@+id/invite_earn_header_back_layout"
+            android:layout_width="55dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="26dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:background="@null"
+                android:src="@drawable/back_arrow"/>
+        </RelativeLayout>
+
+        <com.mylibrary.widgets.CustomTextView
+            android:id="@+id/invite_earn_header_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:text="@string/invite_earn_label_shareAndEarn"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/invite_earn_toolbar_shadow_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/invite_earn_layout_header"
+        android:background="@xml/toolbar_shadow"/>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/invite_earn_toolbar_shadow_layout"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff">
+
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/invite_earn_friend_earn_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:text=""
+                android:textColor="#4e4e4e"
+                android:textSize="17sp"/>
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/invite_earn_you_earn_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/invite_earn_friend_earn_textview"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp"
+                android:text=""
+                android:textColor="#4e4e4e"
+                android:textSize="17sp"/>
+
+            <ImageView
+                android:id="@+id/invite_earn_car_imageView"
+                android:layout_width="fill_parent"
+                android:layout_height="170dp"
+                android:layout_below="@+id/invite_earn_you_earn_textview"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/invite_and_earn_car_new"/>
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/invite_earn_referral_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/invite_earn_car_imageView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/invite_earn_label_shareReferralCode"
+                android:textColor="#878383"
+                android:textSize="17sp"/>
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/invite_earn_referral_code_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/invite_earn_referral_label"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp"
+                android:text=""
+                android:textColor="#4e4e4e"
+                android:textSize="18sp"/>
+
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/invite_earn_start_inviting_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/invite_earn_referral_code_textview"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/invite_earn_label_start_invite"
+                android:textColor="#878383"
+                android:textSize="17sp"/>
+
+            <RelativeLayout
+                android:id="@+id/invite_earn_whatsapp_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/invite_earn_start_inviting_label"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/invite_earn_whatsapp_imageView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/whatsapp_icon"/>
+
+                <com.mylibrary.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/invite_earn_whatsapp_imageView"
+                    android:text="@string/invite_earn_label_whatsApp"
+                    android:textColor="#4e4e4e"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/invite_earn_messenger_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/invite_earn_whatsapp_layout"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="7dp">
+
+                <ImageView
+                    android:id="@+id/invite_earn_messenger_imageView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/messenger_icon"/>
+
+                <com.mylibrary.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/invite_earn_messenger_imageView"
+                    android:text="@string/invite_earn_label_messenger"
+                    android:textColor="#4e4e4e"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/invite_earn_sms_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/invite_earn_messenger_layout"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="7dp">
+
+                <ImageView
+                    android:id="@+id/invite_earn_sms_imageView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/sms_icon"/>
+
+                <com.mylibrary.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/invite_earn_sms_imageView"
+                    android:text="@string/invite_earn_label_invite_sms"
+                    android:textColor="#4e4e4e"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/invite_earn_email_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/invite_earn_sms_layout"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="7dp">
+
+                <ImageView
+                    android:id="@+id/invite_earn_email_imageView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/email_icon"/>
+
+                <com.mylibrary.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/invite_earn_email_imageView"
+                    android:text="@string/invite_earn_label_invite_email"
+                    android:textColor="#4e4e4e"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+
+
+            <com.mylibrary.widgets.CustomTextView
+                android:id="@+id/invite_earn_world_know_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/invite_earn_email_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/invite_earn_label_letWorldKnow"
+                android:textColor="#878383"
+                android:textSize="17sp"/>
+
+            <RelativeLayout
+                android:id="@+id/invite_earn_twitter_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/invite_earn_world_know_label"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/invite_earn_twitter_imageView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/twitter_icon"/>
+
+                <com.mylibrary.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/invite_earn_twitter_imageView"
+                    android:text="@string/invite_earn_label_twitter"
+                    android:textColor="#4e4e4e"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/invite_earn_facebook_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/invite_earn_twitter_layout"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="7dp">
+
+                <ImageView
+                    android:id="@+id/invite_earn_facebook_imageView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/facebook_icon"/>
+
+                <com.mylibrary.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/invite_earn_facebook_imageView"
+                    android:text="@string/invite_earn_label_facebook"
+                    android:textColor="#4e4e4e"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="1px"
+                android:layout_below="@+id/invite_earn_facebook_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:visibility="invisible"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

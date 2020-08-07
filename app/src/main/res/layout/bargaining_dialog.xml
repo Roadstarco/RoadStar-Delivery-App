@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/title_text_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:text="N/A"
+        android:textColor="@color/black" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/amount_enter_bargaining"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_text_dialog"
+        android:layout_margin="5dp"
+        android:digits="@string/digits_amount"
+        android:hint="@string/enter_amount_here_in_usd"
+        android:inputType="number"
+        android:padding="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/amount_enter_bargaining"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/bargaining_accept_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            android:layout_marginStart="2dp"
+            android:layout_weight="1"
+            android:background="#95BF35"
+            android:text="@string/accept"
+            android:textColor="@color/white" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/bargaining_update_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            android:layout_marginStart="1dp"
+            android:layout_weight="1"
+            android:background="#95BF35"
+            android:text="@string/update"
+            android:textColor="@color/white" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/bargaining_cancel_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="1dp"
+            android:layout_weight="1"
+            android:background="#95BF35"
+            android:text="@string/action_cancel"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</RelativeLayout>
